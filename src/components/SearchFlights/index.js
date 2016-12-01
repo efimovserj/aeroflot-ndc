@@ -16,16 +16,42 @@ class SearchFlights extends Component {
 				dateFrom: moment(),
 				dateTo: moment(),
 				passengers: {
-					adults: 0,
+					adults: 1,
 					children: 0,
 					babies: 0,
 					youth: 0,
+					quantity: 6,
 				},
 				paymentMiles: false,
 				paymentCurrency: 'RUB',
 				service: 'economy',
 			}
 		};
+	}
+
+	generatePassengerCounter = () => {
+		const { adults, children, babies, quantity } = this.state.searchParams.passengers;
+		let selfCounter = [];
+
+		for (let i = 0; i <= quantity; i++ ) {
+			selfCounter.push(i);
+		}
+
+		const result = {
+			adults : selfCounter.slice(1, quantity - (children + babies) + 1),
+			children : selfCounter.slice(0, quantity - (adults + babies) + 1),
+			babies : selfCounter.slice(0, Math.min((quantity - children - adults), adults) + 1),
+			youth : selfCounter.slice(0, quantity + 1),
+		}
+
+		return result;
+	};
+
+	setPassengerCounter = (e, category) => {
+		const changeParams = Object.assign({}, this.state.searchParams);
+		changeParams['passengers'][category] = Number(e.target.value);
+
+		this.setState({searchParams : changeParams});
 	}
 
 	render() {
@@ -43,15 +69,23 @@ class SearchFlights extends Component {
 			service
 		} = this.state.searchParams;
 
+		let passengerCounter = this.generatePassengerCounter();
+
 		return (
 			<div>
+				<h2>Куда и когда</h2>
+
 				<p>Откуда</p>
 				<Select
 					itemList={airports}
 					currentItem={airportFrom}
 					filter={true}
 					inputProps={{
-						placeholder: 'With love, your placeholder!'
+						placeholder: 'With love, your placeholder!',
+					}}
+					buttonProps={{
+						className: "form-control",
+						value: 'Откуда'
 					}}
 
 					onChange={(current) => {
@@ -114,7 +148,6 @@ class SearchFlights extends Component {
 
 				<br />
 
-
 				<p>Оплата милями</p>
 				<input type="checkbox" value={paymentMiles} onChange={() => {
 
@@ -125,6 +158,68 @@ class SearchFlights extends Component {
 				}}/>
 
 				<br />
+
+				<h2>Пассажиры</h2>
+
+				<p>Взрослые</p>
+				<select className="form-control"
+				        onChange={(e) => this.setPassengerCounter(e, 'adults')}
+				        disabled={passengers.youth > 0}
+				>
+					{ passengerCounter.adults.map((item, i) => {
+						return (
+							<option key={i} value={item} >{item}</option>
+						)
+					}) }
+				</select>
+				<small>(от 12 лет)</small>
+
+				<br />
+				<br />
+
+				<p>Дети</p>
+				<select className="form-control"
+				        onChange={(e) => this.setPassengerCounter(e, 'children')}
+				        disabled={passengers.youth > 0}
+				>
+					{ passengerCounter.children.map((item, i) => {``
+						return (
+							<option key={i} value={item} >{item}</option>
+						)
+					}) }
+				</select>
+				<small>(от 0 до 12 лет)</small>
+
+				<br />
+				<br />
+
+				<p>Младенцы</p>
+				<select className="form-control"
+				        onChange={(e) => this.setPassengerCounter(e, 'babies')}
+				        disabled={passengers.youth > 0}
+				>
+					{ passengerCounter.babies.map((item, i) => {
+						return (
+							<option key={i} value={item} >{item}</option>
+						)
+					}) }
+				</select>
+				<small>(до 2 лет)</small>
+
+				<br />
+				<br />
+
+				<p className="text-danger">Тип пассажира "Молодежь" не комбинируется с другими типами пассажиров.</p>
+
+				<p>Молодежь</p>
+				<select className="form-control" onChange={(e) => this.setPassengerCounter(e, 'youth')}>
+					{ passengerCounter.youth.map((item, i) => {
+						return (
+							<option key={i} value={item} >{item}</option>
+						)
+					}) }
+				</select>
+				<small>(от 12 до 25 лет)</small>
 
 
 			</div>
