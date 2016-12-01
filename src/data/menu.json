@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Подбор рейса",
+    "url": "/"
+  },
+  {
+    "title": "Рейсы",
+    "url": "/flights"
+  },
+  {
+    "title": "Пассажиры",
+    "url": "/passengers"
+  },
+  {
+    "title": "Правила и Ограничения",
+    "url": "/rules"
+  },
+  {
+    "title": "Подтверждение",
+    "url": "/confirmation"
+  }
+]
