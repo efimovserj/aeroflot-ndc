@@ -81,8 +81,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import library from "../lib/library";
 
-console.log('lib', library);
-
 const DEFAULTS = {
 	"standardSymbols": [
 		{

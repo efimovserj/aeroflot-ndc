@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
-// import Components
+// import components
 import Select from '../select';
 import Calendar from '../calendar';
+
+// import additional data
+import service from '../../data/service';
+import countriesList from '../../data/countries';
 
 class SearchFlights extends Component {
 	constructor(props) {
@@ -11,8 +15,8 @@ class SearchFlights extends Component {
 		this.state = {
 			searchParams: {
 				direction: '',
-				airportFrom: {},
-				airportTo: {},
+				airportFrom: this.props.airports[0],
+				airportTo: this.props.airports[0],
 				dateFrom: moment(),
 				dateTo: moment(),
 				passengers: {
@@ -23,8 +27,10 @@ class SearchFlights extends Component {
 					quantity: 6,
 				},
 				paymentMiles: false,
-				paymentCurrency: 'RUB',
-				service: 'economy',
+				currentService: service[0],
+				serviceList: service,
+				countriesList,
+				currentCountry: countriesList[0],
 			}
 		};
 	}
@@ -33,15 +39,15 @@ class SearchFlights extends Component {
 		const { adults, children, babies, quantity } = this.state.searchParams.passengers;
 		let selfCounter = [];
 
-		for (let i = 0; i <= quantity; i++ ) {
+		for (let i = 0; i <= quantity; i++) {
 			selfCounter.push(i);
 		}
 
 		const result = {
-			adults : selfCounter.slice(1, quantity - (children + babies) + 1),
-			children : selfCounter.slice(0, quantity - (adults + babies) + 1),
-			babies : selfCounter.slice(0, Math.min((quantity - children - adults), adults) + 1),
-			youth : selfCounter.slice(0, quantity + 1),
+			adults: selfCounter.slice(1, quantity - (children + babies) + 1),
+			children: selfCounter.slice(0, quantity - (adults + babies) + 1),
+			babies: selfCounter.slice(0, Math.min((quantity - children - adults), adults) + 1),
+			youth: selfCounter.slice(0, quantity + 1),
 		}
 
 		return result;
@@ -51,22 +57,24 @@ class SearchFlights extends Component {
 		const changeParams = Object.assign({}, this.state.searchParams);
 		changeParams['passengers'][category] = Number(e.target.value);
 
-		this.setState({searchParams : changeParams});
+		this.setState({ searchParams: changeParams });
 	}
 
 	render() {
 		const { airports } = this.props;
 		let { searchParams } = this.state;
 		let {
-			direction,
+			// direction,
 			airportFrom,
 			airportTo,
 			dateFrom,
 			dateTo,
 			passengers,
 			paymentMiles,
-			paymentCurrency,
-			service
+			currentService,
+			serviceList,
+			countriesList,
+			currentCountry,
 		} = this.state.searchParams;
 
 		let passengerCounter = this.generatePassengerCounter();
@@ -75,153 +83,249 @@ class SearchFlights extends Component {
 			<div>
 				<h2>Куда и когда</h2>
 
-				<p>Откуда</p>
-				<Select
-					itemList={airports}
-					currentItem={airportFrom}
-					filter={true}
-					inputProps={{
-						placeholder: 'With love, your placeholder!',
-					}}
-					buttonProps={{
-						className: "form-control",
-						value: 'Откуда'
-					}}
+				<div className="row">
+					<div className="col-xs-2">
+						<p>Откуда</p>
+					</div>
+					<div className="col-xs-10">
+						<Select
+							itemList={airports}
+							currentItem={airportFrom}
+							filter={true}
+							inputProps={{
+								placeholder: 'Enter country name',
+							}}
+							buttonProps={{
+								className: "form-control",
+								value: 'Откуда'
+							}}
 
-					onChange={(current) => {
-						const changeParams = Object.assign({}, searchParams);
-						changeParams.airportFrom = current;
+							onChange={(current) => {
+								const changeParams = Object.assign({}, searchParams);
+								changeParams.airportFrom = current;
 
-						this.setState({ searchParams: changeParams });
-					}}
-				/>
+								this.setState({ searchParams: changeParams });
+							}}
+						/>
+					</div>
+				</div>
 
-				<br />
-				<p>Куда</p>
-				<Select
-					itemList={airports}
-					currentItem={airportTo}
-					filter={true}
-					inputProps={{
-						placeholder: 'With love, your placeholder!'
-					}}
+				<div className="row">
+					<div className="col-xs-2">
+						<p>Куда</p>
+					</div>
+					<div className="col-xs-10">
+						<Select
+							itemList={airports}
+							currentItem={airportTo}
+							filter={true}
+							inputProps={{
+								placeholder: 'Enter country name'
+							}}
 
-					onChange={(current) => {
-						const changeParams = Object.assign({}, searchParams);
-						changeParams.airportTo = current;
+							onChange={(current) => {
+								const changeParams = Object.assign({}, searchParams);
+								changeParams.airportTo = current;
 
-						this.setState({ searchParams: changeParams });
-					}}
-				/>
+								this.setState({ searchParams: changeParams });
+							}}
+						/>
+					</div>
+				</div>
 
-				<br />
+				<div className="row">
+					<div className="col-xs-2">
+						<p>Дата вылета</p>
+					</div>
+					<div className="col-xs-2">
+						<Calendar
+							isManualInputAllowed={false}
+							format="DD.MM.YYYY"
+							value={dateFrom}
+							minDate={moment()}
+							onChange={(result) => {
+								const changeParams = Object.assign({}, searchParams);
+								changeParams.dateFrom = result;
 
-				<p>Дата вылета</p>
-				<Calendar
-					isManualInputAllowed={false}
-					format="DD.MM.YYYY"
-					value={dateFrom}
-					minDate={moment()}
-					onChange={(result) => {
-						const changeParams = Object.assign({}, searchParams);
-						changeParams.dateFrom = result;
+								this.setState({ searchParams: changeParams });
+							}}
+						/>
+					</div>
+				</div>
 
-						this.setState({searchParams : changeParams});
-					}}
-				/>
+				<div className="row">
+					<div className="col-xs-2">
+						<p>Дата прибытия</p>
+					</div>
+					<div className="col-xs-2">
+						<Calendar
+							isManualInputAllowed={false}
+							format="DD.MM.YYYY"
+							value={dateTo}
+							minDate={moment()}
+							onChange={(result) => {
+								const changeParams = Object.assign({}, searchParams);
+								changeParams.dateTo = result;
 
-				<br />
+								this.setState({ searchParams: changeParams });
+							}}
+						/>
+					</div>
+				</div>
 
-				<p>Дата прибытия</p>
-				<Calendar
-					isManualInputAllowed={false}
-					format="DD.MM.YYYY"
-					value={dateTo}
-					minDate={moment()}
-					onChange={(result) => {
-						const changeParams = Object.assign({}, searchParams);
-						changeParams.dateTo = result;
+				<div className="row">
+					<div className="col-xs-12">
+						<input type="checkbox" value={paymentMiles} onChange={() => {
 
-						this.setState({searchParams : changeParams});
-					}}
-				/>
+							const changeParams = Object.assign({}, searchParams);
+							changeParams.paymentMiles = !paymentMiles;
 
-				<br />
-
-				<p>Оплата милями</p>
-				<input type="checkbox" value={paymentMiles} onChange={() => {
-
-					const changeParams = Object.assign({}, searchParams);
-					changeParams.paymentMiles = !paymentMiles;
-
-					this.setState({searchParams : changeParams});
-				}}/>
-
-				<br />
+							this.setState({ searchParams: changeParams });
+						}}/>
+						<span>Оплата милями</span>
+					</div>
+				</div>
 
 				<h2>Пассажиры</h2>
 
-				<p>Взрослые</p>
-				<select className="form-control"
-				        onChange={(e) => this.setPassengerCounter(e, 'adults')}
-				        disabled={passengers.youth > 0}
-				>
-					{ passengerCounter.adults.map((item, i) => {
-						return (
-							<option key={i} value={item} >{item}</option>
-						)
-					}) }
-				</select>
-				<small>(от 12 лет)</small>
+				<div className="row">
+					<div className="col-xs-1">
+						<p>Взрослые</p>
+					</div>
+					<div className="col-xs-3">
+						<select className="form-control"
+						        onChange={(e) => this.setPassengerCounter(e, 'adults')}
+						        disabled={passengers.youth > 0 && !paymentMiles}
+						>
+							{ passengerCounter.adults.map((item, i) => {
+								return (
+									<option key={i} value={item}>{item}</option>
+								)
+							}) }
+						</select>
+						<small>(от 12 лет)</small>
+					</div>
 
-				<br />
-				<br />
+					<div className="col-xs-1">
+						<p>Дети</p>
+					</div>
+					<div className="col-xs-3">
+						<select className="form-control"
+						        onChange={(e) => this.setPassengerCounter(e, 'children')}
+						        disabled={passengers.youth > 0 && !paymentMiles}
+						>
+							{ passengerCounter.children.map((item, i) => {
+								return (
+									<option key={i} value={item}>{item}</option>
+								)
+							}) }
+						</select>
+						<small>(от 0 до 12 лет)</small>
+					</div>
 
-				<p>Дети</p>
-				<select className="form-control"
-				        onChange={(e) => this.setPassengerCounter(e, 'children')}
-				        disabled={passengers.youth > 0}
-				>
-					{ passengerCounter.children.map((item, i) => {``
-						return (
-							<option key={i} value={item} >{item}</option>
-						)
-					}) }
-				</select>
-				<small>(от 0 до 12 лет)</small>
+					<div className="col-xs-1">
+						{!paymentMiles && <p>Младенцы</p>}
+					</div>
+					<div className="col-xs-3">
+						{!paymentMiles && <div>
+							<select className="form-control"
+							        value={passengers.babies}
+							        onChange={(e) => this.setPassengerCounter(e, 'babies')}
+							        disabled={passengers.youth > 0 && !paymentMiles}
+							>
+								{ passengerCounter.babies.map((item, i) => {
+									return (
+										<option key={i} value={item}>{item}</option>
+									)
+								}) }
+							</select>
+							<small>(до 2 лет)</small>
+						</div>
+						}
 
-				<br />
-				<br />
+					</div>
+					<div className="col-xs-12">
+						{paymentMiles &&
+						<p className="text-danger">Оформление премиальных билетов за мили программы Аэрофлот Бонус
+							не применяется для бронирования младенцев, молодежи и для нескольких пунктов
+							назначения</p>
+						}
+					</div>
+				</div>
 
-				<p>Младенцы</p>
-				<select className="form-control"
-				        onChange={(e) => this.setPassengerCounter(e, 'babies')}
-				        disabled={passengers.youth > 0}
-				>
-					{ passengerCounter.babies.map((item, i) => {
-						return (
-							<option key={i} value={item} >{item}</option>
-						)
-					}) }
-				</select>
-				<small>(до 2 лет)</small>
+				{!paymentMiles && <div className="row">
+					<div className="col-xs-12">
+						<p className="text-danger"> Тип пассажира "Молодежь" не комбинируется с другими типами
+							пассажиров.</p>
+					</div>
+					<div className="col-xs-1">
+						<p>Молодежь</p>
+					</div>
+					<div className="col-xs-3">
+						<select value={passengers.youth} className="form-control" onChange={(e) => this.setPassengerCounter(e, 'youth')}>
+							{ passengerCounter.youth.map((item, i) => {
+								return (
+									<option key={i} value={item}>{item}</option>
+								)
+							}) }
+						</select>
+						<small>(от 12 до 25 лет)</small>
+					</div>
+				</div>
+				}
 
-				<br />
-				<br />
-
-				<p className="text-danger">Тип пассажира "Молодежь" не комбинируется с другими типами пассажиров.</p>
-
-				<p>Молодежь</p>
-				<select className="form-control" onChange={(e) => this.setPassengerCounter(e, 'youth')}>
-					{ passengerCounter.youth.map((item, i) => {
-						return (
-							<option key={i} value={item} >{item}</option>
-						)
-					}) }
-				</select>
-				<small>(от 12 до 25 лет)</small>
+				<h2>Предпочтения</h2>
 
 
+				{!paymentMiles && <div className="row">
+					<div className="col-xs-2">
+						<p>Класс обслуживания</p>
+					</div>
+					<div className="col-xs-10">
+						<Select
+							itemList={serviceList}
+							currentItem={currentService}
+							filter={false}
+							inputProps={{
+								placeholder: 'Enter service type'
+							}}
+
+							onChange={(current) => {
+								const changeParams = Object.assign({}, searchParams);
+								changeParams.currentService = current;
+
+								this.setState({ searchParams: changeParams });
+							}}
+						/>
+					</div>
+				</div>
+				}
+
+				<div className="row">
+					<div className="col-xs-2">
+						<p>Страна</p>
+					</div>
+					<div className="col-xs-4">
+						<Select
+							itemList={countriesList}
+							currentItem={currentCountry}
+							filter={true}
+							inputProps={{
+								placeholder: 'Enter country name'
+							}}
+
+							onChange={(current) => {
+								const changeParams = Object.assign({}, searchParams);
+								changeParams.currentCountry = current;
+
+								this.setState({ searchParams: changeParams });
+							}}
+						/>
+					</div>
+					<div className="col-xs-2">
+						<p>Валюта: {currentCountry.currencyTitle}</p>
+					</div>
+				</div>
 			</div>
 		)
 	}
