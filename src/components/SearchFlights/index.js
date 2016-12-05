@@ -4,10 +4,12 @@ import moment from 'moment';
 // import components
 import Select from '../select';
 import Calendar from '../calendar';
+import Button from '../button';
 
 // import additional data
 import service from '../../data/service';
 import countriesList from '../../data/countries';
+import senderConfig from '../../data/senderConfig';
 
 class SearchFlights extends Component {
 	constructor(props) {
@@ -60,11 +62,62 @@ class SearchFlights extends Component {
 		this.setState({ searchParams: changeParams });
 	}
 
+	sendData = () => {
+		const { dateFrom, dateTo, airportFrom, airportTo, passengers } = this.state.searchParams;
+
+		console.log(senderConfig);
+
+		let request = {
+			pointOfSaleEvent: {
+				code: 9,
+				definition: 'Shop agent'
+			},
+			onds: [{
+				flights: [{
+					departure: {
+						date: moment(dateFrom).format('YYYY-MM-DD'),
+						airportCode: airportFrom.id,
+					},
+					arrival: {
+						date: moment(dateTo).format('YYYY-MM-DD'),
+						airportCode: airportTo.id,
+					},
+					airline: senderConfig.sender
+				}]
+			}],
+			cabin: 'S',
+			fareCodes: ['BRO'],
+			travelers: [{
+				anonymous: true,
+				count: passengers.adults,
+				type: 'ADT'
+			}],
+		};
+
+		if (passengers.children > 0) {
+			request.travelers.push({
+				anonymous: true,
+				count: passengers.children,
+				type: 'CNN'
+			})
+		}
+
+		if (passengers.babies > 0) {
+			request.travelers.push({
+				anonymous: true,
+				count: passengers.babies,
+				type: 'INF'
+			})
+		}
+
+		this.props.callback(request);
+	};
+
 	render() {
 		const { airports } = this.props;
 		let { searchParams } = this.state;
 		let {
-			// direction,
+			// direction
 			airportFrom,
 			airportTo,
 			dateFrom,
@@ -246,7 +299,8 @@ class SearchFlights extends Component {
 					</div>
 					<div className="col-xs-12">
 						{paymentMiles &&
-						<p className="text-danger">Оформление премиальных билетов за мили программы Аэрофлот Бонус
+						<p className="text-danger">Оформление премиальных билетов за мили программы Аэрофлот
+							Бонус
 							не применяется для бронирования младенцев, молодежи и для нескольких пунктов
 							назначения</p>
 						}
@@ -262,7 +316,8 @@ class SearchFlights extends Component {
 						<p>Молодежь</p>
 					</div>
 					<div className="col-xs-3">
-						<select value={passengers.youth} className="form-control" onChange={(e) => this.setPassengerCounter(e, 'youth')}>
+						<select value={passengers.youth} className="form-control"
+						        onChange={(e) => this.setPassengerCounter(e, 'youth')}>
 							{ passengerCounter.youth.map((item, i) => {
 								return (
 									<option key={i} value={item}>{item}</option>
@@ -325,6 +380,12 @@ class SearchFlights extends Component {
 					<div className="col-xs-2">
 						<p>Валюта: {currentCountry.currencyTitle}</p>
 					</div>
+
+					<Button title='Найти рейсы'
+					        onChange={this.sendData}
+					        type="button"
+					        class="btn btn-primary"
+					/>
 				</div>
 			</div>
 		)

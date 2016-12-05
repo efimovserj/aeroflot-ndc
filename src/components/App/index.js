@@ -24,13 +24,16 @@ class App extends Component {
 		};
 	}
 
+	setSearchParams = (searchParams) => {
+		console.log(searchParams);
+	}
 
 	render() {
 		const { airports } = this.state;
 
 		return (
 			<div className="App">
-				<SearchFlights airports={airports}/>
+				{status.search && <SearchFlights airports={airports} callback={this.setSearchParams} />}
 			</div>
 		);
 	}
