@@ -128,6 +128,7 @@ class SearchFlights extends Component {
 			currentCountry,
 		} = this.state.searchParams;
 
+		// TODO: the following function must be execute when a passenger's counter is changed
 		let passengerCounter = this.generatePassengerCounter();
 
 		return (
