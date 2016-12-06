@@ -1,28 +1,23 @@
-// const urlBase = 'http://192.168.192.17:8080/api/offers/oneway';
+const urlBase = 'http://192.168.192.44:8080/api';
 
-/*const urlsLibrary = {
-	contacts: '/offers/oneway',
-	region: '/rest-service/api/contacts/region',
-	object: '/rest-service/api/object/',
-	operation: '/rest-service/api/operation/',
-	answer: '/rest-service/api/answer/',
-	question: '/rest-service/api/question/',
-	standard: '/rest-service/api/standard/',
-	document: '/rest-service/api/document/',
-	match: '/rest-service/api/match/',
-	theme: '/rest-service/api/theme/',
-	faq: '/rest-service/api/faq/',
-};*/
-
-
+const urlsLibrary = {
+	oneway: urlBase + '/offers',
+};
 
 const noop = () => {
 }
 
-const getResponse = ({ method, data = null, url, callback }) => {
+let getResponse = ({ method, data = null, url, callback }) => {
 	const xhr = new XMLHttpRequest();
 
+	// console.log('method',method);
+	// console.log('data',data);
+	// console.log('url',url);
+
 	xhr.open(method, url, true);
+
+	xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+	xhr.setRequestHeader('Accept', 'application/json');
 
 	xhr.onreadystatechange = function () {
 		if (this.readyState === 4) {
@@ -30,13 +25,15 @@ const getResponse = ({ method, data = null, url, callback }) => {
 		}
 	};
 
-	xhr.send(data);
+	xhr.send(JSON.stringify(data));
 };
+
 
 const library = {
 	lib: {
 		noop,
 		getResponse,
+		urlsLibrary,
 	}
 };
 

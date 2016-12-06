@@ -65,8 +65,6 @@ class SearchFlights extends Component {
 	sendData = () => {
 		const { dateFrom, dateTo, airportFrom, airportTo, passengers } = this.state.searchParams;
 
-		console.log(senderConfig);
-
 		let request = {
 			pointOfSaleEvent: {
 				code: 9,
