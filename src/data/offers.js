@@ -34,1023 +34,1901 @@ const offers = {
 				"objectMetaReferences": []
 			},
 			"airlineOffer": [
-				{ "parameters": null,
-				"offerID": {
-					"value": "1",
-					"owner": "9A",
-					"webAddressID": null,
-					"ownerType": null,
-					"refs": [],
-					"objectKey": null
-				},
-				"validatingCarrier": null,
-				"timeLimits": {
-					"offerExpiration": {
-						"dateTime": null,
-						"shortDate": null,
-						"timestamp": "2015-10-15T20:59:00.000+0000",
-						"time": null,
+				{
+					"parameters": null,
+					"offerID": {
+						"value": "1",
+						"owner": "9A",
+						"webAddressID": null,
+						"ownerType": null,
 						"refs": [],
 						"objectKey": null
 					},
-					"payment": null,
-					"otherLimits": [],
-					"refs": []
-				},
-				"totalPrice": {
-					"awardPricing": null,
-					"combinationPricing": null,
-					"simpleCurrencyPrice": null,
-					"detailCurrencyPrice": {
-						"approxInd": null,
-						"refundAllInd": null,
-						"taxIncludedInd": null,
-						"otherChargeInd": null,
-						"autoExchangeInd": null,
-						"refs": [],
-						"total": {
-							"value": 98500,
-							"taxable": true,
-							"code": "EUR"
+					"validatingCarrier": null,
+					"timeLimits": {
+						"offerExpiration": {
+							"dateTime": null,
+							"shortDate": null,
+							"timestamp": "2015-10-15T20:59:00.000+0000",
+							"time": null,
+							"refs": [],
+							"objectKey": null
 						},
-						"equivalent": null,
-						"details": {
-							"detail": [{
-								"subTotal": {
-									"value": 98500,
-									"taxable": true,
-									"code": "EUR"
-								},
-								"application": "Base Fare",
-								"refundInd": null,
-								"refs": []
-							}],
-							"refs": []
-						},
-						"taxes": {
+						"payment": null,
+						"otherLimits": [],
+						"refs": []
+					},
+					"totalPrice": {
+						"awardPricing": null,
+						"combinationPricing": null,
+						"simpleCurrencyPrice": null,
+						"detailCurrencyPrice": {
 							"approxInd": null,
-							"collectionInd": null,
 							"refundAllInd": null,
+							"taxIncludedInd": null,
+							"otherChargeInd": null,
+							"autoExchangeInd": null,
 							"refs": [],
 							"total": {
-								"value": 0,
+								"value": 98500,
 								"taxable": true,
 								"code": "EUR"
 							},
-							"breakdown": null
-						},
-						"fees": null
-					},
-					"encodedCurrencyPrice": null,
-					"refs": []
-				},
-				"descriptionReferences": [],
-				"disclosure": null,
-				"penalty": null,
-				"requestedDateInd": null,
-				"refs": [],
-				"match": null,
-				"pricedOffer": {
-					"refs": [],
-					"offerMetaReferences": [],
-					"offerPrice": [
-						{
-						"requestedDate": {
-							"priceDetail": {
-								"totalAmount": {
-									"awardPricing": null,
-									"combinationPricing": null,
-									"detailCurrencyPrice": null,
-									"encodedCurrencyPrice": null,
-									"simpleCurrencyPrice": {
+							"equivalent": null,
+							"details": {
+								"detail": [{
+									"subTotal": {
 										"value": 98500,
 										"taxable": true,
 										"code": "EUR"
-									}
-								},
-								"baseAmount": {
-									"value": 98500,
+									},
+									"application": "Base Fare",
+									"refundInd": null,
+									"refs": []
+								}],
+								"refs": []
+							},
+							"taxes": {
+								"approxInd": null,
+								"collectionInd": null,
+								"refundAllInd": null,
+								"refs": [],
+								"total": {
+									"value": 0,
 									"taxable": true,
 									"code": "EUR"
 								},
-								"fareFiledIn": null,
-								"discount": null,
-								"surcharges": [],
-								"taxes": {
-									"approxInd": null,
-									"collectionInd": null,
-									"refundAllInd": null,
-									"refs": [],
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": "EUR"
-									},
-									"breakdown": null
-								},
-								"taxExemption": null,
-								"awardPricing": null,
-								"combinationPricing": null,
-								"originDestinationReferenceOrSegmentReferences": [],
-								"fees": null
+								"breakdown": null
 							},
-							"associations": [
-								{
-								"associatedTraveler": {
-									"allTravelerInd": null,
-									"travelerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
+							"fees": null
+						},
+						"encodedCurrencyPrice": null,
+						"refs": []
+					},
+					"descriptionReferences": [],
+					"disclosure": null,
+					"penalty": null,
+					"requestedDateInd": null,
+					"refs": [],
+					"match": null,
+					"pricedOffer": {
+						"refs": [],
+						"offerMetaReferences": [],
+						"offerPrice": [
+							{
+								"requestedDate": {
+									"priceDetail": {
+										"totalAmount": {
+											"awardPricing": null,
+											"combinationPricing": null,
+											"detailCurrencyPrice": null,
+											"encodedCurrencyPrice": null,
+											"simpleCurrencyPrice": {
+												"value": 98500,
+												"taxable": true,
+												"code": "EUR"
+											}
 										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}]
+										"baseAmount": {
+											"value": 98500,
+											"taxable": true,
+											"code": "EUR"
+										},
+										"fareFiledIn": null,
+										"discount": null,
+										"surcharges": [],
+										"taxes": {
+											"approxInd": null,
+											"collectionInd": null,
+											"refundAllInd": null,
+											"refs": [],
+											"total": {
+												"value": 0,
+												"taxable": true,
+												"code": "EUR"
+											},
+											"breakdown": null
+										},
+										"taxExemption": null,
+										"awardPricing": null,
+										"combinationPricing": null,
+										"originDestinationReferenceOrSegmentReferences": [],
+										"fees": null
+									},
+									"associations": [
+										{
+											"associatedTraveler": {
+												"allTravelerInd": null,
+												"travelerReferences": [{
+													"pricedInd": null,
+													"refs": [],
+													"objectKey": "SH1",
+													"ptc": {
+														"value": "ADT",
+														"quantity": 1
+													},
+													"residenceCode": null,
+													"passengerAssociation": null,
+													"age": null,
+													"citizenshipCountryCode": null
+												}]
+											},
+											"applicableFlight": null,
+											"priceClass": null,
+											"offerDetailAssociation": null,
+											"includedService": null,
+											"associatedService": {
+												"bundleReference": {
+													"itemCount": 3,
+													"associations": {
+														"serviceReference": [{
+															"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+															"declaredType": "java.lang.Object",
+															"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+															"value": {
+																"serviceID": {
+																	"value": "1023",
+																	"owner": "9A",
+																	"refs": [],
+																	"objectKey": null
+																},
+																"name": {
+																	"value": "Inflight entertainment"
+																},
+																"encoding": {
+																	"rfic": null,
+																	"type": null,
+																	"code": null,
+																	"subCode": null,
+																	"refs": []
+																},
+																"timeLimits": null,
+																"feeMethod": {
+																	"value": "OC"
+																},
+																"descriptions": {
+																	"description": [{
+																		"text": {
+																			"value": "The latest blockbusters, classics from film history, music and games",
+																			"refs": []
+																		},
+																		"markupStyle": null,
+																		"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+																		"media": [{
+																			"objectID": {
+																				"value": "comfort-eco-int-1_title.jpg",
+																				"owner": null,
+																				"refs": []
+																			},
+																			"mediaLink": null,
+																			"attachmentID": null
+																		}, {
+																			"objectID": null,
+																			"mediaLink": {
+																				"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"attachmentID": null
+																		}],
+																		"objectKey": null,
+																		"refs": [],
+																		"application": null
+																	}],
+																	"refs": []
+																},
+																"settlement": {
+																	"method": {
+																		"code": "AD",
+																		"definition": "Internal Airline Document",
+																		"tableName": null,
+																		"link": null,
+																		"refs": []
+																	},
+																	"interlineSettlementValue": null
+																},
+																"price": [{
+																	"total": {
+																		"value": 500,
+																		"taxable": true,
+																		"code": null
+																	},
+																	"refundableValue": null,
+																	"details": null,
+																	"taxes": null,
+																	"fees": null,
+																	"passengerReferences": [{
+																		"pricedInd": null,
+																		"refs": [],
+																		"objectKey": "SH1",
+																		"ptc": {
+																			"value": "ADT",
+																			"quantity": 1
+																		},
+																		"residenceCode": null,
+																		"passengerAssociation": null,
+																		"age": null,
+																		"citizenshipCountryCode": null
+																	}],
+																	"refs": []
+																}],
+																"bookingInstructions": null,
+																"validatingCarrier": null,
+																"associations": [{
+																	"traveler": {
+																		"allTravelerInd": null,
+																		"travelerReferences": [{
+																			"pricedInd": null,
+																			"refs": [],
+																			"objectKey": "SH1",
+																			"ptc": {
+																				"value": "ADT",
+																				"quantity": 1
+																			},
+																			"residenceCode": null,
+																			"passengerAssociation": null,
+																			"age": null,
+																			"citizenshipCountryCode": null
+																		}]
+																	},
+																	"flight": {
+																		"allFlightInd": null,
+																		"allOriginDestinationInd": null,
+																		"allSegmentInd": null,
+																		"originDestinationReferencesOrSegmentReferences": [{
+																			"value": [{
+																				"departure": {
+																					"airportCode": {
+																						"value": "ARN",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"airportName": null,
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"arrival": {
+																					"airportCode": {
+																						"value": "FRA",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"changeOfDay": null,
+																					"airportName": "Frankfurt International",
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"marketingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3803",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": []
+																				},
+																				"operatingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3803",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": [],
+																					"disclosures": null
+																				},
+																				"equipment": {
+																					"aircraftCode": {
+																						"value": "E95",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"changeOfGaugeInd": null,
+																					"refs": [],
+																					"name": "E95 - EMBRAER 195 JET",
+																					"airlineEquipCode": null
+																				},
+																				"classOfService": null,
+																				"flightDetail": {
+																					"flightSegmentType": null,
+																					"flightDistance": null,
+																					"flightDuration": {
+																						"value": "PT2H10M",
+																						"application": null,
+																						"refs": []
+																					},
+																					"stops": null,
+																					"resDateTime": null,
+																					"tourOperatorFlightID": null,
+																					"refs": []
+																				},
+																				"onTimePerformance": null,
+																				"settlement": null,
+																				"segmentKey": "SEG1",
+																				"connectInd": null,
+																				"electronicTicketInd": null,
+																				"ticketlessInd": null,
+																				"secureFlight": null,
+																				"refs": []
+																			}, {
+																				"departure": {
+																					"airportCode": {
+																						"value": "FRA",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"airportName": "Frankfurt International",
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"arrival": {
+																					"airportCode": {
+																						"value": "LHR",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"changeOfDay": null,
+																					"airportName": null,
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"marketingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3916",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": []
+																				},
+																				"operatingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3916",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": [],
+																					"disclosures": null
+																				},
+																				"equipment": {
+																					"aircraftCode": {
+																						"value": "E95",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"changeOfGaugeInd": null,
+																					"refs": [],
+																					"name": "E95 - EMBRAER 195 JET",
+																					"airlineEquipCode": null
+																				},
+																				"classOfService": null,
+																				"flightDetail": {
+																					"flightSegmentType": null,
+																					"flightDistance": null,
+																					"flightDuration": {
+																						"value": null,
+																						"application": null,
+																						"refs": []
+																					},
+																					"stops": null,
+																					"resDateTime": null,
+																					"tourOperatorFlightID": null,
+																					"refs": []
+																				},
+																				"onTimePerformance": null,
+																				"settlement": null,
+																				"segmentKey": "SEG2",
+																				"connectInd": null,
+																				"electronicTicketInd": null,
+																				"ticketlessInd": null,
+																				"secureFlight": null,
+																				"refs": []
+																			}],
+																			"onPoint": null,
+																			"offPoint": null
+																		}]
+																	},
+																	"offer": [],
+																	"otherAssociations": [],
+																	"seatReference": null
+																}],
+																"baggageDeterminingCarrier": null,
+																"objectKey": "SV2",
+																"refs": [],
+																"detail": null,
+																"bdcanalysisResult": null
+															},
+															"nil": false,
+															"globalScope": true,
+															"typeSubstituted": true
+														}, {
+															"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+															"declaredType": "java.lang.Object",
+															"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+															"value": {
+																"serviceID": {
+																	"value": "1022",
+																	"owner": "9A",
+																	"refs": [],
+																	"objectKey": null
+																},
+																"name": {
+																	"value": "Advance Seat selection"
+																},
+																"encoding": {
+																	"rfic": null,
+																	"type": null,
+																	"code": null,
+																	"subCode": null,
+																	"refs": []
+																},
+																"timeLimits": null,
+																"feeMethod": {
+																	"value": "OC"
+																},
+																"descriptions": {
+																	"description": [{
+																		"text": {
+																			"value": "A convenient option that lets you reserve your preferred seat",
+																			"refs": []
+																		},
+																		"markupStyle": null,
+																		"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+																		"media": [{
+																			"objectID": {
+																				"value": "preferred_seat.jpg",
+																				"owner": null,
+																				"refs": []
+																			},
+																			"mediaLink": null,
+																			"attachmentID": null
+																		}, {
+																			"objectID": null,
+																			"mediaLink": {
+																				"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"attachmentID": null
+																		}],
+																		"objectKey": null,
+																		"refs": [],
+																		"application": null
+																	}],
+																	"refs": []
+																},
+																"settlement": {
+																	"method": {
+																		"code": "AD",
+																		"definition": "Internal Airline Document",
+																		"tableName": null,
+																		"link": null,
+																		"refs": []
+																	},
+																	"interlineSettlementValue": null
+																},
+																"price": [{
+																	"total": {
+																		"value": 0,
+																		"taxable": true,
+																		"code": null
+																	},
+																	"refundableValue": null,
+																	"details": null,
+																	"taxes": null,
+																	"fees": null,
+																	"passengerReferences": [{
+																		"pricedInd": null,
+																		"refs": [],
+																		"objectKey": "SH1",
+																		"ptc": {
+																			"value": "ADT",
+																			"quantity": 1
+																		},
+																		"residenceCode": null,
+																		"passengerAssociation": null,
+																		"age": null,
+																		"citizenshipCountryCode": null
+																	}],
+																	"refs": []
+																}],
+																"bookingInstructions": null,
+																"validatingCarrier": null,
+																"associations": [{
+																	"traveler": {
+																		"allTravelerInd": null,
+																		"travelerReferences": [{
+																			"pricedInd": null,
+																			"refs": [],
+																			"objectKey": "SH1",
+																			"ptc": {
+																				"value": "ADT",
+																				"quantity": 1
+																			},
+																			"residenceCode": null,
+																			"passengerAssociation": null,
+																			"age": null,
+																			"citizenshipCountryCode": null
+																		}]
+																	},
+																	"flight": {
+																		"allFlightInd": null,
+																		"allOriginDestinationInd": null,
+																		"allSegmentInd": null,
+																		"originDestinationReferencesOrSegmentReferences": [{
+																			"value": [{
+																				"departure": {
+																					"airportCode": {
+																						"value": "ARN",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"airportName": null,
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"arrival": {
+																					"airportCode": {
+																						"value": "FRA",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"changeOfDay": null,
+																					"airportName": "Frankfurt International",
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"marketingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3803",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": []
+																				},
+																				"operatingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3803",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": [],
+																					"disclosures": null
+																				},
+																				"equipment": {
+																					"aircraftCode": {
+																						"value": "E95",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"changeOfGaugeInd": null,
+																					"refs": [],
+																					"name": "E95 - EMBRAER 195 JET",
+																					"airlineEquipCode": null
+																				},
+																				"classOfService": null,
+																				"flightDetail": {
+																					"flightSegmentType": null,
+																					"flightDistance": null,
+																					"flightDuration": {
+																						"value": "PT2H10M",
+																						"application": null,
+																						"refs": []
+																					},
+																					"stops": null,
+																					"resDateTime": null,
+																					"tourOperatorFlightID": null,
+																					"refs": []
+																				},
+																				"onTimePerformance": null,
+																				"settlement": null,
+																				"segmentKey": "SEG1",
+																				"connectInd": null,
+																				"electronicTicketInd": null,
+																				"ticketlessInd": null,
+																				"secureFlight": null,
+																				"refs": []
+																			}],
+																			"onPoint": null,
+																			"offPoint": null
+																		}]
+																	},
+																	"offer": [],
+																	"otherAssociations": [],
+																	"seatReference": null
+																}],
+																"baggageDeterminingCarrier": null,
+																"objectKey": "SV1",
+																"refs": [],
+																"detail": null,
+																"bdcanalysisResult": null
+															},
+															"nil": false,
+															"globalScope": true,
+															"typeSubstituted": true
+														}, {
+															"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+															"declaredType": "java.lang.Object",
+															"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+															"value": {
+																"serviceID": {
+																	"value": "1021",
+																	"owner": "9A",
+																	"refs": [],
+																	"objectKey": null
+																},
+																"name": {
+																	"value": "Meal"
+																},
+																"encoding": {
+																	"rfic": null,
+																	"type": null,
+																	"code": null,
+																	"subCode": null,
+																	"refs": []
+																},
+																"timeLimits": null,
+																"feeMethod": {
+																	"value": "OC"
+																},
+																"descriptions": {
+																	"description": [{
+																		"text": {
+																			"value": "Vegetarian Vegan Meal",
+																			"refs": []
+																		},
+																		"markupStyle": null,
+																		"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+																		"media": [{
+																			"objectID": {
+																				"value": "int_economy_promo.jpg",
+																				"owner": null,
+																				"refs": []
+																			},
+																			"mediaLink": null,
+																			"attachmentID": null
+																		}, {
+																			"objectID": null,
+																			"mediaLink": {
+																				"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"attachmentID": null
+																		}],
+																		"objectKey": null,
+																		"refs": [],
+																		"application": null
+																	}],
+																	"refs": []
+																},
+																"settlement": {
+																	"method": {
+																		"code": "AD",
+																		"definition": "Internal Airline Document",
+																		"tableName": null,
+																		"link": null,
+																		"refs": []
+																	},
+																	"interlineSettlementValue": null
+																},
+																"price": [{
+																	"total": {
+																		"value": 0,
+																		"taxable": true,
+																		"code": null
+																	},
+																	"refundableValue": null,
+																	"details": null,
+																	"taxes": null,
+																	"fees": null,
+																	"passengerReferences": [{
+																		"pricedInd": null,
+																		"refs": [],
+																		"objectKey": "SH1",
+																		"ptc": {
+																			"value": "ADT",
+																			"quantity": 1
+																		},
+																		"residenceCode": null,
+																		"passengerAssociation": null,
+																		"age": null,
+																		"citizenshipCountryCode": null
+																	}],
+																	"refs": []
+																}],
+																"bookingInstructions": null,
+																"validatingCarrier": null,
+																"associations": [{
+																	"traveler": {
+																		"allTravelerInd": null,
+																		"travelerReferences": [{
+																			"pricedInd": null,
+																			"refs": [],
+																			"objectKey": "SH1",
+																			"ptc": {
+																				"value": "ADT",
+																				"quantity": 1
+																			},
+																			"residenceCode": null,
+																			"passengerAssociation": null,
+																			"age": null,
+																			"citizenshipCountryCode": null
+																		}]
+																	},
+																	"flight": {
+																		"allFlightInd": null,
+																		"allOriginDestinationInd": null,
+																		"allSegmentInd": null,
+																		"originDestinationReferencesOrSegmentReferences": [{
+																			"value": [{
+																				"departure": {
+																					"airportCode": {
+																						"value": "ARN",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"airportName": null,
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"arrival": {
+																					"airportCode": {
+																						"value": "FRA",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"changeOfDay": null,
+																					"airportName": "Frankfurt International",
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"marketingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3803",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": []
+																				},
+																				"operatingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3803",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": [],
+																					"disclosures": null
+																				},
+																				"equipment": {
+																					"aircraftCode": {
+																						"value": "E95",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"changeOfGaugeInd": null,
+																					"refs": [],
+																					"name": "E95 - EMBRAER 195 JET",
+																					"airlineEquipCode": null
+																				},
+																				"classOfService": null,
+																				"flightDetail": {
+																					"flightSegmentType": null,
+																					"flightDistance": null,
+																					"flightDuration": {
+																						"value": "PT2H10M",
+																						"application": null,
+																						"refs": []
+																					},
+																					"stops": null,
+																					"resDateTime": null,
+																					"tourOperatorFlightID": null,
+																					"refs": []
+																				},
+																				"onTimePerformance": null,
+																				"settlement": null,
+																				"segmentKey": "SEG1",
+																				"connectInd": null,
+																				"electronicTicketInd": null,
+																				"ticketlessInd": null,
+																				"secureFlight": null,
+																				"refs": []
+																			}, {
+																				"departure": {
+																					"airportCode": {
+																						"value": "FRA",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"airportName": "Frankfurt International",
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"arrival": {
+																					"airportCode": {
+																						"value": "LHR",
+																						"application": null,
+																						"area": null,
+																						"uom": null
+																					},
+																					"date": "2015-12-24T21:00:00.000+0000",
+																					"time": null,
+																					"changeOfDay": null,
+																					"airportName": null,
+																					"terminal": null,
+																					"refs": []
+																				},
+																				"marketingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3916",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": []
+																				},
+																				"operatingCarrier": {
+																					"airlineID": {
+																						"value": "9A",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"name": "Athena Air",
+																					"flightNumber": {
+																						"value": "3916",
+																						"operationalSuffix": null
+																					},
+																					"resBookDesigCode": null,
+																					"refs": [],
+																					"disclosures": null
+																				},
+																				"equipment": {
+																					"aircraftCode": {
+																						"value": "E95",
+																						"refs": [],
+																						"objectMetaReferences": []
+																					},
+																					"changeOfGaugeInd": null,
+																					"refs": [],
+																					"name": "E95 - EMBRAER 195 JET",
+																					"airlineEquipCode": null
+																				},
+																				"classOfService": null,
+																				"flightDetail": {
+																					"flightSegmentType": null,
+																					"flightDistance": null,
+																					"flightDuration": {
+																						"value": null,
+																						"application": null,
+																						"refs": []
+																					},
+																					"stops": null,
+																					"resDateTime": null,
+																					"tourOperatorFlightID": null,
+																					"refs": []
+																				},
+																				"onTimePerformance": null,
+																				"settlement": null,
+																				"segmentKey": "SEG2",
+																				"connectInd": null,
+																				"electronicTicketInd": null,
+																				"ticketlessInd": null,
+																				"secureFlight": null,
+																				"refs": []
+																			}],
+																			"onPoint": null,
+																			"offPoint": null
+																		}]
+																	},
+																	"offer": [],
+																	"otherAssociations": [],
+																	"seatReference": null
+																}],
+																"baggageDeterminingCarrier": null,
+																"objectKey": "SV3",
+																"refs": [],
+																"detail": null,
+																"bdcanalysisResult": null
+															},
+															"nil": false,
+															"globalScope": true,
+															"typeSubstituted": true
+														}],
+														"serviceID": []
+													},
+													"selection": {
+														"minimumQuantityOrMaximumQuantity": [{
+															"name": "{http://www.iata.org/IATA/EDIST}MaximumQuantity",
+															"declaredType": "java.math.BigInteger",
+															"scope": "org.iata.iata.edist.ServiceBundle$Selection",
+															"value": 2,
+															"nil": false,
+															"globalScope": false,
+															"typeSubstituted": false
+														}]
+													},
+													"bundleID": {
+														"value": "B1004",
+														"refs": [],
+														"objectKey": null
+													},
+													"price": [{
+														"total": {
+															"value": 5000,
+															"taxable": true,
+															"code": null
+														},
+														"refundableValue": null,
+														"details": null,
+														"taxes": null,
+														"fees": null,
+														"passengerReferences": [{
+															"pricedInd": null,
+															"refs": [],
+															"objectKey": "SH1",
+															"ptc": {
+																"value": "ADT",
+																"quantity": 1
+															},
+															"residenceCode": null,
+															"passengerAssociation": null,
+															"age": null,
+															"citizenshipCountryCode": null
+														}],
+														"refs": []
+													}],
+													"bundleName": null,
+													"refs": [],
+													"listKey": "SB1"
+												},
+												"serviceReferences": []
+											},
+											"otherAssociation": []
+										}
+									]
 								},
-								"applicableFlight": null,
-								"priceClass": null,
-								"offerDetailAssociation": null,
-								"includedService": null,
-								"associatedService": {
-									"bundleReference": {
-										"itemCount": 3,
-										"associations": {
-											"serviceReference": [{
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1023",
-														"owner": "9A",
+								"fareDetail": {
+									"fareIndicatorCode": null,
+									"fareComponent": [{
+										"parameters": null,
+										"segmentReference": null,
+										"priceBreakdown": null,
+										"fareBasis": {
+											"fareBasisCode": {
+												"displayAllInd": null,
+												"allExemptInd": null,
+												"pricingInd": null,
+												"connectionInd": null,
+												"ticketlessInd": null,
+												"associateInd": null,
+												"taxOnEMDInd": null,
+												"stopOverInd": null,
+												"taxInd": null,
+												"otherChargeInd": null,
+												"poolingInd": null,
+												"specialItemsInd": null,
+												"taxesInd": null,
+												"netFareInd": null,
+												"reissueOnlyInd": null,
+												"autoExchangeInd": null,
+												"alertInd": null,
+												"authenticationInd": null,
+												"marketingInd": null,
+												"multiPayFormInd": null,
+												"noticeInd": null,
+												"partialInd": null,
+												"warningInd": null,
+												"failedPaymentInd": null,
+												"partialPaymentInd": null,
+												"verificationInd": null,
+												"priceVarianceInd": null,
+												"invGuaranteedInd": null,
+												"waitlistInd": null,
+												"bundleInd": null,
+												"invGuarRequestedInd": null,
+												"exitRowInd": null,
+												"premiumInd": null,
+												"upperDeckInd": null,
+												"taxIncludedInd": null,
+												"feeIncludedInd": null,
+												"leadPricingInd": null,
+												"timestamp": null,
+												"metadataToken": null,
+												"refs": [],
+												"objectKey": null,
+												"code": "ESO",
+												"application": null,
+												"eticketInd": null
+											},
+											"fareRulesRemarks": [],
+											"fareBasisCityPair": null,
+											"rbd": null
+										},
+										"ticketDesig": null,
+										"fareRules": null,
+										"refs": []
+									}],
+									"priceClassReference": null,
+									"flightMileage": null,
+									"tourCode": null,
+									"remarks": null,
+									"refs": []
+								},
+								"offerItemID": "1#M#111198795#111162714",
+								"modificationProhibitedInd": null,
+								"refs": []
+							}
+						],
+						"associations": [
+							{
+								"associatedTraveler": null,
+								"applicableFlight": {
+									"allSegmentInd": null,
+									"flightSegmentReference": [
+										{
+											"cabin": {
+												"cabinDesignator": {
+													"value": "M",
+													"allCabins": null
+												},
+												"marketingName": null,
+												"refs": []
+											},
+											"classOfService": null,
+											"bagDetailAssociation": null,
+											"marriedSegmentGroup": null,
+											"ref": {
+												"departure": {
+													"airportCode": {
+														"value": "ARN",
+														"application": null,
+														"area": null,
+														"uom": null
+													},
+													"date": "2015-12-24T21:00:00.000+0000",
+													"time": null,
+													"airportName": null,
+													"terminal": null,
+													"refs": []
+												},
+												"arrival": {
+													"airportCode": {
+														"value": "FRA",
+														"application": null,
+														"area": null,
+														"uom": null
+													},
+													"date": "2015-12-24T21:00:00.000+0000",
+													"time": null,
+													"changeOfDay": null,
+													"airportName": "Frankfurt International",
+													"terminal": null,
+													"refs": []
+												},
+												"marketingCarrier": {
+													"airlineID": {
+														"value": "9A",
 														"refs": [],
-														"objectKey": null
+														"objectMetaReferences": []
 													},
-													"name": {
-														"value": "Inflight entertainment"
+													"name": "Athena Air",
+													"flightNumber": {
+														"value": "3803",
+														"operationalSuffix": null
 													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
+													"resBookDesigCode": null,
+													"refs": []
+												},
+												"operatingCarrier": {
+													"airlineID": {
+														"value": "9A",
+														"refs": [],
+														"objectMetaReferences": []
+													},
+													"name": "Athena Air",
+													"flightNumber": {
+														"value": "3803",
+														"operationalSuffix": null
+													},
+													"resBookDesigCode": null,
+													"refs": [],
+													"disclosures": null
+												},
+												"equipment": {
+													"aircraftCode": {
+														"value": "E95",
+														"refs": [],
+														"objectMetaReferences": []
+													},
+													"changeOfGaugeInd": null,
+													"refs": [],
+													"name": "E95 - EMBRAER 195 JET",
+													"airlineEquipCode": null
+												},
+												"classOfService": null,
+												"flightDetail": {
+													"flightSegmentType": null,
+													"flightDistance": null,
+													"flightDuration": {
+														"value": "PT2H10M",
+														"application": null,
 														"refs": []
 													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
+													"stops": null,
+													"resDateTime": null,
+													"tourOperatorFlightID": null,
+													"refs": []
+												},
+												"onTimePerformance": null,
+												"settlement": null,
+												"segmentKey": "SEG1",
+												"connectInd": null,
+												"electronicTicketInd": null,
+												"ticketlessInd": null,
+												"secureFlight": null,
+												"refs": []
+											}
+										},
+										{
+											"cabin": {
+												"cabinDesignator": {
+													"value": "M",
+													"allCabins": null
+												},
+												"marketingName": null,
+												"refs": []
+											},
+											"classOfService": null,
+											"bagDetailAssociation": null,
+											"marriedSegmentGroup": null,
+											"ref": {
+												"departure": {
+													"airportCode": {
+														"value": "FRA",
+														"application": null,
+														"area": null,
+														"uom": null
 													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "The latest blockbusters, classics from film history, music and games",
-																"refs": []
+													"date": "2015-12-24T21:00:00.000+0000",
+													"time": null,
+													"airportName": "Frankfurt International",
+													"terminal": null,
+													"refs": []
+												},
+												"arrival": {
+													"airportCode": {
+														"value": "LHR",
+														"application": null,
+														"area": null,
+														"uom": null
+													},
+													"date": "2015-12-24T21:00:00.000+0000",
+													"time": null,
+													"changeOfDay": null,
+													"airportName": null,
+													"terminal": null,
+													"refs": []
+												},
+												"marketingCarrier": {
+													"airlineID": {
+														"value": "9A",
+														"refs": [],
+														"objectMetaReferences": []
+													},
+													"name": "Athena Air",
+													"flightNumber": {
+														"value": "3916",
+														"operationalSuffix": null
+													},
+													"resBookDesigCode": null,
+													"refs": []
+												},
+												"operatingCarrier": {
+													"airlineID": {
+														"value": "9A",
+														"refs": [],
+														"objectMetaReferences": []
+													},
+													"name": "Athena Air",
+													"flightNumber": {
+														"value": "3916",
+														"operationalSuffix": null
+													},
+													"resBookDesigCode": null,
+													"refs": [],
+													"disclosures": null
+												},
+												"equipment": {
+													"aircraftCode": {
+														"value": "E95",
+														"refs": [],
+														"objectMetaReferences": []
+													},
+													"changeOfGaugeInd": null,
+													"refs": [],
+													"name": "E95 - EMBRAER 195 JET",
+													"airlineEquipCode": null
+												},
+												"classOfService": null,
+												"flightDetail": {
+													"flightSegmentType": null,
+													"flightDistance": null,
+													"flightDuration": {
+														"value": null,
+														"application": null,
+														"refs": []
+													},
+													"stops": null,
+													"resDateTime": null,
+													"tourOperatorFlightID": null,
+													"refs": []
+												},
+												"onTimePerformance": null,
+												"settlement": null,
+												"segmentKey": "SEG2",
+												"connectInd": null,
+												"electronicTicketInd": null,
+												"ticketlessInd": null,
+												"secureFlight": null,
+												"refs": []
+											}
+										}
+									],
+									"allOriginDestinationInd": null,
+									"originDestinationReferences": [
+										{
+										"departureCode": {
+											"value": "ARN",
+											"application": null,
+											"area": null,
+											"uom": null
+										},
+										"arrivalCode": {
+											"value": "LHR",
+											"application": null,
+											"area": null,
+											"uom": null
+										},
+										"originDestinationKey": "OD1",
+										"refs": [],
+										"totalJourney": null,
+										"flightReferences": {
+											"value": [{
+												"journey": {
+													"time": "PT3H15M",
+													"distance": null,
+													"refs": []
+												},
+												"segmentReferences": {
+													"value": [
+														{
+														"departure": {
+															"airportCode": {
+																"value": "ARN",
+																"application": null,
+																"area": null,
+																"uom": null
 															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "comfort-eco-int-1_title.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"airportName": null,
+															"terminal": null,
 															"refs": []
 														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 500,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
+														"arrival": {
+															"airportCode": {
+																"value": "FRA",
+																"application": null,
+																"area": null,
+																"uom": null
 															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
-																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
-														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}, {
-																	"departure": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "LHR",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": null,
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG2",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
-														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV2",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
-												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
-											}, {
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1022",
-														"owner": "9A",
-														"refs": [],
-														"objectKey": null
-													},
-													"name": {
-														"value": "Advance Seat selection"
-													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
-														"refs": []
-													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
-													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "A convenient option that lets you reserve your preferred seat",
-																"refs": []
-															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "preferred_seat.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"changeOfDay": null,
+															"airportName": "Frankfurt International",
+															"terminal": null,
 															"refs": []
 														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 0,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
-															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
+														"marketingCarrier": {
+															"airlineID": {
+																"value": "9A",
 																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
-														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
-														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV1",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
-												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
-											}, {
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1021",
-														"owner": "9A",
-														"refs": [],
-														"objectKey": null
-													},
-													"name": {
-														"value": "Meal"
-													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
-														"refs": []
-													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
-													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "Vegetarian Vegan Meal",
-																"refs": []
+																"objectMetaReferences": []
 															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "int_economy_promo.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3803",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
 															"refs": []
 														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 0,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
-															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
+														"operatingCarrier": {
+															"airlineID": {
+																"value": "9A",
 																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3803",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": [],
+															"disclosures": null
 														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}, {
-																	"departure": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "LHR",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": null,
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG2",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
+														"equipment": {
+															"aircraftCode": {
+																"value": "E95",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"changeOfGaugeInd": null,
+															"refs": [],
+															"name": "E95 - EMBRAER 195 JET",
+															"airlineEquipCode": null
 														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV3",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
+														"classOfService": null,
+														"flightDetail": {
+															"flightSegmentType": null,
+															"flightDistance": null,
+															"flightDuration": {
+																"value": "PT2H10M",
+																"application": null,
+																"refs": []
+															},
+															"stops": null,
+															"resDateTime": null,
+															"tourOperatorFlightID": null,
+															"refs": []
+														},
+														"onTimePerformance": null,
+														"settlement": null,
+														"segmentKey": "SEG1",
+														"connectInd": null,
+														"electronicTicketInd": null,
+														"ticketlessInd": null,
+														"secureFlight": null,
+														"refs": []
+													},
+														{
+														"departure": {
+															"airportCode": {
+																"value": "FRA",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"airportName": "Frankfurt International",
+															"terminal": null,
+															"refs": []
+														},
+														"arrival": {
+															"airportCode": {
+																"value": "LHR",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"changeOfDay": null,
+															"airportName": null,
+															"terminal": null,
+															"refs": []
+														},
+														"marketingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3916",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": []
+														},
+														"operatingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3916",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": [],
+															"disclosures": null
+														},
+														"equipment": {
+															"aircraftCode": {
+																"value": "E95",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"changeOfGaugeInd": null,
+															"refs": [],
+															"name": "E95 - EMBRAER 195 JET",
+															"airlineEquipCode": null
+														},
+														"classOfService": null,
+														"flightDetail": {
+															"flightSegmentType": null,
+															"flightDistance": null,
+															"flightDuration": {
+																"value": null,
+																"application": null,
+																"refs": []
+															},
+															"stops": null,
+															"resDateTime": null,
+															"tourOperatorFlightID": null,
+															"refs": []
+														},
+														"onTimePerformance": null,
+														"settlement": null,
+														"segmentKey": "SEG2",
+														"connectInd": null,
+														"electronicTicketInd": null,
+														"ticketlessInd": null,
+														"secureFlight": null,
+														"refs": []
+													}
+													],
+													"onPoint": null,
+													"offPoint": null
 												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
+												"settlement": null,
+												"flightKey": "FL1",
+												"refs": []
 											}],
-											"serviceID": []
+											"onPoint": null,
+											"offPoint": null
 										},
-										"selection": {
-											"minimumQuantityOrMaximumQuantity": [{
-												"name": "{http://www.iata.org/IATA/EDIST}MaximumQuantity",
-												"declaredType": "java.math.BigInteger",
-												"scope": "org.iata.iata.edist.ServiceBundle$Selection",
-												"value": 2,
-												"nil": false,
-												"globalScope": false,
-												"typeSubstituted": false
-											}]
+										"checkedBag": null,
+										"carryOnBag": null
+									}
+									],
+									"allFlightInd": null,
+									"flightReferences": {
+										"value": [{
+											"journey": {
+												"time": "PT3H15M",
+												"distance": null,
+												"refs": []
+											},
+											"segmentReferences": {
+												"value": [
+													{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												},
+													{
+													"departure": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "LHR",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": null,
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG2",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}
+												],
+												"onPoint": null,
+												"offPoint": null
+											},
+											"settlement": null,
+											"flightKey": "FL1",
+											"refs": []
+										}],
+										"onPoint": null,
+										"offPoint": null
+									}
+								},
+								"priceClass": {
+									"priceClassReference": {
+										"name": "M-ESO",
+										"code": "M",
+										"descriptions": [],
+										"fareBasisCode": {
+											"displayAllInd": null,
+											"allExemptInd": null,
+											"pricingInd": null,
+											"connectionInd": null,
+											"ticketlessInd": null,
+											"associateInd": null,
+											"taxOnEMDInd": null,
+											"stopOverInd": null,
+											"taxInd": null,
+											"otherChargeInd": null,
+											"poolingInd": null,
+											"specialItemsInd": null,
+											"taxesInd": null,
+											"netFareInd": null,
+											"reissueOnlyInd": null,
+											"autoExchangeInd": null,
+											"alertInd": null,
+											"authenticationInd": null,
+											"marketingInd": null,
+											"multiPayFormInd": null,
+											"noticeInd": null,
+											"partialInd": null,
+											"warningInd": null,
+											"failedPaymentInd": null,
+											"partialPaymentInd": null,
+											"verificationInd": null,
+											"priceVarianceInd": null,
+											"invGuaranteedInd": null,
+											"waitlistInd": null,
+											"bundleInd": null,
+											"invGuarRequestedInd": null,
+											"exitRowInd": null,
+											"premiumInd": null,
+											"upperDeckInd": null,
+											"taxIncludedInd": null,
+											"feeIncludedInd": null,
+											"leadPricingInd": null,
+											"timestamp": null,
+											"metadataToken": null,
+											"refs": [],
+											"objectKey": null,
+											"code": "ESO",
+											"application": null,
+											"eticketInd": null
 										},
-										"bundleID": {
-											"value": "B1004",
+										"classOfService": [],
+										"associations": [],
+										"displayOrder": null,
+										"objectKey": "PC1",
+										"refs": []
+									}
+								},
+								"offerDetailAssociation": null,
+								"includedService": {
+									"bundleReference": null,
+									"serviceReferences": [
+										{
+										"serviceID": {
+											"value": "1022",
+											"owner": "9A",
 											"refs": [],
 											"objectKey": null
 										},
+										"name": {
+											"value": "Advance Seat selection"
+										},
+										"encoding": {
+											"rfic": null,
+											"type": null,
+											"code": null,
+											"subCode": null,
+											"refs": []
+										},
+										"timeLimits": null,
+										"feeMethod": {
+											"value": "OC"
+										},
+										"descriptions": {
+											"description": [
+												{
+												"text": {
+													"value": "A convenient option that lets you reserve your preferred seat",
+													"refs": []
+												},
+												"markupStyle": null,
+												"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+												"media": [{
+													"objectID": {
+														"value": "preferred_seat.jpg",
+														"owner": null,
+														"refs": []
+													},
+													"mediaLink": null,
+													"attachmentID": null
+												},
+													{
+													"objectID": null,
+													"mediaLink": {
+														"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+														"refs": [],
+														"objectMetaReferences": []
+													},
+													"attachmentID": null
+												}],
+												"objectKey": null,
+												"refs": [],
+												"application": null
+											}
+											],
+											"refs": []
+										},
+										"settlement": {
+											"method": {
+												"code": "AD",
+												"definition": "Internal Airline Document",
+												"tableName": null,
+												"link": null,
+												"refs": []
+											},
+											"interlineSettlementValue": null
+										},
 										"price": [{
 											"total": {
-												"value": 5000,
+												"value": 0,
 												"taxable": true,
 												"code": null
 											},
@@ -1073,320 +1951,2320 @@ const offers = {
 											}],
 											"refs": []
 										}],
-										"bundleName": null,
+										"bookingInstructions": null,
+										"validatingCarrier": null,
+										"associations": [
+											{
+											"traveler": {
+												"allTravelerInd": null,
+												"travelerReferences": [{
+													"pricedInd": null,
+													"refs": [],
+													"objectKey": "SH1",
+													"ptc": {
+														"value": "ADT",
+														"quantity": 1
+													},
+													"residenceCode": null,
+													"passengerAssociation": null,
+													"age": null,
+													"citizenshipCountryCode": null
+												}]
+											},
+											"flight": {
+												"allFlightInd": null,
+												"allOriginDestinationInd": null,
+												"allSegmentInd": null,
+												"originDestinationReferencesOrSegmentReferences": [
+													{
+													"value": [
+														{
+														"departure": {
+															"airportCode": {
+																"value": "ARN",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"airportName": null,
+															"terminal": null,
+															"refs": []
+														},
+														"arrival": {
+															"airportCode": {
+																"value": "FRA",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"changeOfDay": null,
+															"airportName": "Frankfurt International",
+															"terminal": null,
+															"refs": []
+														},
+														"marketingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3803",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": []
+														},
+														"operatingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3803",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": [],
+															"disclosures": null
+														},
+														"equipment": {
+															"aircraftCode": {
+																"value": "E95",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"changeOfGaugeInd": null,
+															"refs": [],
+															"name": "E95 - EMBRAER 195 JET",
+															"airlineEquipCode": null
+														},
+														"classOfService": null,
+														"flightDetail": {
+															"flightSegmentType": null,
+															"flightDistance": null,
+															"flightDuration": {
+																"value": "PT2H10M",
+																"application": null,
+																"refs": []
+															},
+															"stops": null,
+															"resDateTime": null,
+															"tourOperatorFlightID": null,
+															"refs": []
+														},
+														"onTimePerformance": null,
+														"settlement": null,
+														"segmentKey": "SEG1",
+														"connectInd": null,
+														"electronicTicketInd": null,
+														"ticketlessInd": null,
+														"secureFlight": null,
+														"refs": []
+													}],
+													"onPoint": null,
+													"offPoint": null
+												}
+												]
+											},
+											"offer": [],
+											"otherAssociations": [],
+											"seatReference": null
+										}],
+										"baggageDeterminingCarrier": null,
+										"objectKey": "SV1",
 										"refs": [],
-										"listKey": "SB1"
+										"detail": null,
+										"bdcanalysisResult": null
 									},
-									"serviceReferences": []
+										{
+										"serviceID": {
+											"value": "1021",
+											"owner": "9A",
+											"refs": [],
+											"objectKey": null
+										},
+										"name": {
+											"value": "Meal"
+										},
+										"encoding": {
+											"rfic": null,
+											"type": null,
+											"code": null,
+											"subCode": null,
+											"refs": []
+										},
+										"timeLimits": null,
+										"feeMethod": {
+											"value": "OC"
+										},
+										"descriptions": {
+											"description": [{
+												"text": {
+													"value": "Vegetarian Vegan Meal",
+													"refs": []
+												},
+												"markupStyle": null,
+												"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+												"media": [{
+													"objectID": {
+														"value": "int_economy_promo.jpg",
+														"owner": null,
+														"refs": []
+													},
+													"mediaLink": null,
+													"attachmentID": null
+												}, {
+													"objectID": null,
+													"mediaLink": {
+														"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+														"refs": [],
+														"objectMetaReferences": []
+													},
+													"attachmentID": null
+												}],
+												"objectKey": null,
+												"refs": [],
+												"application": null
+											}],
+											"refs": []
+										},
+										"settlement": {
+											"method": {
+												"code": "AD",
+												"definition": "Internal Airline Document",
+												"tableName": null,
+												"link": null,
+												"refs": []
+											},
+											"interlineSettlementValue": null
+										},
+										"price": [{
+											"total": {
+												"value": 0,
+												"taxable": true,
+												"code": null
+											},
+											"refundableValue": null,
+											"details": null,
+											"taxes": null,
+											"fees": null,
+											"passengerReferences": [{
+												"pricedInd": null,
+												"refs": [],
+												"objectKey": "SH1",
+												"ptc": {
+													"value": "ADT",
+													"quantity": 1
+												},
+												"residenceCode": null,
+												"passengerAssociation": null,
+												"age": null,
+												"citizenshipCountryCode": null
+											}],
+											"refs": []
+										}],
+										"bookingInstructions": null,
+										"validatingCarrier": null,
+										"associations": [{
+											"traveler": {
+												"allTravelerInd": null,
+												"travelerReferences": [{
+													"pricedInd": null,
+													"refs": [],
+													"objectKey": "SH1",
+													"ptc": {
+														"value": "ADT",
+														"quantity": 1
+													},
+													"residenceCode": null,
+													"passengerAssociation": null,
+													"age": null,
+													"citizenshipCountryCode": null
+												}]
+											},
+											"flight": {
+												"allFlightInd": null,
+												"allOriginDestinationInd": null,
+												"allSegmentInd": null,
+												"originDestinationReferencesOrSegmentReferences": [{
+													"value": [
+														{
+														"departure": {
+															"airportCode": {
+																"value": "ARN",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"airportName": null,
+															"terminal": null,
+															"refs": []
+														},
+														"arrival": {
+															"airportCode": {
+																"value": "FRA",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"changeOfDay": null,
+															"airportName": "Frankfurt International",
+															"terminal": null,
+															"refs": []
+														},
+														"marketingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3803",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": []
+														},
+														"operatingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3803",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": [],
+															"disclosures": null
+														},
+														"equipment": {
+															"aircraftCode": {
+																"value": "E95",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"changeOfGaugeInd": null,
+															"refs": [],
+															"name": "E95 - EMBRAER 195 JET",
+															"airlineEquipCode": null
+														},
+														"classOfService": null,
+														"flightDetail": {
+															"flightSegmentType": null,
+															"flightDistance": null,
+															"flightDuration": {
+																"value": "PT2H10M",
+																"application": null,
+																"refs": []
+															},
+															"stops": null,
+															"resDateTime": null,
+															"tourOperatorFlightID": null,
+															"refs": []
+														},
+														"onTimePerformance": null,
+														"settlement": null,
+														"segmentKey": "SEG1",
+														"connectInd": null,
+														"electronicTicketInd": null,
+														"ticketlessInd": null,
+														"secureFlight": null,
+														"refs": []
+													},
+														{
+														"departure": {
+															"airportCode": {
+																"value": "FRA",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"airportName": "Frankfurt International",
+															"terminal": null,
+															"refs": []
+														},
+														"arrival": {
+															"airportCode": {
+																"value": "LHR",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"changeOfDay": null,
+															"airportName": null,
+															"terminal": null,
+															"refs": []
+														},
+														"marketingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3916",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": []
+														},
+														"operatingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3916",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": [],
+															"disclosures": null
+														},
+														"equipment": {
+															"aircraftCode": {
+																"value": "E95",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"changeOfGaugeInd": null,
+															"refs": [],
+															"name": "E95 - EMBRAER 195 JET",
+															"airlineEquipCode": null
+														},
+														"classOfService": null,
+														"flightDetail": {
+															"flightSegmentType": null,
+															"flightDistance": null,
+															"flightDuration": {
+																"value": null,
+																"application": null,
+																"refs": []
+															},
+															"stops": null,
+															"resDateTime": null,
+															"tourOperatorFlightID": null,
+															"refs": []
+														},
+														"onTimePerformance": null,
+														"settlement": null,
+														"segmentKey": "SEG2",
+														"connectInd": null,
+														"electronicTicketInd": null,
+														"ticketlessInd": null,
+														"secureFlight": null,
+														"refs": []
+													}
+													],
+													"onPoint": null,
+													"offPoint": null
+												}]
+											},
+											"offer": [],
+											"otherAssociations": [],
+											"seatReference": null
+										}],
+										"baggageDeterminingCarrier": null,
+										"objectKey": "SV3",
+										"refs": [],
+										"detail": null,
+										"bdcanalysisResult": null
+									}
+									]
+								},
+								"associatedService": {
+									"bundleReference": null,
+									"serviceReferences": [{
+										"serviceID": {
+											"value": "1023",
+											"owner": "9A",
+											"refs": [],
+											"objectKey": null
+										},
+										"name": {
+											"value": "Inflight entertainment"
+										},
+										"encoding": {
+											"rfic": null,
+											"type": null,
+											"code": null,
+											"subCode": null,
+											"refs": []
+										},
+										"timeLimits": null,
+										"feeMethod": {
+											"value": "OC"
+										},
+										"descriptions": {
+											"description": [{
+												"text": {
+													"value": "The latest blockbusters, classics from film history, music and games",
+													"refs": []
+												},
+												"markupStyle": null,
+												"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+												"media": [{
+													"objectID": {
+														"value": "comfort-eco-int-1_title.jpg",
+														"owner": null,
+														"refs": []
+													},
+													"mediaLink": null,
+													"attachmentID": null
+												}, {
+													"objectID": null,
+													"mediaLink": {
+														"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+														"refs": [],
+														"objectMetaReferences": []
+													},
+													"attachmentID": null
+												}],
+												"objectKey": null,
+												"refs": [],
+												"application": null
+											}],
+											"refs": []
+										},
+										"settlement": {
+											"method": {
+												"code": "AD",
+												"definition": "Internal Airline Document",
+												"tableName": null,
+												"link": null,
+												"refs": []
+											},
+											"interlineSettlementValue": null
+										},
+										"price": [
+											{
+											"total": {
+												"value": 500,
+												"taxable": true,
+												"code": null
+											},
+											"refundableValue": null,
+											"details": null,
+											"taxes": null,
+											"fees": null,
+											"passengerReferences": [{
+												"pricedInd": null,
+												"refs": [],
+												"objectKey": "SH1",
+												"ptc": {
+													"value": "ADT",
+													"quantity": 1
+												},
+												"residenceCode": null,
+												"passengerAssociation": null,
+												"age": null,
+												"citizenshipCountryCode": null
+											}],
+											"refs": []
+										}],
+										"bookingInstructions": null,
+										"validatingCarrier": null,
+										"associations": [{
+											"traveler": {
+												"allTravelerInd": null,
+												"travelerReferences": [{
+													"pricedInd": null,
+													"refs": [],
+													"objectKey": "SH1",
+													"ptc": {
+														"value": "ADT",
+														"quantity": 1
+													},
+													"residenceCode": null,
+													"passengerAssociation": null,
+													"age": null,
+													"citizenshipCountryCode": null
+												}]
+											},
+											"flight": {
+												"allFlightInd": null,
+												"allOriginDestinationInd": null,
+												"allSegmentInd": null,
+												"originDestinationReferencesOrSegmentReferences": [{
+													"value": [{
+														"departure": {
+															"airportCode": {
+																"value": "ARN",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"airportName": null,
+															"terminal": null,
+															"refs": []
+														},
+														"arrival": {
+															"airportCode": {
+																"value": "FRA",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"changeOfDay": null,
+															"airportName": "Frankfurt International",
+															"terminal": null,
+															"refs": []
+														},
+														"marketingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3803",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": []
+														},
+														"operatingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3803",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": [],
+															"disclosures": null
+														},
+														"equipment": {
+															"aircraftCode": {
+																"value": "E95",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"changeOfGaugeInd": null,
+															"refs": [],
+															"name": "E95 - EMBRAER 195 JET",
+															"airlineEquipCode": null
+														},
+														"classOfService": null,
+														"flightDetail": {
+															"flightSegmentType": null,
+															"flightDistance": null,
+															"flightDuration": {
+																"value": "PT2H10M",
+																"application": null,
+																"refs": []
+															},
+															"stops": null,
+															"resDateTime": null,
+															"tourOperatorFlightID": null,
+															"refs": []
+														},
+														"onTimePerformance": null,
+														"settlement": null,
+														"segmentKey": "SEG1",
+														"connectInd": null,
+														"electronicTicketInd": null,
+														"ticketlessInd": null,
+														"secureFlight": null,
+														"refs": []
+													}, {
+														"departure": {
+															"airportCode": {
+																"value": "FRA",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"airportName": "Frankfurt International",
+															"terminal": null,
+															"refs": []
+														},
+														"arrival": {
+															"airportCode": {
+																"value": "LHR",
+																"application": null,
+																"area": null,
+																"uom": null
+															},
+															"date": "2015-12-24T21:00:00.000+0000",
+															"time": null,
+															"changeOfDay": null,
+															"airportName": null,
+															"terminal": null,
+															"refs": []
+														},
+														"marketingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3916",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": []
+														},
+														"operatingCarrier": {
+															"airlineID": {
+																"value": "9A",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"name": "Athena Air",
+															"flightNumber": {
+																"value": "3916",
+																"operationalSuffix": null
+															},
+															"resBookDesigCode": null,
+															"refs": [],
+															"disclosures": null
+														},
+														"equipment": {
+															"aircraftCode": {
+																"value": "E95",
+																"refs": [],
+																"objectMetaReferences": []
+															},
+															"changeOfGaugeInd": null,
+															"refs": [],
+															"name": "E95 - EMBRAER 195 JET",
+															"airlineEquipCode": null
+														},
+														"classOfService": null,
+														"flightDetail": {
+															"flightSegmentType": null,
+															"flightDistance": null,
+															"flightDuration": {
+																"value": null,
+																"application": null,
+																"refs": []
+															},
+															"stops": null,
+															"resDateTime": null,
+															"tourOperatorFlightID": null,
+															"refs": []
+														},
+														"onTimePerformance": null,
+														"settlement": null,
+														"segmentKey": "SEG2",
+														"connectInd": null,
+														"electronicTicketInd": null,
+														"ticketlessInd": null,
+														"secureFlight": null,
+														"refs": []
+													}],
+													"onPoint": null,
+													"offPoint": null
+												}]
+											},
+											"offer": [],
+											"otherAssociations": [],
+											"seatReference": null
+										}],
+										"baggageDeterminingCarrier": null,
+										"objectKey": "SV2",
+										"refs": [],
+										"detail": null,
+										"bdcanalysisResult": null
+									}]
 								},
 								"otherAssociation": []
 							}
-							]
-						},
-						"fareDetail": {
-							"fareIndicatorCode": null,
-							"fareComponent": [{
-								"parameters": null,
-								"segmentReference": null,
-								"priceBreakdown": null,
-								"fareBasis": {
-									"fareBasisCode": {
-										"displayAllInd": null,
-										"allExemptInd": null,
-										"pricingInd": null,
-										"connectionInd": null,
-										"ticketlessInd": null,
-										"associateInd": null,
-										"taxOnEMDInd": null,
-										"stopOverInd": null,
-										"taxInd": null,
-										"otherChargeInd": null,
-										"poolingInd": null,
-										"specialItemsInd": null,
-										"taxesInd": null,
-										"netFareInd": null,
-										"reissueOnlyInd": null,
-										"autoExchangeInd": null,
-										"alertInd": null,
-										"authenticationInd": null,
-										"marketingInd": null,
-										"multiPayFormInd": null,
-										"noticeInd": null,
-										"partialInd": null,
-										"warningInd": null,
-										"failedPaymentInd": null,
-										"partialPaymentInd": null,
-										"verificationInd": null,
-										"priceVarianceInd": null,
-										"invGuaranteedInd": null,
-										"waitlistInd": null,
-										"bundleInd": null,
-										"invGuarRequestedInd": null,
-										"exitRowInd": null,
-										"premiumInd": null,
-										"upperDeckInd": null,
-										"taxIncludedInd": null,
-										"feeIncludedInd": null,
-										"leadPricingInd": null,
-										"timestamp": null,
-										"metadataToken": null,
-										"refs": [],
-										"objectKey": null,
-										"code": "ESO",
-										"application": null,
-										"eticketInd": null
-									},
-									"fareRulesRemarks": [],
-									"fareBasisCityPair": null,
-									"rbd": null
-								},
-								"ticketDesig": null,
-								"fareRules": null,
-								"refs": []
-							}],
-							"priceClassReference": null,
-							"flightMileage": null,
-							"tourCode": null,
-							"remarks": null,
-							"refs": []
-						},
-						"offerItemID": "1#M#111198795#111162714",
-						"modificationProhibitedInd": null,
-						"refs": []
+						]
 					}
-					],
-					"associations": [
-						{
-						"associatedTraveler": null,
-						"applicableFlight": {
-							"allSegmentInd": null,
-							"flightSegmentReference": [
-								{
-								"cabin": {
-									"cabinDesignator": {
-										"value": "M",
-										"allCabins": null
-									},
-									"marketingName": null,
-									"refs": []
-								},
-								"classOfService": null,
-								"bagDetailAssociation": null,
-								"marriedSegmentGroup": null,
-								"ref": {
-									"departure": {
-										"airportCode": {
-											"value": "ARN",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"airportName": null,
-										"terminal": null,
-										"refs": []
-									},
-									"arrival": {
-										"airportCode": {
-											"value": "FRA",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"changeOfDay": null,
-										"airportName": "Frankfurt International",
-										"terminal": null,
-										"refs": []
-									},
-									"marketingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3803",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": []
-									},
-									"operatingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3803",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": [],
-										"disclosures": null
-									},
-									"equipment": {
-										"aircraftCode": {
-											"value": "E95",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"changeOfGaugeInd": null,
-										"refs": [],
-										"name": "E95 - EMBRAER 195 JET",
-										"airlineEquipCode": null
-									},
-									"classOfService": null,
-									"flightDetail": {
-										"flightSegmentType": null,
-										"flightDistance": null,
-										"flightDuration": {
-											"value": "PT2H10M",
-											"application": null,
-											"refs": []
-										},
-										"stops": null,
-										"resDateTime": null,
-										"tourOperatorFlightID": null,
-										"refs": []
-									},
-									"onTimePerformance": null,
-									"settlement": null,
-									"segmentKey": "SEG1",
-									"connectInd": null,
-									"electronicTicketInd": null,
-									"ticketlessInd": null,
-									"secureFlight": null,
-									"refs": []
-								}
+				},
+				{
+					"parameters": null,
+					"offerID": {
+						"value": "2",
+						"owner": "9A",
+						"webAddressID": null,
+						"ownerType": null,
+						"refs": [],
+						"objectKey": null
+					},
+					"validatingCarrier": null,
+					"timeLimits": {
+						"offerExpiration": {
+							"dateTime": null,
+							"shortDate": null,
+							"timestamp": "2015-10-15T20:59:00.000+0000",
+							"time": null,
+							"refs": [],
+							"objectKey": null
+						},
+						"payment": null,
+						"otherLimits": [],
+						"refs": []
+					},
+					"totalPrice": {
+						"awardPricing": null,
+						"combinationPricing": null,
+						"simpleCurrencyPrice": null,
+						"detailCurrencyPrice": {
+							"approxInd": null,
+							"refundAllInd": null,
+							"taxIncludedInd": null,
+							"otherChargeInd": null,
+							"autoExchangeInd": null,
+							"refs": [],
+							"total": {
+								"value": 87500,
+								"taxable": true,
+								"code": "EUR"
 							},
-								{
-								"cabin": {
-									"cabinDesignator": {
-										"value": "M",
-										"allCabins": null
+							"equivalent": null,
+							"details": {
+								"detail": [{
+									"subTotal": {
+										"value": 87500,
+										"taxable": true,
+										"code": "EUR"
 									},
-									"marketingName": null,
+									"application": "Base Fare",
+									"refundInd": null,
 									"refs": []
+								}],
+								"refs": []
+							},
+							"taxes": {
+								"approxInd": null,
+								"collectionInd": null,
+								"refundAllInd": null,
+								"refs": [],
+								"total": {
+									"value": 0,
+									"taxable": true,
+									"code": "EUR"
 								},
-								"classOfService": null,
-								"bagDetailAssociation": null,
-								"marriedSegmentGroup": null,
-								"ref": {
-									"departure": {
-										"airportCode": {
-											"value": "FRA",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"airportName": "Frankfurt International",
-										"terminal": null,
-										"refs": []
+								"breakdown": null
+							},
+							"fees": null
+						},
+						"encodedCurrencyPrice": null,
+						"refs": []
+					},
+					"descriptionReferences": [],
+					"disclosure": null,
+					"penalty": null,
+					"requestedDateInd": null,
+					"refs": [],
+					"match": null,
+					"pricedOffer": {
+						"refs": [],
+						"offerMetaReferences": [],
+						"offerPrice": [
+							{
+							"requestedDate": {
+								"priceDetail": {
+									"totalAmount": {
+										"awardPricing": null,
+										"combinationPricing": null,
+										"detailCurrencyPrice": null,
+										"encodedCurrencyPrice": null,
+										"simpleCurrencyPrice": {
+											"value": 87500,
+											"taxable": true,
+											"code": "EUR"
+										}
 									},
-									"arrival": {
-										"airportCode": {
-											"value": "LHR",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"changeOfDay": null,
-										"airportName": null,
-										"terminal": null,
-										"refs": []
+									"baseAmount": {
+										"value": 87500,
+										"taxable": true,
+										"code": "EUR"
 									},
-									"marketingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3916",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": []
-									},
-									"operatingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3916",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
+									"fareFiledIn": null,
+									"discount": null,
+									"surcharges": [],
+									"taxes": {
+										"approxInd": null,
+										"collectionInd": null,
+										"refundAllInd": null,
 										"refs": [],
-										"disclosures": null
-									},
-									"equipment": {
-										"aircraftCode": {
-											"value": "E95",
-											"refs": [],
-											"objectMetaReferences": []
+										"total": {
+											"value": 0,
+											"taxable": true,
+											"code": "EUR"
 										},
-										"changeOfGaugeInd": null,
-										"refs": [],
-										"name": "E95 - EMBRAER 195 JET",
-										"airlineEquipCode": null
+										"breakdown": null
+									},
+									"taxExemption": null,
+									"awardPricing": null,
+									"combinationPricing": null,
+									"originDestinationReferenceOrSegmentReferences": [],
+									"fees": null
+								},
+								"associations": [
+									{
+									"associatedTraveler": {
+										"allTravelerInd": null,
+										"travelerReferences": [{
+											"pricedInd": null,
+											"refs": [],
+											"objectKey": "SH1",
+											"ptc": {
+												"value": "ADT",
+												"quantity": 1
+											},
+											"residenceCode": null,
+											"passengerAssociation": null,
+											"age": null,
+											"citizenshipCountryCode": null
+										}]
+									},
+									"applicableFlight": null,
+									"priceClass": null,
+									"offerDetailAssociation": null,
+									"includedService": null,
+									"associatedService": {
+										"bundleReference": {
+											"itemCount": 3,
+											"associations": {
+												"serviceReference": [{
+													"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+													"declaredType": "java.lang.Object",
+													"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+													"value": {
+														"serviceID": {
+															"value": "1023",
+															"owner": "9A",
+															"refs": [],
+															"objectKey": null
+														},
+														"name": {
+															"value": "Inflight entertainment"
+														},
+														"encoding": {
+															"rfic": null,
+															"type": null,
+															"code": null,
+															"subCode": null,
+															"refs": []
+														},
+														"timeLimits": null,
+														"feeMethod": {
+															"value": "OC"
+														},
+														"descriptions": {
+															"description": [{
+																"text": {
+																	"value": "The latest blockbusters, classics from film history, music and games",
+																	"refs": []
+																},
+																"markupStyle": null,
+																"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+																"media": [{
+																	"objectID": {
+																		"value": "comfort-eco-int-1_title.jpg",
+																		"owner": null,
+																		"refs": []
+																	},
+																	"mediaLink": null,
+																	"attachmentID": null
+																}, {
+																	"objectID": null,
+																	"mediaLink": {
+																		"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+																		"refs": [],
+																		"objectMetaReferences": []
+																	},
+																	"attachmentID": null
+																}],
+																"objectKey": null,
+																"refs": [],
+																"application": null
+															}],
+															"refs": []
+														},
+														"settlement": {
+															"method": {
+																"code": "AD",
+																"definition": "Internal Airline Document",
+																"tableName": null,
+																"link": null,
+																"refs": []
+															},
+															"interlineSettlementValue": null
+														},
+														"price": [{
+															"total": {
+																"value": 500,
+																"taxable": true,
+																"code": null
+															},
+															"refundableValue": null,
+															"details": null,
+															"taxes": null,
+															"fees": null,
+															"passengerReferences": [{
+																"pricedInd": null,
+																"refs": [],
+																"objectKey": "SH1",
+																"ptc": {
+																	"value": "ADT",
+																	"quantity": 1
+																},
+																"residenceCode": null,
+																"passengerAssociation": null,
+																"age": null,
+																"citizenshipCountryCode": null
+															}],
+															"refs": []
+														}],
+														"bookingInstructions": null,
+														"validatingCarrier": null,
+														"associations": [{
+															"traveler": {
+																"allTravelerInd": null,
+																"travelerReferences": [{
+																	"pricedInd": null,
+																	"refs": [],
+																	"objectKey": "SH1",
+																	"ptc": {
+																		"value": "ADT",
+																		"quantity": 1
+																	},
+																	"residenceCode": null,
+																	"passengerAssociation": null,
+																	"age": null,
+																	"citizenshipCountryCode": null
+																}]
+															},
+															"flight": {
+																"allFlightInd": null,
+																"allOriginDestinationInd": null,
+																"allSegmentInd": null,
+																"originDestinationReferencesOrSegmentReferences": [{
+																	"value": [{
+																		"departure": {
+																			"airportCode": {
+																				"value": "ARN",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": "PT2H10M",
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG1",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}, {
+																		"departure": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "LHR",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3916",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3916",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": null,
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG2",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}],
+																	"onPoint": null,
+																	"offPoint": null
+																}]
+															},
+															"offer": [],
+															"otherAssociations": [],
+															"seatReference": null
+														}],
+														"baggageDeterminingCarrier": null,
+														"objectKey": "SV2",
+														"refs": [],
+														"detail": null,
+														"bdcanalysisResult": null
+													},
+													"nil": false,
+													"globalScope": true,
+													"typeSubstituted": true
+												}, {
+													"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+													"declaredType": "java.lang.Object",
+													"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+													"value": {
+														"serviceID": {
+															"value": "1022",
+															"owner": "9A",
+															"refs": [],
+															"objectKey": null
+														},
+														"name": {
+															"value": "Advance Seat selection"
+														},
+														"encoding": {
+															"rfic": null,
+															"type": null,
+															"code": null,
+															"subCode": null,
+															"refs": []
+														},
+														"timeLimits": null,
+														"feeMethod": {
+															"value": "OC"
+														},
+														"descriptions": {
+															"description": [{
+																"text": {
+																	"value": "A convenient option that lets you reserve your preferred seat",
+																	"refs": []
+																},
+																"markupStyle": null,
+																"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+																"media": [{
+																	"objectID": {
+																		"value": "preferred_seat.jpg",
+																		"owner": null,
+																		"refs": []
+																	},
+																	"mediaLink": null,
+																	"attachmentID": null
+																}, {
+																	"objectID": null,
+																	"mediaLink": {
+																		"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+																		"refs": [],
+																		"objectMetaReferences": []
+																	},
+																	"attachmentID": null
+																}],
+																"objectKey": null,
+																"refs": [],
+																"application": null
+															}],
+															"refs": []
+														},
+														"settlement": {
+															"method": {
+																"code": "AD",
+																"definition": "Internal Airline Document",
+																"tableName": null,
+																"link": null,
+																"refs": []
+															},
+															"interlineSettlementValue": null
+														},
+														"price": [{
+															"total": {
+																"value": 0,
+																"taxable": true,
+																"code": null
+															},
+															"refundableValue": null,
+															"details": null,
+															"taxes": null,
+															"fees": null,
+															"passengerReferences": [{
+																"pricedInd": null,
+																"refs": [],
+																"objectKey": "SH1",
+																"ptc": {
+																	"value": "ADT",
+																	"quantity": 1
+																},
+																"residenceCode": null,
+																"passengerAssociation": null,
+																"age": null,
+																"citizenshipCountryCode": null
+															}],
+															"refs": []
+														}],
+														"bookingInstructions": null,
+														"validatingCarrier": null,
+														"associations": [{
+															"traveler": {
+																"allTravelerInd": null,
+																"travelerReferences": [{
+																	"pricedInd": null,
+																	"refs": [],
+																	"objectKey": "SH1",
+																	"ptc": {
+																		"value": "ADT",
+																		"quantity": 1
+																	},
+																	"residenceCode": null,
+																	"passengerAssociation": null,
+																	"age": null,
+																	"citizenshipCountryCode": null
+																}]
+															},
+															"flight": {
+																"allFlightInd": null,
+																"allOriginDestinationInd": null,
+																"allSegmentInd": null,
+																"originDestinationReferencesOrSegmentReferences": [{
+																	"value": [{
+																		"departure": {
+																			"airportCode": {
+																				"value": "ARN",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": "PT2H10M",
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG1",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}],
+																	"onPoint": null,
+																	"offPoint": null
+																}]
+															},
+															"offer": [],
+															"otherAssociations": [],
+															"seatReference": null
+														}],
+														"baggageDeterminingCarrier": null,
+														"objectKey": "SV1",
+														"refs": [],
+														"detail": null,
+														"bdcanalysisResult": null
+													},
+													"nil": false,
+													"globalScope": true,
+													"typeSubstituted": true
+												}, {
+													"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+													"declaredType": "java.lang.Object",
+													"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+													"value": {
+														"serviceID": {
+															"value": "1021",
+															"owner": "9A",
+															"refs": [],
+															"objectKey": null
+														},
+														"name": {
+															"value": "Meal"
+														},
+														"encoding": {
+															"rfic": null,
+															"type": null,
+															"code": null,
+															"subCode": null,
+															"refs": []
+														},
+														"timeLimits": null,
+														"feeMethod": {
+															"value": "OC"
+														},
+														"descriptions": {
+															"description": [{
+																"text": {
+																	"value": "Vegetarian Vegan Meal",
+																	"refs": []
+																},
+																"markupStyle": null,
+																"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+																"media": [{
+																	"objectID": {
+																		"value": "int_economy_promo.jpg",
+																		"owner": null,
+																		"refs": []
+																	},
+																	"mediaLink": null,
+																	"attachmentID": null
+																}, {
+																	"objectID": null,
+																	"mediaLink": {
+																		"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+																		"refs": [],
+																		"objectMetaReferences": []
+																	},
+																	"attachmentID": null
+																}],
+																"objectKey": null,
+																"refs": [],
+																"application": null
+															}],
+															"refs": []
+														},
+														"settlement": {
+															"method": {
+																"code": "AD",
+																"definition": "Internal Airline Document",
+																"tableName": null,
+																"link": null,
+																"refs": []
+															},
+															"interlineSettlementValue": null
+														},
+														"price": [{
+															"total": {
+																"value": 0,
+																"taxable": true,
+																"code": null
+															},
+															"refundableValue": null,
+															"details": null,
+															"taxes": null,
+															"fees": null,
+															"passengerReferences": [{
+																"pricedInd": null,
+																"refs": [],
+																"objectKey": "SH1",
+																"ptc": {
+																	"value": "ADT",
+																	"quantity": 1
+																},
+																"residenceCode": null,
+																"passengerAssociation": null,
+																"age": null,
+																"citizenshipCountryCode": null
+															}],
+															"refs": []
+														}],
+														"bookingInstructions": null,
+														"validatingCarrier": null,
+														"associations": [{
+															"traveler": {
+																"allTravelerInd": null,
+																"travelerReferences": [{
+																	"pricedInd": null,
+																	"refs": [],
+																	"objectKey": "SH1",
+																	"ptc": {
+																		"value": "ADT",
+																		"quantity": 1
+																	},
+																	"residenceCode": null,
+																	"passengerAssociation": null,
+																	"age": null,
+																	"citizenshipCountryCode": null
+																}]
+															},
+															"flight": {
+																"allFlightInd": null,
+																"allOriginDestinationInd": null,
+																"allSegmentInd": null,
+																"originDestinationReferencesOrSegmentReferences": [{
+																	"value": [{
+																		"departure": {
+																			"airportCode": {
+																				"value": "ARN",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": "PT2H10M",
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG1",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}, {
+																		"departure": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "LHR",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3916",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3916",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": null,
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG2",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}],
+																	"onPoint": null,
+																	"offPoint": null
+																}]
+															},
+															"offer": [],
+															"otherAssociations": [],
+															"seatReference": null
+														}],
+														"baggageDeterminingCarrier": null,
+														"objectKey": "SV3",
+														"refs": [],
+														"detail": null,
+														"bdcanalysisResult": null
+													},
+													"nil": false,
+													"globalScope": true,
+													"typeSubstituted": true
+												}],
+												"serviceID": []
+											},
+											"selection": {
+												"minimumQuantityOrMaximumQuantity": [{
+													"name": "{http://www.iata.org/IATA/EDIST}MaximumQuantity",
+													"declaredType": "java.math.BigInteger",
+													"scope": "org.iata.iata.edist.ServiceBundle$Selection",
+													"value": 2,
+													"nil": false,
+													"globalScope": false,
+													"typeSubstituted": false
+												}]
+											},
+											"bundleID": {
+												"value": "B1004",
+												"refs": [],
+												"objectKey": null
+											},
+											"price": [{
+												"total": {
+													"value": 5000,
+													"taxable": true,
+													"code": null
+												},
+												"refundableValue": null,
+												"details": null,
+												"taxes": null,
+												"fees": null,
+												"passengerReferences": [{
+													"pricedInd": null,
+													"refs": [],
+													"objectKey": "SH1",
+													"ptc": {
+														"value": "ADT",
+														"quantity": 1
+													},
+													"residenceCode": null,
+													"passengerAssociation": null,
+													"age": null,
+													"citizenshipCountryCode": null
+												}],
+												"refs": []
+											}],
+											"bundleName": null,
+											"refs": [],
+											"listKey": "SB1"
+										},
+										"serviceReferences": []
+									},
+									"otherAssociation": []
+								}
+								]
+							},
+							"fareDetail": {
+								"fareIndicatorCode": null,
+								"fareComponent": [{
+									"parameters": null,
+									"segmentReference": null,
+									"priceBreakdown": null,
+									"fareBasis": {
+										"fareBasisCode": {
+											"displayAllInd": null,
+											"allExemptInd": null,
+											"pricingInd": null,
+											"connectionInd": null,
+											"ticketlessInd": null,
+											"associateInd": null,
+											"taxOnEMDInd": null,
+											"stopOverInd": null,
+											"taxInd": null,
+											"otherChargeInd": null,
+											"poolingInd": null,
+											"specialItemsInd": null,
+											"taxesInd": null,
+											"netFareInd": null,
+											"reissueOnlyInd": null,
+											"autoExchangeInd": null,
+											"alertInd": null,
+											"authenticationInd": null,
+											"marketingInd": null,
+											"multiPayFormInd": null,
+											"noticeInd": null,
+											"partialInd": null,
+											"warningInd": null,
+											"failedPaymentInd": null,
+											"partialPaymentInd": null,
+											"verificationInd": null,
+											"priceVarianceInd": null,
+											"invGuaranteedInd": null,
+											"waitlistInd": null,
+											"bundleInd": null,
+											"invGuarRequestedInd": null,
+											"exitRowInd": null,
+											"premiumInd": null,
+											"upperDeckInd": null,
+											"taxIncludedInd": null,
+											"feeIncludedInd": null,
+											"leadPricingInd": null,
+											"timestamp": null,
+											"metadataToken": null,
+											"refs": [],
+											"objectKey": null,
+											"code": "ERO",
+											"application": null,
+											"eticketInd": null
+										},
+										"fareRulesRemarks": [],
+										"fareBasisCityPair": null,
+										"rbd": null
+									},
+									"ticketDesig": null,
+									"fareRules": null,
+									"refs": []
+								}],
+								"priceClassReference": null,
+								"flightMileage": null,
+								"tourCode": null,
+								"remarks": null,
+								"refs": []
+							},
+							"offerItemID": "1#M#111198795#111162714",
+							"modificationProhibitedInd": null,
+							"refs": []
+						}],
+						"associations": [{
+							"associatedTraveler": null,
+							"applicableFlight": {
+								"allSegmentInd": null,
+								"flightSegmentReference": [
+									{
+									"cabin": {
+										"cabinDesignator": {
+											"value": "M",
+											"allCabins": null
+										},
+										"marketingName": null,
+										"refs": []
 									},
 									"classOfService": null,
-									"flightDetail": {
-										"flightSegmentType": null,
-										"flightDistance": null,
-										"flightDuration": {
-											"value": null,
-											"application": null,
+									"bagDetailAssociation": null,
+									"marriedSegmentGroup": null,
+									"ref": {
+										"departure": {
+											"airportCode": {
+												"value": "ARN",
+												"application": null,
+												"area": null,
+												"uom": null
+											},
+											"date": "2015-12-24T21:00:00.000+0000",
+											"time": null,
+											"airportName": null,
+											"terminal": null,
 											"refs": []
 										},
-										"stops": null,
-										"resDateTime": null,
-										"tourOperatorFlightID": null,
+										"arrival": {
+											"airportCode": {
+												"value": "FRA",
+												"application": null,
+												"area": null,
+												"uom": null
+											},
+											"date": "2015-12-24T21:00:00.000+0000",
+											"time": null,
+											"changeOfDay": null,
+											"airportName": "Frankfurt International",
+											"terminal": null,
+											"refs": []
+										},
+										"marketingCarrier": {
+											"airlineID": {
+												"value": "9A",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"name": "Athena Air",
+											"flightNumber": {
+												"value": "3803",
+												"operationalSuffix": null
+											},
+											"resBookDesigCode": null,
+											"refs": []
+										},
+										"operatingCarrier": {
+											"airlineID": {
+												"value": "9A",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"name": "Athena Air",
+											"flightNumber": {
+												"value": "3803",
+												"operationalSuffix": null
+											},
+											"resBookDesigCode": null,
+											"refs": [],
+											"disclosures": null
+										},
+										"equipment": {
+											"aircraftCode": {
+												"value": "E95",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"changeOfGaugeInd": null,
+											"refs": [],
+											"name": "E95 - EMBRAER 195 JET",
+											"airlineEquipCode": null
+										},
+										"classOfService": null,
+										"flightDetail": {
+											"flightSegmentType": null,
+											"flightDistance": null,
+											"flightDuration": {
+												"value": "PT2H10M",
+												"application": null,
+												"refs": []
+											},
+											"stops": null,
+											"resDateTime": null,
+											"tourOperatorFlightID": null,
+											"refs": []
+										},
+										"onTimePerformance": null,
+										"settlement": null,
+										"segmentKey": "SEG1",
+										"connectInd": null,
+										"electronicTicketInd": null,
+										"ticketlessInd": null,
+										"secureFlight": null,
+										"refs": []
+									}
+								},
+									{
+									"cabin": {
+										"cabinDesignator": {
+											"value": "M",
+											"allCabins": null
+										},
+										"marketingName": null,
 										"refs": []
 									},
-									"onTimePerformance": null,
-									"settlement": null,
-									"segmentKey": "SEG2",
-									"connectInd": null,
-									"electronicTicketInd": null,
-									"ticketlessInd": null,
-									"secureFlight": null,
-									"refs": []
+									"classOfService": null,
+									"bagDetailAssociation": null,
+									"marriedSegmentGroup": null,
+									"ref": {
+										"departure": {
+											"airportCode": {
+												"value": "FRA",
+												"application": null,
+												"area": null,
+												"uom": null
+											},
+											"date": "2015-12-24T21:00:00.000+0000",
+											"time": null,
+											"airportName": "Frankfurt International",
+											"terminal": null,
+											"refs": []
+										},
+										"arrival": {
+											"airportCode": {
+												"value": "LHR",
+												"application": null,
+												"area": null,
+												"uom": null
+											},
+											"date": "2015-12-24T21:00:00.000+0000",
+											"time": null,
+											"changeOfDay": null,
+											"airportName": null,
+											"terminal": null,
+											"refs": []
+										},
+										"marketingCarrier": {
+											"airlineID": {
+												"value": "9A",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"name": "Athena Air",
+											"flightNumber": {
+												"value": "3916",
+												"operationalSuffix": null
+											},
+											"resBookDesigCode": null,
+											"refs": []
+										},
+										"operatingCarrier": {
+											"airlineID": {
+												"value": "9A",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"name": "Athena Air",
+											"flightNumber": {
+												"value": "3916",
+												"operationalSuffix": null
+											},
+											"resBookDesigCode": null,
+											"refs": [],
+											"disclosures": null
+										},
+										"equipment": {
+											"aircraftCode": {
+												"value": "E95",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"changeOfGaugeInd": null,
+											"refs": [],
+											"name": "E95 - EMBRAER 195 JET",
+											"airlineEquipCode": null
+										},
+										"classOfService": null,
+										"flightDetail": {
+											"flightSegmentType": null,
+											"flightDistance": null,
+											"flightDuration": {
+												"value": null,
+												"application": null,
+												"refs": []
+											},
+											"stops": null,
+											"resDateTime": null,
+											"tourOperatorFlightID": null,
+											"refs": []
+										},
+										"onTimePerformance": null,
+										"settlement": null,
+										"segmentKey": "SEG2",
+										"connectInd": null,
+										"electronicTicketInd": null,
+										"ticketlessInd": null,
+										"secureFlight": null,
+										"refs": []
+									}
 								}
-							}
-							],
-							"allOriginDestinationInd": null,
-							"originDestinationReferences": [{
-								"departureCode": {
-									"value": "ARN",
-									"application": null,
-									"area": null,
-									"uom": null
-								},
-								"arrivalCode": {
-									"value": "LHR",
-									"application": null,
-									"area": null,
-									"uom": null
-								},
-								"originDestinationKey": "OD1",
-								"refs": [],
-								"totalJourney": null,
+								],
+								"allOriginDestinationInd": null,
+								"originDestinationReferences": [{
+									"departureCode": {
+										"value": "ARN",
+										"application": null,
+										"area": null,
+										"uom": null
+									},
+									"arrivalCode": {
+										"value": "LHR",
+										"application": null,
+										"area": null,
+										"uom": null
+									},
+									"originDestinationKey": "OD1",
+									"refs": [],
+									"totalJourney": null,
+									"flightReferences": {
+										"value": [{
+											"journey": {
+												"time": "PT3H15M",
+												"distance": null,
+												"refs": []
+											},
+											"segmentReferences": {
+												"value": [{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}, {
+													"departure": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "LHR",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": null,
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG2",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}],
+												"onPoint": null,
+												"offPoint": null
+											},
+											"settlement": null,
+											"flightKey": "FL1",
+											"refs": []
+										}],
+										"onPoint": null,
+										"offPoint": null
+									},
+									"checkedBag": null,
+									"carryOnBag": null
+								}],
+								"allFlightInd": null,
 								"flightReferences": {
 									"value": [{
 										"journey": {
@@ -1585,2161 +4463,13 @@ const offers = {
 									}],
 									"onPoint": null,
 									"offPoint": null
-								},
-								"checkedBag": null,
-								"carryOnBag": null
-							}],
-							"allFlightInd": null,
-							"flightReferences": {
-								"value": [{
-									"journey": {
-										"time": "PT3H15M",
-										"distance": null,
-										"refs": []
-									},
-									"segmentReferences": {
-										"value": [{
-											"departure": {
-												"airportCode": {
-													"value": "ARN",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"airportName": null,
-												"terminal": null,
-												"refs": []
-											},
-											"arrival": {
-												"airportCode": {
-													"value": "FRA",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"changeOfDay": null,
-												"airportName": "Frankfurt International",
-												"terminal": null,
-												"refs": []
-											},
-											"marketingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3803",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": []
-											},
-											"operatingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3803",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": [],
-												"disclosures": null
-											},
-											"equipment": {
-												"aircraftCode": {
-													"value": "E95",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"changeOfGaugeInd": null,
-												"refs": [],
-												"name": "E95 - EMBRAER 195 JET",
-												"airlineEquipCode": null
-											},
-											"classOfService": null,
-											"flightDetail": {
-												"flightSegmentType": null,
-												"flightDistance": null,
-												"flightDuration": {
-													"value": "PT2H10M",
-													"application": null,
-													"refs": []
-												},
-												"stops": null,
-												"resDateTime": null,
-												"tourOperatorFlightID": null,
-												"refs": []
-											},
-											"onTimePerformance": null,
-											"settlement": null,
-											"segmentKey": "SEG1",
-											"connectInd": null,
-											"electronicTicketInd": null,
-											"ticketlessInd": null,
-											"secureFlight": null,
-											"refs": []
-										}, {
-											"departure": {
-												"airportCode": {
-													"value": "FRA",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"airportName": "Frankfurt International",
-												"terminal": null,
-												"refs": []
-											},
-											"arrival": {
-												"airportCode": {
-													"value": "LHR",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"changeOfDay": null,
-												"airportName": null,
-												"terminal": null,
-												"refs": []
-											},
-											"marketingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3916",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": []
-											},
-											"operatingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3916",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": [],
-												"disclosures": null
-											},
-											"equipment": {
-												"aircraftCode": {
-													"value": "E95",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"changeOfGaugeInd": null,
-												"refs": [],
-												"name": "E95 - EMBRAER 195 JET",
-												"airlineEquipCode": null
-											},
-											"classOfService": null,
-											"flightDetail": {
-												"flightSegmentType": null,
-												"flightDistance": null,
-												"flightDuration": {
-													"value": null,
-													"application": null,
-													"refs": []
-												},
-												"stops": null,
-												"resDateTime": null,
-												"tourOperatorFlightID": null,
-												"refs": []
-											},
-											"onTimePerformance": null,
-											"settlement": null,
-											"segmentKey": "SEG2",
-											"connectInd": null,
-											"electronicTicketInd": null,
-											"ticketlessInd": null,
-											"secureFlight": null,
-											"refs": []
-										}],
-										"onPoint": null,
-										"offPoint": null
-									},
-									"settlement": null,
-									"flightKey": "FL1",
-									"refs": []
-								}],
-								"onPoint": null,
-								"offPoint": null
-							}
-						},
-						"priceClass": {
-							"priceClassReference": {
-								"name": "M-ESO",
-								"code": "M",
-								"descriptions": [],
-								"fareBasisCode": {
-									"displayAllInd": null,
-									"allExemptInd": null,
-									"pricingInd": null,
-									"connectionInd": null,
-									"ticketlessInd": null,
-									"associateInd": null,
-									"taxOnEMDInd": null,
-									"stopOverInd": null,
-									"taxInd": null,
-									"otherChargeInd": null,
-									"poolingInd": null,
-									"specialItemsInd": null,
-									"taxesInd": null,
-									"netFareInd": null,
-									"reissueOnlyInd": null,
-									"autoExchangeInd": null,
-									"alertInd": null,
-									"authenticationInd": null,
-									"marketingInd": null,
-									"multiPayFormInd": null,
-									"noticeInd": null,
-									"partialInd": null,
-									"warningInd": null,
-									"failedPaymentInd": null,
-									"partialPaymentInd": null,
-									"verificationInd": null,
-									"priceVarianceInd": null,
-									"invGuaranteedInd": null,
-									"waitlistInd": null,
-									"bundleInd": null,
-									"invGuarRequestedInd": null,
-									"exitRowInd": null,
-									"premiumInd": null,
-									"upperDeckInd": null,
-									"taxIncludedInd": null,
-									"feeIncludedInd": null,
-									"leadPricingInd": null,
-									"timestamp": null,
-									"metadataToken": null,
-									"refs": [],
-									"objectKey": null,
-									"code": "ESO",
-									"application": null,
-									"eticketInd": null
-								},
-								"classOfService": [],
-								"associations": [],
-								"displayOrder": null,
-								"objectKey": "PC1",
-								"refs": []
-							}
-						},
-						"offerDetailAssociation": null,
-						"includedService": {
-							"bundleReference": null,
-							"serviceReferences": [{
-								"serviceID": {
-									"value": "1022",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Advance Seat selection"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "A convenient option that lets you reserve your preferred seat",
-											"refs": []
-										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-										"media": [{
-											"objectID": {
-												"value": "preferred_seat.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
-										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
-									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
-										"refs": []
-									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": null
-									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
-										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
-											"pricedInd": null,
-											"refs": [],
-											"objectKey": "SH1",
-											"ptc": {
-												"value": "ADT",
-												"quantity": 1
-											},
-											"residenceCode": null,
-											"passengerAssociation": null,
-											"age": null,
-											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV1",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}, {
-								"serviceID": {
-									"value": "1021",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Meal"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "Vegetarian Vegan Meal",
-											"refs": []
-										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-										"media": [{
-											"objectID": {
-												"value": "int_economy_promo.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
-										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
-									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
-										"refs": []
-									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": null
-									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
-										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
-											"pricedInd": null,
-											"refs": [],
-											"objectKey": "SH1",
-											"ptc": {
-												"value": "ADT",
-												"quantity": 1
-											},
-											"residenceCode": null,
-											"passengerAssociation": null,
-											"age": null,
-											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}, {
-												"departure": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "LHR",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": null,
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG2",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV3",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}]
-						},
-						"associatedService": {
-							"bundleReference": null,
-							"serviceReferences": [{
-								"serviceID": {
-									"value": "1023",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Inflight entertainment"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "The latest blockbusters, classics from film history, music and games",
-											"refs": []
-										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-										"media": [{
-											"objectID": {
-												"value": "comfort-eco-int-1_title.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
-										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
-									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
-										"refs": []
-									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 500,
-										"taxable": true,
-										"code": null
-									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
-										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
-											"pricedInd": null,
-											"refs": [],
-											"objectKey": "SH1",
-											"ptc": {
-												"value": "ADT",
-												"quantity": 1
-											},
-											"residenceCode": null,
-											"passengerAssociation": null,
-											"age": null,
-											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}, {
-												"departure": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "LHR",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": null,
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG2",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV2",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}]
-						},
-						"otherAssociation": []
-					}
-					]
-				}
-			},
-				{"parameters": null,
-				"offerID": {
-					"value": "2",
-					"owner": "9A",
-					"webAddressID": null,
-					"ownerType": null,
-					"refs": [],
-					"objectKey": null
-				},
-				"validatingCarrier": null,
-				"timeLimits": {
-					"offerExpiration": {
-						"dateTime": null,
-						"shortDate": null,
-						"timestamp": "2015-10-15T20:59:00.000+0000",
-						"time": null,
-						"refs": [],
-						"objectKey": null
-					},
-					"payment": null,
-					"otherLimits": [],
-					"refs": []
-				},
-				"totalPrice": {
-					"awardPricing": null,
-					"combinationPricing": null,
-					"simpleCurrencyPrice": null,
-					"detailCurrencyPrice": {
-						"approxInd": null,
-						"refundAllInd": null,
-						"taxIncludedInd": null,
-						"otherChargeInd": null,
-						"autoExchangeInd": null,
-						"refs": [],
-						"total": {
-							"value": 87500,
-							"taxable": true,
-							"code": "EUR"
-						},
-						"equivalent": null,
-						"details": {
-							"detail": [{
-								"subTotal": {
-									"value": 87500,
-									"taxable": true,
-									"code": "EUR"
-								},
-								"application": "Base Fare",
-								"refundInd": null,
-								"refs": []
-							}],
-							"refs": []
-						},
-						"taxes": {
-							"approxInd": null,
-							"collectionInd": null,
-							"refundAllInd": null,
-							"refs": [],
-							"total": {
-								"value": 0,
-								"taxable": true,
-								"code": "EUR"
+								}
 							},
-							"breakdown": null
-						},
-						"fees": null
-					},
-					"encodedCurrencyPrice": null,
-					"refs": []
-				},
-				"descriptionReferences": [],
-				"disclosure": null,
-				"penalty": null,
-				"requestedDateInd": null,
-				"refs": [],
-				"match": null,
-				"pricedOffer": {
-					"refs": [],
-					"offerMetaReferences": [],
-					"offerPrice": [{
-						"requestedDate": {
-							"priceDetail": {
-								"totalAmount": {
-									"awardPricing": null,
-									"combinationPricing": null,
-									"detailCurrencyPrice": null,
-									"encodedCurrencyPrice": null,
-									"simpleCurrencyPrice": {
-										"value": 87500,
-										"taxable": true,
-										"code": "EUR"
-									}
-								},
-								"baseAmount": {
-									"value": 87500,
-									"taxable": true,
-									"code": "EUR"
-								},
-								"fareFiledIn": null,
-								"discount": null,
-								"surcharges": [],
-								"taxes": {
-									"approxInd": null,
-									"collectionInd": null,
-									"refundAllInd": null,
-									"refs": [],
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": "EUR"
-									},
-									"breakdown": null
-								},
-								"taxExemption": null,
-								"awardPricing": null,
-								"combinationPricing": null,
-								"originDestinationReferenceOrSegmentReferences": [],
-								"fees": null
-							},
-							"associations": [{
-								"associatedTraveler": {
-									"allTravelerInd": null,
-									"travelerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
-										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}]
-								},
-								"applicableFlight": null,
-								"priceClass": null,
-								"offerDetailAssociation": null,
-								"includedService": null,
-								"associatedService": {
-									"bundleReference": {
-										"itemCount": 3,
-										"associations": {
-											"serviceReference": [{
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1023",
-														"owner": "9A",
-														"refs": [],
-														"objectKey": null
-													},
-													"name": {
-														"value": "Inflight entertainment"
-													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
-														"refs": []
-													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
-													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "The latest blockbusters, classics from film history, music and games",
-																"refs": []
-															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "comfort-eco-int-1_title.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
-															"refs": []
-														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 500,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
-															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
-																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
-														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}, {
-																	"departure": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "LHR",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": null,
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG2",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
-														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV2",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
-												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
-											}, {
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1022",
-														"owner": "9A",
-														"refs": [],
-														"objectKey": null
-													},
-													"name": {
-														"value": "Advance Seat selection"
-													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
-														"refs": []
-													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
-													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "A convenient option that lets you reserve your preferred seat",
-																"refs": []
-															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "preferred_seat.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
-															"refs": []
-														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 0,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
-															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
-																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
-														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
-														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV1",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
-												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
-											}, {
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1021",
-														"owner": "9A",
-														"refs": [],
-														"objectKey": null
-													},
-													"name": {
-														"value": "Meal"
-													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
-														"refs": []
-													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
-													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "Vegetarian Vegan Meal",
-																"refs": []
-															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "int_economy_promo.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
-															"refs": []
-														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 0,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
-															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
-																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
-														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}, {
-																	"departure": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "LHR",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": null,
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG2",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
-														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV3",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
-												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
-											}],
-											"serviceID": []
-										},
-										"selection": {
-											"minimumQuantityOrMaximumQuantity": [{
-												"name": "{http://www.iata.org/IATA/EDIST}MaximumQuantity",
-												"declaredType": "java.math.BigInteger",
-												"scope": "org.iata.iata.edist.ServiceBundle$Selection",
-												"value": 2,
-												"nil": false,
-												"globalScope": false,
-												"typeSubstituted": false
-											}]
-										},
-										"bundleID": {
-											"value": "B1004",
-											"refs": [],
-											"objectKey": null
-										},
-										"price": [{
-											"total": {
-												"value": 5000,
-												"taxable": true,
-												"code": null
-											},
-											"refundableValue": null,
-											"details": null,
-											"taxes": null,
-											"fees": null,
-											"passengerReferences": [{
-												"pricedInd": null,
-												"refs": [],
-												"objectKey": "SH1",
-												"ptc": {
-													"value": "ADT",
-													"quantity": 1
-												},
-												"residenceCode": null,
-												"passengerAssociation": null,
-												"age": null,
-												"citizenshipCountryCode": null
-											}],
-											"refs": []
-										}],
-										"bundleName": null,
-										"refs": [],
-										"listKey": "SB1"
-									},
-									"serviceReferences": []
-								},
-								"otherAssociation": []
-							}]
-						},
-						"fareDetail": {
-							"fareIndicatorCode": null,
-							"fareComponent": [{
-								"parameters": null,
-								"segmentReference": null,
-								"priceBreakdown": null,
-								"fareBasis": {
+							"priceClass": {
+								"priceClassReference": {
+									"name": "M-ERO",
+									"code": "M",
+									"descriptions": [],
 									"fareBasisCode": {
 										"displayAllInd": null,
 										"allExemptInd": null,
@@ -3786,252 +4516,2406 @@ const offers = {
 										"application": null,
 										"eticketInd": null
 									},
-									"fareRulesRemarks": [],
-									"fareBasisCityPair": null,
-									"rbd": null
-								},
-								"ticketDesig": null,
-								"fareRules": null,
-								"refs": []
-							}],
-							"priceClassReference": null,
-							"flightMileage": null,
-							"tourCode": null,
-							"remarks": null,
-							"refs": []
+									"classOfService": [],
+									"associations": [],
+									"displayOrder": null,
+									"objectKey": "PC2",
+									"refs": []
+								}
+							},
+							"offerDetailAssociation": null,
+							"includedService": {
+								"bundleReference": null,
+								"serviceReferences": [{
+									"serviceID": {
+										"value": "1022",
+										"owner": "9A",
+										"refs": [],
+										"objectKey": null
+									},
+									"name": {
+										"value": "Advance Seat selection"
+									},
+									"encoding": {
+										"rfic": null,
+										"type": null,
+										"code": null,
+										"subCode": null,
+										"refs": []
+									},
+									"timeLimits": null,
+									"feeMethod": {
+										"value": "OC"
+									},
+									"descriptions": {
+										"description": [{
+											"text": {
+												"value": "A convenient option that lets you reserve your preferred seat",
+												"refs": []
+											},
+											"markupStyle": null,
+											"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+											"media": [{
+												"objectID": {
+													"value": "preferred_seat.jpg",
+													"owner": null,
+													"refs": []
+												},
+												"mediaLink": null,
+												"attachmentID": null
+											}, {
+												"objectID": null,
+												"mediaLink": {
+													"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+													"refs": [],
+													"objectMetaReferences": []
+												},
+												"attachmentID": null
+											}],
+											"objectKey": null,
+											"refs": [],
+											"application": null
+										}],
+										"refs": []
+									},
+									"settlement": {
+										"method": {
+											"code": "AD",
+											"definition": "Internal Airline Document",
+											"tableName": null,
+											"link": null,
+											"refs": []
+										},
+										"interlineSettlementValue": null
+									},
+									"price": [{
+										"total": {
+											"value": 0,
+											"taxable": true,
+											"code": null
+										},
+										"refundableValue": null,
+										"details": null,
+										"taxes": null,
+										"fees": null,
+										"passengerReferences": [{
+											"pricedInd": null,
+											"refs": [],
+											"objectKey": "SH1",
+											"ptc": {
+												"value": "ADT",
+												"quantity": 1
+											},
+											"residenceCode": null,
+											"passengerAssociation": null,
+											"age": null,
+											"citizenshipCountryCode": null
+										}],
+										"refs": []
+									}],
+									"bookingInstructions": null,
+									"validatingCarrier": null,
+									"associations": [{
+										"traveler": {
+											"allTravelerInd": null,
+											"travelerReferences": [{
+												"pricedInd": null,
+												"refs": [],
+												"objectKey": "SH1",
+												"ptc": {
+													"value": "ADT",
+													"quantity": 1
+												},
+												"residenceCode": null,
+												"passengerAssociation": null,
+												"age": null,
+												"citizenshipCountryCode": null
+											}]
+										},
+										"flight": {
+											"allFlightInd": null,
+											"allOriginDestinationInd": null,
+											"allSegmentInd": null,
+											"originDestinationReferencesOrSegmentReferences": [{
+												"value": [{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}],
+												"onPoint": null,
+												"offPoint": null
+											}]
+										},
+										"offer": [],
+										"otherAssociations": [],
+										"seatReference": null
+									}],
+									"baggageDeterminingCarrier": null,
+									"objectKey": "SV1",
+									"refs": [],
+									"detail": null,
+									"bdcanalysisResult": null
+								}, {
+									"serviceID": {
+										"value": "1021",
+										"owner": "9A",
+										"refs": [],
+										"objectKey": null
+									},
+									"name": {
+										"value": "Meal"
+									},
+									"encoding": {
+										"rfic": null,
+										"type": null,
+										"code": null,
+										"subCode": null,
+										"refs": []
+									},
+									"timeLimits": null,
+									"feeMethod": {
+										"value": "OC"
+									},
+									"descriptions": {
+										"description": [{
+											"text": {
+												"value": "Vegetarian Vegan Meal",
+												"refs": []
+											},
+											"markupStyle": null,
+											"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+											"media": [{
+												"objectID": {
+													"value": "int_economy_promo.jpg",
+													"owner": null,
+													"refs": []
+												},
+												"mediaLink": null,
+												"attachmentID": null
+											}, {
+												"objectID": null,
+												"mediaLink": {
+													"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+													"refs": [],
+													"objectMetaReferences": []
+												},
+												"attachmentID": null
+											}],
+											"objectKey": null,
+											"refs": [],
+											"application": null
+										}],
+										"refs": []
+									},
+									"settlement": {
+										"method": {
+											"code": "AD",
+											"definition": "Internal Airline Document",
+											"tableName": null,
+											"link": null,
+											"refs": []
+										},
+										"interlineSettlementValue": null
+									},
+									"price": [{
+										"total": {
+											"value": 0,
+											"taxable": true,
+											"code": null
+										},
+										"refundableValue": null,
+										"details": null,
+										"taxes": null,
+										"fees": null,
+										"passengerReferences": [{
+											"pricedInd": null,
+											"refs": [],
+											"objectKey": "SH1",
+											"ptc": {
+												"value": "ADT",
+												"quantity": 1
+											},
+											"residenceCode": null,
+											"passengerAssociation": null,
+											"age": null,
+											"citizenshipCountryCode": null
+										}],
+										"refs": []
+									}],
+									"bookingInstructions": null,
+									"validatingCarrier": null,
+									"associations": [{
+										"traveler": {
+											"allTravelerInd": null,
+											"travelerReferences": [{
+												"pricedInd": null,
+												"refs": [],
+												"objectKey": "SH1",
+												"ptc": {
+													"value": "ADT",
+													"quantity": 1
+												},
+												"residenceCode": null,
+												"passengerAssociation": null,
+												"age": null,
+												"citizenshipCountryCode": null
+											}]
+										},
+										"flight": {
+											"allFlightInd": null,
+											"allOriginDestinationInd": null,
+											"allSegmentInd": null,
+											"originDestinationReferencesOrSegmentReferences": [{
+												"value": [{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}, {
+													"departure": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "LHR",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": null,
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG2",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}],
+												"onPoint": null,
+												"offPoint": null
+											}]
+										},
+										"offer": [],
+										"otherAssociations": [],
+										"seatReference": null
+									}],
+									"baggageDeterminingCarrier": null,
+									"objectKey": "SV3",
+									"refs": [],
+									"detail": null,
+									"bdcanalysisResult": null
+								}]
+							},
+							"associatedService": {
+								"bundleReference": null,
+								"serviceReferences": [{
+									"serviceID": {
+										"value": "1023",
+										"owner": "9A",
+										"refs": [],
+										"objectKey": null
+									},
+									"name": {
+										"value": "Inflight entertainment"
+									},
+									"encoding": {
+										"rfic": null,
+										"type": null,
+										"code": null,
+										"subCode": null,
+										"refs": []
+									},
+									"timeLimits": null,
+									"feeMethod": {
+										"value": "OC"
+									},
+									"descriptions": {
+										"description": [{
+											"text": {
+												"value": "The latest blockbusters, classics from film history, music and games",
+												"refs": []
+											},
+											"markupStyle": null,
+											"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+											"media": [{
+												"objectID": {
+													"value": "comfort-eco-int-1_title.jpg",
+													"owner": null,
+													"refs": []
+												},
+												"mediaLink": null,
+												"attachmentID": null
+											}, {
+												"objectID": null,
+												"mediaLink": {
+													"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+													"refs": [],
+													"objectMetaReferences": []
+												},
+												"attachmentID": null
+											}],
+											"objectKey": null,
+											"refs": [],
+											"application": null
+										}],
+										"refs": []
+									},
+									"settlement": {
+										"method": {
+											"code": "AD",
+											"definition": "Internal Airline Document",
+											"tableName": null,
+											"link": null,
+											"refs": []
+										},
+										"interlineSettlementValue": null
+									},
+									"price": [{
+										"total": {
+											"value": 500,
+											"taxable": true,
+											"code": null
+										},
+										"refundableValue": null,
+										"details": null,
+										"taxes": null,
+										"fees": null,
+										"passengerReferences": [{
+											"pricedInd": null,
+											"refs": [],
+											"objectKey": "SH1",
+											"ptc": {
+												"value": "ADT",
+												"quantity": 1
+											},
+											"residenceCode": null,
+											"passengerAssociation": null,
+											"age": null,
+											"citizenshipCountryCode": null
+										}],
+										"refs": []
+									}],
+									"bookingInstructions": null,
+									"validatingCarrier": null,
+									"associations": [{
+										"traveler": {
+											"allTravelerInd": null,
+											"travelerReferences": [{
+												"pricedInd": null,
+												"refs": [],
+												"objectKey": "SH1",
+												"ptc": {
+													"value": "ADT",
+													"quantity": 1
+												},
+												"residenceCode": null,
+												"passengerAssociation": null,
+												"age": null,
+												"citizenshipCountryCode": null
+											}]
+										},
+										"flight": {
+											"allFlightInd": null,
+											"allOriginDestinationInd": null,
+											"allSegmentInd": null,
+											"originDestinationReferencesOrSegmentReferences": [{
+												"value": [{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}, {
+													"departure": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "LHR",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": null,
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG2",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}],
+												"onPoint": null,
+												"offPoint": null
+											}]
+										},
+										"offer": [],
+										"otherAssociations": [],
+										"seatReference": null
+									}],
+									"baggageDeterminingCarrier": null,
+									"objectKey": "SV2",
+									"refs": [],
+									"detail": null,
+									"bdcanalysisResult": null
+								}]
+							},
+							"otherAssociation": []
+						}]
+					}
+				},
+				{
+					"parameters": null,
+					"offerID": {
+						"value": "3",
+						"owner": "9A",
+						"webAddressID": null,
+						"ownerType": null,
+						"refs": [],
+						"objectKey": null
+					},
+					"validatingCarrier": null,
+					"timeLimits": {
+						"offerExpiration": {
+							"dateTime": null,
+							"shortDate": null,
+							"timestamp": "2015-10-15T20:59:00.000+0000",
+							"time": null,
+							"refs": [],
+							"objectKey": null
 						},
-						"offerItemID": "1#M#111198795#111162714",
-						"modificationProhibitedInd": null,
+						"payment": null,
+						"otherLimits": [],
 						"refs": []
-					}],
-					"associations": [{
-						"associatedTraveler": null,
-						"applicableFlight": {
-							"allSegmentInd": null,
-							"flightSegmentReference": [{
-								"cabin": {
-									"cabinDesignator": {
-										"value": "M",
-										"allCabins": null
+					},
+					"totalPrice": {
+						"awardPricing": null,
+						"combinationPricing": null,
+						"simpleCurrencyPrice": null,
+						"detailCurrencyPrice": {
+							"approxInd": null,
+							"refundAllInd": null,
+							"taxIncludedInd": null,
+							"otherChargeInd": null,
+							"autoExchangeInd": null,
+							"refs": [],
+							"total": {
+								"value": 110400,
+								"taxable": true,
+								"code": "EUR"
+							},
+							"equivalent": null,
+							"details": {
+								"detail": [{
+									"subTotal": {
+										"value": 110400,
+										"taxable": true,
+										"code": "EUR"
 									},
-									"marketingName": null,
+									"application": "Base Fare",
+									"refundInd": null,
 									"refs": []
-								},
-								"classOfService": null,
-								"bagDetailAssociation": null,
-								"marriedSegmentGroup": null,
-								"ref": {
-									"departure": {
-										"airportCode": {
-											"value": "ARN",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"airportName": null,
-										"terminal": null,
-										"refs": []
-									},
-									"arrival": {
-										"airportCode": {
-											"value": "FRA",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"changeOfDay": null,
-										"airportName": "Frankfurt International",
-										"terminal": null,
-										"refs": []
-									},
-									"marketingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3803",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": []
-									},
-									"operatingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3803",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": [],
-										"disclosures": null
-									},
-									"equipment": {
-										"aircraftCode": {
-											"value": "E95",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"changeOfGaugeInd": null,
-										"refs": [],
-										"name": "E95 - EMBRAER 195 JET",
-										"airlineEquipCode": null
-									},
-									"classOfService": null,
-									"flightDetail": {
-										"flightSegmentType": null,
-										"flightDistance": null,
-										"flightDuration": {
-											"value": "PT2H10M",
-											"application": null,
-											"refs": []
-										},
-										"stops": null,
-										"resDateTime": null,
-										"tourOperatorFlightID": null,
-										"refs": []
-									},
-									"onTimePerformance": null,
-									"settlement": null,
-									"segmentKey": "SEG1",
-									"connectInd": null,
-									"electronicTicketInd": null,
-									"ticketlessInd": null,
-									"secureFlight": null,
-									"refs": []
-								}
-							}, {
-								"cabin": {
-									"cabinDesignator": {
-										"value": "M",
-										"allCabins": null
-									},
-									"marketingName": null,
-									"refs": []
-								},
-								"classOfService": null,
-								"bagDetailAssociation": null,
-								"marriedSegmentGroup": null,
-								"ref": {
-									"departure": {
-										"airportCode": {
-											"value": "FRA",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"airportName": "Frankfurt International",
-										"terminal": null,
-										"refs": []
-									},
-									"arrival": {
-										"airportCode": {
-											"value": "LHR",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"changeOfDay": null,
-										"airportName": null,
-										"terminal": null,
-										"refs": []
-									},
-									"marketingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3916",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": []
-									},
-									"operatingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3916",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": [],
-										"disclosures": null
-									},
-									"equipment": {
-										"aircraftCode": {
-											"value": "E95",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"changeOfGaugeInd": null,
-										"refs": [],
-										"name": "E95 - EMBRAER 195 JET",
-										"airlineEquipCode": null
-									},
-									"classOfService": null,
-									"flightDetail": {
-										"flightSegmentType": null,
-										"flightDistance": null,
-										"flightDuration": {
-											"value": null,
-											"application": null,
-											"refs": []
-										},
-										"stops": null,
-										"resDateTime": null,
-										"tourOperatorFlightID": null,
-										"refs": []
-									},
-									"onTimePerformance": null,
-									"settlement": null,
-									"segmentKey": "SEG2",
-									"connectInd": null,
-									"electronicTicketInd": null,
-									"ticketlessInd": null,
-									"secureFlight": null,
-									"refs": []
-								}
-							}],
-							"allOriginDestinationInd": null,
-							"originDestinationReferences": [{
-								"departureCode": {
-									"value": "ARN",
-									"application": null,
-									"area": null,
-									"uom": null
-								},
-								"arrivalCode": {
-									"value": "LHR",
-									"application": null,
-									"area": null,
-									"uom": null
-								},
-								"originDestinationKey": "OD1",
+								}],
+								"refs": []
+							},
+							"taxes": {
+								"approxInd": null,
+								"collectionInd": null,
+								"refundAllInd": null,
 								"refs": [],
-								"totalJourney": null,
+								"total": {
+									"value": 0,
+									"taxable": true,
+									"code": "EUR"
+								},
+								"breakdown": null
+							},
+							"fees": null
+						},
+						"encodedCurrencyPrice": null,
+						"refs": []
+					},
+					"descriptionReferences": [],
+					"disclosure": null,
+					"penalty": null,
+					"requestedDateInd": null,
+					"refs": [],
+					"match": null,
+					"pricedOffer": {
+						"refs": [],
+						"offerMetaReferences": [],
+						"offerPrice": [
+							{
+							"requestedDate": {
+								"priceDetail": {
+									"totalAmount": {
+										"awardPricing": null,
+										"combinationPricing": null,
+										"detailCurrencyPrice": null,
+										"encodedCurrencyPrice": null,
+										"simpleCurrencyPrice": {
+											"value": 110400,
+											"taxable": true,
+											"code": "EUR"
+										}
+									},
+									"baseAmount": {
+										"value": 110400,
+										"taxable": true,
+										"code": "EUR"
+									},
+									"fareFiledIn": null,
+									"discount": null,
+									"surcharges": [],
+									"taxes": {
+										"approxInd": null,
+										"collectionInd": null,
+										"refundAllInd": null,
+										"refs": [],
+										"total": {
+											"value": 0,
+											"taxable": true,
+											"code": "EUR"
+										},
+										"breakdown": null
+									},
+									"taxExemption": null,
+									"awardPricing": null,
+									"combinationPricing": null,
+									"originDestinationReferenceOrSegmentReferences": [],
+									"fees": null
+								},
+								"associations": [{
+									"associatedTraveler": {
+										"allTravelerInd": null,
+										"travelerReferences": [{
+											"pricedInd": null,
+											"refs": [],
+											"objectKey": "SH1",
+											"ptc": {
+												"value": "ADT",
+												"quantity": 1
+											},
+											"residenceCode": null,
+											"passengerAssociation": null,
+											"age": null,
+											"citizenshipCountryCode": null
+										}]
+									},
+									"applicableFlight": null,
+									"priceClass": null,
+									"offerDetailAssociation": null,
+									"includedService": null,
+									"associatedService": {
+										"bundleReference": {
+											"itemCount": 3,
+											"associations": {
+												"serviceReference": [{
+													"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+													"declaredType": "java.lang.Object",
+													"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+													"value": {
+														"serviceID": {
+															"value": "1023",
+															"owner": "9A",
+															"refs": [],
+															"objectKey": null
+														},
+														"name": {
+															"value": "Inflight entertainment"
+														},
+														"encoding": {
+															"rfic": null,
+															"type": null,
+															"code": null,
+															"subCode": null,
+															"refs": []
+														},
+														"timeLimits": null,
+														"feeMethod": {
+															"value": "OC"
+														},
+														"descriptions": {
+															"description": [{
+																"text": {
+																	"value": "The latest blockbusters, classics from film history, music and games",
+																	"refs": []
+																},
+																"markupStyle": null,
+																"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+																"media": [{
+																	"objectID": {
+																		"value": "comfort-eco-int-1_title.jpg",
+																		"owner": null,
+																		"refs": []
+																	},
+																	"mediaLink": null,
+																	"attachmentID": null
+																}, {
+																	"objectID": null,
+																	"mediaLink": {
+																		"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+																		"refs": [],
+																		"objectMetaReferences": []
+																	},
+																	"attachmentID": null
+																}],
+																"objectKey": null,
+																"refs": [],
+																"application": null
+															}],
+															"refs": []
+														},
+														"settlement": {
+															"method": {
+																"code": "AD",
+																"definition": "Internal Airline Document",
+																"tableName": null,
+																"link": null,
+																"refs": []
+															},
+															"interlineSettlementValue": null
+														},
+														"price": [{
+															"total": {
+																"value": 500,
+																"taxable": true,
+																"code": null
+															},
+															"refundableValue": null,
+															"details": null,
+															"taxes": null,
+															"fees": null,
+															"passengerReferences": [{
+																"pricedInd": null,
+																"refs": [],
+																"objectKey": "SH1",
+																"ptc": {
+																	"value": "ADT",
+																	"quantity": 1
+																},
+																"residenceCode": null,
+																"passengerAssociation": null,
+																"age": null,
+																"citizenshipCountryCode": null
+															}],
+															"refs": []
+														}],
+														"bookingInstructions": null,
+														"validatingCarrier": null,
+														"associations": [{
+															"traveler": {
+																"allTravelerInd": null,
+																"travelerReferences": [{
+																	"pricedInd": null,
+																	"refs": [],
+																	"objectKey": "SH1",
+																	"ptc": {
+																		"value": "ADT",
+																		"quantity": 1
+																	},
+																	"residenceCode": null,
+																	"passengerAssociation": null,
+																	"age": null,
+																	"citizenshipCountryCode": null
+																}]
+															},
+															"flight": {
+																"allFlightInd": null,
+																"allOriginDestinationInd": null,
+																"allSegmentInd": null,
+																"originDestinationReferencesOrSegmentReferences": [{
+																	"value": [{
+																		"departure": {
+																			"airportCode": {
+																				"value": "ARN",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": "PT2H10M",
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG1",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}, {
+																		"departure": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "LHR",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3916",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3916",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": null,
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG2",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}],
+																	"onPoint": null,
+																	"offPoint": null
+																}]
+															},
+															"offer": [],
+															"otherAssociations": [],
+															"seatReference": null
+														}],
+														"baggageDeterminingCarrier": null,
+														"objectKey": "SV2",
+														"refs": [],
+														"detail": null,
+														"bdcanalysisResult": null
+													},
+													"nil": false,
+													"globalScope": true,
+													"typeSubstituted": true
+												}, {
+													"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+													"declaredType": "java.lang.Object",
+													"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+													"value": {
+														"serviceID": {
+															"value": "1022",
+															"owner": "9A",
+															"refs": [],
+															"objectKey": null
+														},
+														"name": {
+															"value": "Advance Seat selection"
+														},
+														"encoding": {
+															"rfic": null,
+															"type": null,
+															"code": null,
+															"subCode": null,
+															"refs": []
+														},
+														"timeLimits": null,
+														"feeMethod": {
+															"value": "OC"
+														},
+														"descriptions": {
+															"description": [{
+																"text": {
+																	"value": "A convenient option that lets you reserve your preferred seat",
+																	"refs": []
+																},
+																"markupStyle": null,
+																"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+																"media": [{
+																	"objectID": {
+																		"value": "preferred_seat.jpg",
+																		"owner": null,
+																		"refs": []
+																	},
+																	"mediaLink": null,
+																	"attachmentID": null
+																}, {
+																	"objectID": null,
+																	"mediaLink": {
+																		"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+																		"refs": [],
+																		"objectMetaReferences": []
+																	},
+																	"attachmentID": null
+																}],
+																"objectKey": null,
+																"refs": [],
+																"application": null
+															}],
+															"refs": []
+														},
+														"settlement": {
+															"method": {
+																"code": "AD",
+																"definition": "Internal Airline Document",
+																"tableName": null,
+																"link": null,
+																"refs": []
+															},
+															"interlineSettlementValue": null
+														},
+														"price": [{
+															"total": {
+																"value": 0,
+																"taxable": true,
+																"code": null
+															},
+															"refundableValue": null,
+															"details": null,
+															"taxes": null,
+															"fees": null,
+															"passengerReferences": [{
+																"pricedInd": null,
+																"refs": [],
+																"objectKey": "SH1",
+																"ptc": {
+																	"value": "ADT",
+																	"quantity": 1
+																},
+																"residenceCode": null,
+																"passengerAssociation": null,
+																"age": null,
+																"citizenshipCountryCode": null
+															}],
+															"refs": []
+														}],
+														"bookingInstructions": null,
+														"validatingCarrier": null,
+														"associations": [{
+															"traveler": {
+																"allTravelerInd": null,
+																"travelerReferences": [{
+																	"pricedInd": null,
+																	"refs": [],
+																	"objectKey": "SH1",
+																	"ptc": {
+																		"value": "ADT",
+																		"quantity": 1
+																	},
+																	"residenceCode": null,
+																	"passengerAssociation": null,
+																	"age": null,
+																	"citizenshipCountryCode": null
+																}]
+															},
+															"flight": {
+																"allFlightInd": null,
+																"allOriginDestinationInd": null,
+																"allSegmentInd": null,
+																"originDestinationReferencesOrSegmentReferences": [{
+																	"value": [{
+																		"departure": {
+																			"airportCode": {
+																				"value": "ARN",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": "PT2H10M",
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG1",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}],
+																	"onPoint": null,
+																	"offPoint": null
+																}]
+															},
+															"offer": [],
+															"otherAssociations": [],
+															"seatReference": null
+														}],
+														"baggageDeterminingCarrier": null,
+														"objectKey": "SV1",
+														"refs": [],
+														"detail": null,
+														"bdcanalysisResult": null
+													},
+													"nil": false,
+													"globalScope": true,
+													"typeSubstituted": true
+												}, {
+													"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
+													"declaredType": "java.lang.Object",
+													"scope": "javax.xml.bind.JAXBElement$GlobalScope",
+													"value": {
+														"serviceID": {
+															"value": "1021",
+															"owner": "9A",
+															"refs": [],
+															"objectKey": null
+														},
+														"name": {
+															"value": "Meal"
+														},
+														"encoding": {
+															"rfic": null,
+															"type": null,
+															"code": null,
+															"subCode": null,
+															"refs": []
+														},
+														"timeLimits": null,
+														"feeMethod": {
+															"value": "OC"
+														},
+														"descriptions": {
+															"description": [{
+																"text": {
+																	"value": "Vegetarian Vegan Meal",
+																	"refs": []
+																},
+																"markupStyle": null,
+																"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+																"media": [{
+																	"objectID": {
+																		"value": "int_economy_promo.jpg",
+																		"owner": null,
+																		"refs": []
+																	},
+																	"mediaLink": null,
+																	"attachmentID": null
+																}, {
+																	"objectID": null,
+																	"mediaLink": {
+																		"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+																		"refs": [],
+																		"objectMetaReferences": []
+																	},
+																	"attachmentID": null
+																}],
+																"objectKey": null,
+																"refs": [],
+																"application": null
+															}],
+															"refs": []
+														},
+														"settlement": {
+															"method": {
+																"code": "AD",
+																"definition": "Internal Airline Document",
+																"tableName": null,
+																"link": null,
+																"refs": []
+															},
+															"interlineSettlementValue": null
+														},
+														"price": [{
+															"total": {
+																"value": 0,
+																"taxable": true,
+																"code": null
+															},
+															"refundableValue": null,
+															"details": null,
+															"taxes": null,
+															"fees": null,
+															"passengerReferences": [{
+																"pricedInd": null,
+																"refs": [],
+																"objectKey": "SH1",
+																"ptc": {
+																	"value": "ADT",
+																	"quantity": 1
+																},
+																"residenceCode": null,
+																"passengerAssociation": null,
+																"age": null,
+																"citizenshipCountryCode": null
+															}],
+															"refs": []
+														}],
+														"bookingInstructions": null,
+														"validatingCarrier": null,
+														"associations": [{
+															"traveler": {
+																"allTravelerInd": null,
+																"travelerReferences": [{
+																	"pricedInd": null,
+																	"refs": [],
+																	"objectKey": "SH1",
+																	"ptc": {
+																		"value": "ADT",
+																		"quantity": 1
+																	},
+																	"residenceCode": null,
+																	"passengerAssociation": null,
+																	"age": null,
+																	"citizenshipCountryCode": null
+																}]
+															},
+															"flight": {
+																"allFlightInd": null,
+																"allOriginDestinationInd": null,
+																"allSegmentInd": null,
+																"originDestinationReferencesOrSegmentReferences": [{
+																	"value": [{
+																		"departure": {
+																			"airportCode": {
+																				"value": "ARN",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3803",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": "PT2H10M",
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG1",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}, {
+																		"departure": {
+																			"airportCode": {
+																				"value": "FRA",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"airportName": "Frankfurt International",
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"arrival": {
+																			"airportCode": {
+																				"value": "LHR",
+																				"application": null,
+																				"area": null,
+																				"uom": null
+																			},
+																			"date": "2015-12-24T21:00:00.000+0000",
+																			"time": null,
+																			"changeOfDay": null,
+																			"airportName": null,
+																			"terminal": null,
+																			"refs": []
+																		},
+																		"marketingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3916",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": []
+																		},
+																		"operatingCarrier": {
+																			"airlineID": {
+																				"value": "9A",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"name": "Athena Air",
+																			"flightNumber": {
+																				"value": "3916",
+																				"operationalSuffix": null
+																			},
+																			"resBookDesigCode": null,
+																			"refs": [],
+																			"disclosures": null
+																		},
+																		"equipment": {
+																			"aircraftCode": {
+																				"value": "E95",
+																				"refs": [],
+																				"objectMetaReferences": []
+																			},
+																			"changeOfGaugeInd": null,
+																			"refs": [],
+																			"name": "E95 - EMBRAER 195 JET",
+																			"airlineEquipCode": null
+																		},
+																		"classOfService": null,
+																		"flightDetail": {
+																			"flightSegmentType": null,
+																			"flightDistance": null,
+																			"flightDuration": {
+																				"value": null,
+																				"application": null,
+																				"refs": []
+																			},
+																			"stops": null,
+																			"resDateTime": null,
+																			"tourOperatorFlightID": null,
+																			"refs": []
+																		},
+																		"onTimePerformance": null,
+																		"settlement": null,
+																		"segmentKey": "SEG2",
+																		"connectInd": null,
+																		"electronicTicketInd": null,
+																		"ticketlessInd": null,
+																		"secureFlight": null,
+																		"refs": []
+																	}],
+																	"onPoint": null,
+																	"offPoint": null
+																}]
+															},
+															"offer": [],
+															"otherAssociations": [],
+															"seatReference": null
+														}],
+														"baggageDeterminingCarrier": null,
+														"objectKey": "SV3",
+														"refs": [],
+														"detail": null,
+														"bdcanalysisResult": null
+													},
+													"nil": false,
+													"globalScope": true,
+													"typeSubstituted": true
+												}],
+												"serviceID": []
+											},
+											"selection": {
+												"minimumQuantityOrMaximumQuantity": [{
+													"name": "{http://www.iata.org/IATA/EDIST}MaximumQuantity",
+													"declaredType": "java.math.BigInteger",
+													"scope": "org.iata.iata.edist.ServiceBundle$Selection",
+													"value": 2,
+													"nil": false,
+													"globalScope": false,
+													"typeSubstituted": false
+												}]
+											},
+											"bundleID": {
+												"value": "B1004",
+												"refs": [],
+												"objectKey": null
+											},
+											"price": [{
+												"total": {
+													"value": 5000,
+													"taxable": true,
+													"code": null
+												},
+												"refundableValue": null,
+												"details": null,
+												"taxes": null,
+												"fees": null,
+												"passengerReferences": [{
+													"pricedInd": null,
+													"refs": [],
+													"objectKey": "SH1",
+													"ptc": {
+														"value": "ADT",
+														"quantity": 1
+													},
+													"residenceCode": null,
+													"passengerAssociation": null,
+													"age": null,
+													"citizenshipCountryCode": null
+												}],
+												"refs": []
+											}],
+											"bundleName": null,
+											"refs": [],
+											"listKey": "SB1"
+										},
+										"serviceReferences": []
+									},
+									"otherAssociation": []
+								}]
+							},
+							"fareDetail": {
+								"fareIndicatorCode": null,
+								"fareComponent": [{
+									"parameters": null,
+									"segmentReference": null,
+									"priceBreakdown": null,
+									"fareBasis": {
+										"fareBasisCode": {
+											"displayAllInd": null,
+											"allExemptInd": null,
+											"pricingInd": null,
+											"connectionInd": null,
+											"ticketlessInd": null,
+											"associateInd": null,
+											"taxOnEMDInd": null,
+											"stopOverInd": null,
+											"taxInd": null,
+											"otherChargeInd": null,
+											"poolingInd": null,
+											"specialItemsInd": null,
+											"taxesInd": null,
+											"netFareInd": null,
+											"reissueOnlyInd": null,
+											"autoExchangeInd": null,
+											"alertInd": null,
+											"authenticationInd": null,
+											"marketingInd": null,
+											"multiPayFormInd": null,
+											"noticeInd": null,
+											"partialInd": null,
+											"warningInd": null,
+											"failedPaymentInd": null,
+											"partialPaymentInd": null,
+											"verificationInd": null,
+											"priceVarianceInd": null,
+											"invGuaranteedInd": null,
+											"waitlistInd": null,
+											"bundleInd": null,
+											"invGuarRequestedInd": null,
+											"exitRowInd": null,
+											"premiumInd": null,
+											"upperDeckInd": null,
+											"taxIncludedInd": null,
+											"feeIncludedInd": null,
+											"leadPricingInd": null,
+											"timestamp": null,
+											"metadataToken": null,
+											"refs": [],
+											"objectKey": null,
+											"code": "EFO",
+											"application": null,
+											"eticketInd": null
+										},
+										"fareRulesRemarks": [],
+										"fareBasisCityPair": null,
+										"rbd": null
+									},
+									"ticketDesig": null,
+									"fareRules": null,
+									"refs": []
+								}],
+								"priceClassReference": null,
+								"flightMileage": null,
+								"tourCode": null,
+								"remarks": null,
+								"refs": []
+							},
+							"offerItemID": "1#M#111198795#111162714",
+							"modificationProhibitedInd": null,
+							"refs": []
+						}],
+						"associations": [
+							{
+							"associatedTraveler": null,
+							"applicableFlight": {
+								"allSegmentInd": null,
+								"flightSegmentReference": [
+									{
+									"cabin": {
+										"cabinDesignator": {
+											"value": "M",
+											"allCabins": null
+										},
+										"marketingName": null,
+										"refs": []
+									},
+									"classOfService": null,
+									"bagDetailAssociation": null,
+									"marriedSegmentGroup": null,
+									"ref": {
+										"departure": {
+											"airportCode": {
+												"value": "ARN",
+												"application": null,
+												"area": null,
+												"uom": null
+											},
+											"date": "2015-12-24T21:00:00.000+0000",
+											"time": null,
+											"airportName": null,
+											"terminal": null,
+											"refs": []
+										},
+										"arrival": {
+											"airportCode": {
+												"value": "FRA",
+												"application": null,
+												"area": null,
+												"uom": null
+											},
+											"date": "2015-12-24T21:00:00.000+0000",
+											"time": null,
+											"changeOfDay": null,
+											"airportName": "Frankfurt International",
+											"terminal": null,
+											"refs": []
+										},
+										"marketingCarrier": {
+											"airlineID": {
+												"value": "9A",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"name": "Athena Air",
+											"flightNumber": {
+												"value": "3803",
+												"operationalSuffix": null
+											},
+											"resBookDesigCode": null,
+											"refs": []
+										},
+										"operatingCarrier": {
+											"airlineID": {
+												"value": "9A",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"name": "Athena Air",
+											"flightNumber": {
+												"value": "3803",
+												"operationalSuffix": null
+											},
+											"resBookDesigCode": null,
+											"refs": [],
+											"disclosures": null
+										},
+										"equipment": {
+											"aircraftCode": {
+												"value": "E95",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"changeOfGaugeInd": null,
+											"refs": [],
+											"name": "E95 - EMBRAER 195 JET",
+											"airlineEquipCode": null
+										},
+										"classOfService": null,
+										"flightDetail": {
+											"flightSegmentType": null,
+											"flightDistance": null,
+											"flightDuration": {
+												"value": "PT2H10M",
+												"application": null,
+												"refs": []
+											},
+											"stops": null,
+											"resDateTime": null,
+											"tourOperatorFlightID": null,
+											"refs": []
+										},
+										"onTimePerformance": null,
+										"settlement": null,
+										"segmentKey": "SEG1",
+										"connectInd": null,
+										"electronicTicketInd": null,
+										"ticketlessInd": null,
+										"secureFlight": null,
+										"refs": []
+									}
+								},
+									{
+									"cabin": {
+										"cabinDesignator": {
+											"value": "M",
+											"allCabins": null
+										},
+										"marketingName": null,
+										"refs": []
+									},
+									"classOfService": null,
+									"bagDetailAssociation": null,
+									"marriedSegmentGroup": null,
+									"ref": {
+										"departure": {
+											"airportCode": {
+												"value": "FRA",
+												"application": null,
+												"area": null,
+												"uom": null
+											},
+											"date": "2015-12-24T21:00:00.000+0000",
+											"time": null,
+											"airportName": "Frankfurt International",
+											"terminal": null,
+											"refs": []
+										},
+										"arrival": {
+											"airportCode": {
+												"value": "LHR",
+												"application": null,
+												"area": null,
+												"uom": null
+											},
+											"date": "2015-12-24T21:00:00.000+0000",
+											"time": null,
+											"changeOfDay": null,
+											"airportName": null,
+											"terminal": null,
+											"refs": []
+										},
+										"marketingCarrier": {
+											"airlineID": {
+												"value": "9A",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"name": "Athena Air",
+											"flightNumber": {
+												"value": "3916",
+												"operationalSuffix": null
+											},
+											"resBookDesigCode": null,
+											"refs": []
+										},
+										"operatingCarrier": {
+											"airlineID": {
+												"value": "9A",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"name": "Athena Air",
+											"flightNumber": {
+												"value": "3916",
+												"operationalSuffix": null
+											},
+											"resBookDesigCode": null,
+											"refs": [],
+											"disclosures": null
+										},
+										"equipment": {
+											"aircraftCode": {
+												"value": "E95",
+												"refs": [],
+												"objectMetaReferences": []
+											},
+											"changeOfGaugeInd": null,
+											"refs": [],
+											"name": "E95 - EMBRAER 195 JET",
+											"airlineEquipCode": null
+										},
+										"classOfService": null,
+										"flightDetail": {
+											"flightSegmentType": null,
+											"flightDistance": null,
+											"flightDuration": {
+												"value": null,
+												"application": null,
+												"refs": []
+											},
+											"stops": null,
+											"resDateTime": null,
+											"tourOperatorFlightID": null,
+											"refs": []
+										},
+										"onTimePerformance": null,
+										"settlement": null,
+										"segmentKey": "SEG2",
+										"connectInd": null,
+										"electronicTicketInd": null,
+										"ticketlessInd": null,
+										"secureFlight": null,
+										"refs": []
+									}
+								}
+								],
+								"allOriginDestinationInd": null,
+								"originDestinationReferences": [
+									{
+									"departureCode": {
+										"value": "ARN",
+										"application": null,
+										"area": null,
+										"uom": null
+									},
+									"arrivalCode": {
+										"value": "LHR",
+										"application": null,
+										"area": null,
+										"uom": null
+									},
+									"originDestinationKey": "OD1",
+									"refs": [],
+									"totalJourney": null,
+									"flightReferences": {
+										"value": [{
+											"journey": {
+												"time": "PT3H15M",
+												"distance": null,
+												"refs": []
+											},
+											"segmentReferences": {
+												"value": [{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}, {
+													"departure": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "LHR",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": null,
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG2",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}],
+												"onPoint": null,
+												"offPoint": null
+											},
+											"settlement": null,
+											"flightKey": "FL1",
+											"refs": []
+										}],
+										"onPoint": null,
+										"offPoint": null
+									},
+									"checkedBag": null,
+									"carryOnBag": null
+								}],
+								"allFlightInd": null,
 								"flightReferences": {
 									"value": [{
 										"journey": {
@@ -4230,2161 +7114,13 @@ const offers = {
 									}],
 									"onPoint": null,
 									"offPoint": null
-								},
-								"checkedBag": null,
-								"carryOnBag": null
-							}],
-							"allFlightInd": null,
-							"flightReferences": {
-								"value": [{
-									"journey": {
-										"time": "PT3H15M",
-										"distance": null,
-										"refs": []
-									},
-									"segmentReferences": {
-										"value": [{
-											"departure": {
-												"airportCode": {
-													"value": "ARN",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"airportName": null,
-												"terminal": null,
-												"refs": []
-											},
-											"arrival": {
-												"airportCode": {
-													"value": "FRA",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"changeOfDay": null,
-												"airportName": "Frankfurt International",
-												"terminal": null,
-												"refs": []
-											},
-											"marketingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3803",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": []
-											},
-											"operatingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3803",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": [],
-												"disclosures": null
-											},
-											"equipment": {
-												"aircraftCode": {
-													"value": "E95",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"changeOfGaugeInd": null,
-												"refs": [],
-												"name": "E95 - EMBRAER 195 JET",
-												"airlineEquipCode": null
-											},
-											"classOfService": null,
-											"flightDetail": {
-												"flightSegmentType": null,
-												"flightDistance": null,
-												"flightDuration": {
-													"value": "PT2H10M",
-													"application": null,
-													"refs": []
-												},
-												"stops": null,
-												"resDateTime": null,
-												"tourOperatorFlightID": null,
-												"refs": []
-											},
-											"onTimePerformance": null,
-											"settlement": null,
-											"segmentKey": "SEG1",
-											"connectInd": null,
-											"electronicTicketInd": null,
-											"ticketlessInd": null,
-											"secureFlight": null,
-											"refs": []
-										}, {
-											"departure": {
-												"airportCode": {
-													"value": "FRA",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"airportName": "Frankfurt International",
-												"terminal": null,
-												"refs": []
-											},
-											"arrival": {
-												"airportCode": {
-													"value": "LHR",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"changeOfDay": null,
-												"airportName": null,
-												"terminal": null,
-												"refs": []
-											},
-											"marketingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3916",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": []
-											},
-											"operatingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3916",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": [],
-												"disclosures": null
-											},
-											"equipment": {
-												"aircraftCode": {
-													"value": "E95",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"changeOfGaugeInd": null,
-												"refs": [],
-												"name": "E95 - EMBRAER 195 JET",
-												"airlineEquipCode": null
-											},
-											"classOfService": null,
-											"flightDetail": {
-												"flightSegmentType": null,
-												"flightDistance": null,
-												"flightDuration": {
-													"value": null,
-													"application": null,
-													"refs": []
-												},
-												"stops": null,
-												"resDateTime": null,
-												"tourOperatorFlightID": null,
-												"refs": []
-											},
-											"onTimePerformance": null,
-											"settlement": null,
-											"segmentKey": "SEG2",
-											"connectInd": null,
-											"electronicTicketInd": null,
-											"ticketlessInd": null,
-											"secureFlight": null,
-											"refs": []
-										}],
-										"onPoint": null,
-										"offPoint": null
-									},
-									"settlement": null,
-									"flightKey": "FL1",
-									"refs": []
-								}],
-								"onPoint": null,
-								"offPoint": null
-							}
-						},
-						"priceClass": {
-							"priceClassReference": {
-								"name": "M-ERO",
-								"code": "M",
-								"descriptions": [],
-								"fareBasisCode": {
-									"displayAllInd": null,
-									"allExemptInd": null,
-									"pricingInd": null,
-									"connectionInd": null,
-									"ticketlessInd": null,
-									"associateInd": null,
-									"taxOnEMDInd": null,
-									"stopOverInd": null,
-									"taxInd": null,
-									"otherChargeInd": null,
-									"poolingInd": null,
-									"specialItemsInd": null,
-									"taxesInd": null,
-									"netFareInd": null,
-									"reissueOnlyInd": null,
-									"autoExchangeInd": null,
-									"alertInd": null,
-									"authenticationInd": null,
-									"marketingInd": null,
-									"multiPayFormInd": null,
-									"noticeInd": null,
-									"partialInd": null,
-									"warningInd": null,
-									"failedPaymentInd": null,
-									"partialPaymentInd": null,
-									"verificationInd": null,
-									"priceVarianceInd": null,
-									"invGuaranteedInd": null,
-									"waitlistInd": null,
-									"bundleInd": null,
-									"invGuarRequestedInd": null,
-									"exitRowInd": null,
-									"premiumInd": null,
-									"upperDeckInd": null,
-									"taxIncludedInd": null,
-									"feeIncludedInd": null,
-									"leadPricingInd": null,
-									"timestamp": null,
-									"metadataToken": null,
-									"refs": [],
-									"objectKey": null,
-									"code": "ERO",
-									"application": null,
-									"eticketInd": null
-								},
-								"classOfService": [],
-								"associations": [],
-								"displayOrder": null,
-								"objectKey": "PC2",
-								"refs": []
-							}
-						},
-						"offerDetailAssociation": null,
-						"includedService": {
-							"bundleReference": null,
-							"serviceReferences": [{
-								"serviceID": {
-									"value": "1022",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Advance Seat selection"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "A convenient option that lets you reserve your preferred seat",
-											"refs": []
-										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-										"media": [{
-											"objectID": {
-												"value": "preferred_seat.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
-										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
-									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
-										"refs": []
-									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": null
-									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
-										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
-											"pricedInd": null,
-											"refs": [],
-											"objectKey": "SH1",
-											"ptc": {
-												"value": "ADT",
-												"quantity": 1
-											},
-											"residenceCode": null,
-											"passengerAssociation": null,
-											"age": null,
-											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV1",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}, {
-								"serviceID": {
-									"value": "1021",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Meal"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "Vegetarian Vegan Meal",
-											"refs": []
-										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-										"media": [{
-											"objectID": {
-												"value": "int_economy_promo.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
-										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
-									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
-										"refs": []
-									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": null
-									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
-										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
-											"pricedInd": null,
-											"refs": [],
-											"objectKey": "SH1",
-											"ptc": {
-												"value": "ADT",
-												"quantity": 1
-											},
-											"residenceCode": null,
-											"passengerAssociation": null,
-											"age": null,
-											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}, {
-												"departure": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "LHR",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": null,
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG2",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV3",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}]
-						},
-						"associatedService": {
-							"bundleReference": null,
-							"serviceReferences": [{
-								"serviceID": {
-									"value": "1023",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Inflight entertainment"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "The latest blockbusters, classics from film history, music and games",
-											"refs": []
-										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-										"media": [{
-											"objectID": {
-												"value": "comfort-eco-int-1_title.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
-										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
-									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
-										"refs": []
-									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 500,
-										"taxable": true,
-										"code": null
-									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
-										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
-											"pricedInd": null,
-											"refs": [],
-											"objectKey": "SH1",
-											"ptc": {
-												"value": "ADT",
-												"quantity": 1
-											},
-											"residenceCode": null,
-											"passengerAssociation": null,
-											"age": null,
-											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}, {
-												"departure": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "LHR",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": null,
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG2",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV2",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}]
-						},
-						"otherAssociation": []
-					}]
-				}
-			},
-				{
-				"parameters": null,
-				"offerID": {
-					"value": "3",
-					"owner": "9A",
-					"webAddressID": null,
-					"ownerType": null,
-					"refs": [],
-					"objectKey": null
-				},
-				"validatingCarrier": null,
-				"timeLimits": {
-					"offerExpiration": {
-						"dateTime": null,
-						"shortDate": null,
-						"timestamp": "2015-10-15T20:59:00.000+0000",
-						"time": null,
-						"refs": [],
-						"objectKey": null
-					},
-					"payment": null,
-					"otherLimits": [],
-					"refs": []
-				},
-				"totalPrice": {
-					"awardPricing": null,
-					"combinationPricing": null,
-					"simpleCurrencyPrice": null,
-					"detailCurrencyPrice": {
-						"approxInd": null,
-						"refundAllInd": null,
-						"taxIncludedInd": null,
-						"otherChargeInd": null,
-						"autoExchangeInd": null,
-						"refs": [],
-						"total": {
-							"value": 110400,
-							"taxable": true,
-							"code": "EUR"
-						},
-						"equivalent": null,
-						"details": {
-							"detail": [{
-								"subTotal": {
-									"value": 110400,
-									"taxable": true,
-									"code": "EUR"
-								},
-								"application": "Base Fare",
-								"refundInd": null,
-								"refs": []
-							}],
-							"refs": []
-						},
-						"taxes": {
-							"approxInd": null,
-							"collectionInd": null,
-							"refundAllInd": null,
-							"refs": [],
-							"total": {
-								"value": 0,
-								"taxable": true,
-								"code": "EUR"
+								}
 							},
-							"breakdown": null
-						},
-						"fees": null
-					},
-					"encodedCurrencyPrice": null,
-					"refs": []
-				},
-				"descriptionReferences": [],
-				"disclosure": null,
-				"penalty": null,
-				"requestedDateInd": null,
-				"refs": [],
-				"match": null,
-				"pricedOffer": {
-					"refs": [],
-					"offerMetaReferences": [],
-					"offerPrice": [{
-						"requestedDate": {
-							"priceDetail": {
-								"totalAmount": {
-									"awardPricing": null,
-									"combinationPricing": null,
-									"detailCurrencyPrice": null,
-									"encodedCurrencyPrice": null,
-									"simpleCurrencyPrice": {
-										"value": 110400,
-										"taxable": true,
-										"code": "EUR"
-									}
-								},
-								"baseAmount": {
-									"value": 110400,
-									"taxable": true,
-									"code": "EUR"
-								},
-								"fareFiledIn": null,
-								"discount": null,
-								"surcharges": [],
-								"taxes": {
-									"approxInd": null,
-									"collectionInd": null,
-									"refundAllInd": null,
-									"refs": [],
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": "EUR"
-									},
-									"breakdown": null
-								},
-								"taxExemption": null,
-								"awardPricing": null,
-								"combinationPricing": null,
-								"originDestinationReferenceOrSegmentReferences": [],
-								"fees": null
-							},
-							"associations": [{
-								"associatedTraveler": {
-									"allTravelerInd": null,
-									"travelerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
-										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}]
-								},
-								"applicableFlight": null,
-								"priceClass": null,
-								"offerDetailAssociation": null,
-								"includedService": null,
-								"associatedService": {
-									"bundleReference": {
-										"itemCount": 3,
-										"associations": {
-											"serviceReference": [{
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1023",
-														"owner": "9A",
-														"refs": [],
-														"objectKey": null
-													},
-													"name": {
-														"value": "Inflight entertainment"
-													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
-														"refs": []
-													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
-													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "The latest blockbusters, classics from film history, music and games",
-																"refs": []
-															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "comfort-eco-int-1_title.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
-															"refs": []
-														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 500,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
-															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
-																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
-														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}, {
-																	"departure": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "LHR",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": null,
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG2",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
-														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV2",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
-												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
-											}, {
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1022",
-														"owner": "9A",
-														"refs": [],
-														"objectKey": null
-													},
-													"name": {
-														"value": "Advance Seat selection"
-													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
-														"refs": []
-													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
-													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "A convenient option that lets you reserve your preferred seat",
-																"refs": []
-															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "preferred_seat.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
-															"refs": []
-														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 0,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
-															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
-																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
-														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
-														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV1",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
-												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
-											}, {
-												"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
-												"declaredType": "java.lang.Object",
-												"scope": "javax.xml.bind.JAXBElement$GlobalScope",
-												"value": {
-													"serviceID": {
-														"value": "1021",
-														"owner": "9A",
-														"refs": [],
-														"objectKey": null
-													},
-													"name": {
-														"value": "Meal"
-													},
-													"encoding": {
-														"rfic": null,
-														"type": null,
-														"code": null,
-														"subCode": null,
-														"refs": []
-													},
-													"timeLimits": null,
-													"feeMethod": {
-														"value": "OC"
-													},
-													"descriptions": {
-														"description": [{
-															"text": {
-																"value": "Vegetarian Vegan Meal",
-																"refs": []
-															},
-															"markupStyle": null,
-															"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-															"media": [{
-																"objectID": {
-																	"value": "int_economy_promo.jpg",
-																	"owner": null,
-																	"refs": []
-																},
-																"mediaLink": null,
-																"attachmentID": null
-															}, {
-																"objectID": null,
-																"mediaLink": {
-																	"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-																	"refs": [],
-																	"objectMetaReferences": []
-																},
-																"attachmentID": null
-															}],
-															"objectKey": null,
-															"refs": [],
-															"application": null
-														}],
-														"refs": []
-													},
-													"settlement": {
-														"method": {
-															"code": "AD",
-															"definition": "Internal Airline Document",
-															"tableName": null,
-															"link": null,
-															"refs": []
-														},
-														"interlineSettlementValue": null
-													},
-													"price": [{
-														"total": {
-															"value": 0,
-															"taxable": true,
-															"code": null
-														},
-														"refundableValue": null,
-														"details": null,
-														"taxes": null,
-														"fees": null,
-														"passengerReferences": [{
-															"pricedInd": null,
-															"refs": [],
-															"objectKey": "SH1",
-															"ptc": {
-																"value": "ADT",
-																"quantity": 1
-															},
-															"residenceCode": null,
-															"passengerAssociation": null,
-															"age": null,
-															"citizenshipCountryCode": null
-														}],
-														"refs": []
-													}],
-													"bookingInstructions": null,
-													"validatingCarrier": null,
-													"associations": [{
-														"traveler": {
-															"allTravelerInd": null,
-															"travelerReferences": [{
-																"pricedInd": null,
-																"refs": [],
-																"objectKey": "SH1",
-																"ptc": {
-																	"value": "ADT",
-																	"quantity": 1
-																},
-																"residenceCode": null,
-																"passengerAssociation": null,
-																"age": null,
-																"citizenshipCountryCode": null
-															}]
-														},
-														"flight": {
-															"allFlightInd": null,
-															"allOriginDestinationInd": null,
-															"allSegmentInd": null,
-															"originDestinationReferencesOrSegmentReferences": [{
-																"value": [{
-																	"departure": {
-																		"airportCode": {
-																			"value": "ARN",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3803",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": "PT2H10M",
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG1",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}, {
-																	"departure": {
-																		"airportCode": {
-																			"value": "FRA",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"airportName": "Frankfurt International",
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"arrival": {
-																		"airportCode": {
-																			"value": "LHR",
-																			"application": null,
-																			"area": null,
-																			"uom": null
-																		},
-																		"date": "2015-12-24T21:00:00.000+0000",
-																		"time": null,
-																		"changeOfDay": null,
-																		"airportName": null,
-																		"terminal": null,
-																		"refs": []
-																	},
-																	"marketingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": []
-																	},
-																	"operatingCarrier": {
-																		"airlineID": {
-																			"value": "9A",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"name": "Athena Air",
-																		"flightNumber": {
-																			"value": "3916",
-																			"operationalSuffix": null
-																		},
-																		"resBookDesigCode": null,
-																		"refs": [],
-																		"disclosures": null
-																	},
-																	"equipment": {
-																		"aircraftCode": {
-																			"value": "E95",
-																			"refs": [],
-																			"objectMetaReferences": []
-																		},
-																		"changeOfGaugeInd": null,
-																		"refs": [],
-																		"name": "E95 - EMBRAER 195 JET",
-																		"airlineEquipCode": null
-																	},
-																	"classOfService": null,
-																	"flightDetail": {
-																		"flightSegmentType": null,
-																		"flightDistance": null,
-																		"flightDuration": {
-																			"value": null,
-																			"application": null,
-																			"refs": []
-																		},
-																		"stops": null,
-																		"resDateTime": null,
-																		"tourOperatorFlightID": null,
-																		"refs": []
-																	},
-																	"onTimePerformance": null,
-																	"settlement": null,
-																	"segmentKey": "SEG2",
-																	"connectInd": null,
-																	"electronicTicketInd": null,
-																	"ticketlessInd": null,
-																	"secureFlight": null,
-																	"refs": []
-																}],
-																"onPoint": null,
-																"offPoint": null
-															}]
-														},
-														"offer": [],
-														"otherAssociations": [],
-														"seatReference": null
-													}],
-													"baggageDeterminingCarrier": null,
-													"objectKey": "SV3",
-													"refs": [],
-													"detail": null,
-													"bdcanalysisResult": null
-												},
-												"nil": false,
-												"globalScope": true,
-												"typeSubstituted": true
-											}],
-											"serviceID": []
-										},
-										"selection": {
-											"minimumQuantityOrMaximumQuantity": [{
-												"name": "{http://www.iata.org/IATA/EDIST}MaximumQuantity",
-												"declaredType": "java.math.BigInteger",
-												"scope": "org.iata.iata.edist.ServiceBundle$Selection",
-												"value": 2,
-												"nil": false,
-												"globalScope": false,
-												"typeSubstituted": false
-											}]
-										},
-										"bundleID": {
-											"value": "B1004",
-											"refs": [],
-											"objectKey": null
-										},
-										"price": [{
-											"total": {
-												"value": 5000,
-												"taxable": true,
-												"code": null
-											},
-											"refundableValue": null,
-											"details": null,
-											"taxes": null,
-											"fees": null,
-											"passengerReferences": [{
-												"pricedInd": null,
-												"refs": [],
-												"objectKey": "SH1",
-												"ptc": {
-													"value": "ADT",
-													"quantity": 1
-												},
-												"residenceCode": null,
-												"passengerAssociation": null,
-												"age": null,
-												"citizenshipCountryCode": null
-											}],
-											"refs": []
-										}],
-										"bundleName": null,
-										"refs": [],
-										"listKey": "SB1"
-									},
-									"serviceReferences": []
-								},
-								"otherAssociation": []
-							}]
-						},
-						"fareDetail": {
-							"fareIndicatorCode": null,
-							"fareComponent": [{
-								"parameters": null,
-								"segmentReference": null,
-								"priceBreakdown": null,
-								"fareBasis": {
+							"priceClass": {
+								"priceClassReference": {
+									"name": "M-EFO",
+									"code": "M",
+									"descriptions": [],
 									"fareBasisCode": {
 										"displayAllInd": null,
 										"allExemptInd": null,
@@ -6431,809 +7167,89 @@ const offers = {
 										"application": null,
 										"eticketInd": null
 									},
-									"fareRulesRemarks": [],
-									"fareBasisCityPair": null,
-									"rbd": null
-								},
-								"ticketDesig": null,
-								"fareRules": null,
-								"refs": []
-							}],
-							"priceClassReference": null,
-							"flightMileage": null,
-							"tourCode": null,
-							"remarks": null,
-							"refs": []
-						},
-						"offerItemID": "1#M#111198795#111162714",
-						"modificationProhibitedInd": null,
-						"refs": []
-					}],
-					"associations": [{
-						"associatedTraveler": null,
-						"applicableFlight": {
-							"allSegmentInd": null,
-							"flightSegmentReference": [{
-								"cabin": {
-									"cabinDesignator": {
-										"value": "M",
-										"allCabins": null
-									},
-									"marketingName": null,
-									"refs": []
-								},
-								"classOfService": null,
-								"bagDetailAssociation": null,
-								"marriedSegmentGroup": null,
-								"ref": {
-									"departure": {
-										"airportCode": {
-											"value": "ARN",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"airportName": null,
-										"terminal": null,
-										"refs": []
-									},
-									"arrival": {
-										"airportCode": {
-											"value": "FRA",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"changeOfDay": null,
-										"airportName": "Frankfurt International",
-										"terminal": null,
-										"refs": []
-									},
-									"marketingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3803",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": []
-									},
-									"operatingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3803",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": [],
-										"disclosures": null
-									},
-									"equipment": {
-										"aircraftCode": {
-											"value": "E95",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"changeOfGaugeInd": null,
-										"refs": [],
-										"name": "E95 - EMBRAER 195 JET",
-										"airlineEquipCode": null
-									},
-									"classOfService": null,
-									"flightDetail": {
-										"flightSegmentType": null,
-										"flightDistance": null,
-										"flightDuration": {
-											"value": "PT2H10M",
-											"application": null,
-											"refs": []
-										},
-										"stops": null,
-										"resDateTime": null,
-										"tourOperatorFlightID": null,
-										"refs": []
-									},
-									"onTimePerformance": null,
-									"settlement": null,
-									"segmentKey": "SEG1",
-									"connectInd": null,
-									"electronicTicketInd": null,
-									"ticketlessInd": null,
-									"secureFlight": null,
+									"classOfService": [],
+									"associations": [],
+									"displayOrder": null,
+									"objectKey": "PC3",
 									"refs": []
 								}
-							}, {
-								"cabin": {
-									"cabinDesignator": {
-										"value": "M",
-										"allCabins": null
-									},
-									"marketingName": null,
-									"refs": []
-								},
-								"classOfService": null,
-								"bagDetailAssociation": null,
-								"marriedSegmentGroup": null,
-								"ref": {
-									"departure": {
-										"airportCode": {
-											"value": "FRA",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"airportName": "Frankfurt International",
-										"terminal": null,
-										"refs": []
-									},
-									"arrival": {
-										"airportCode": {
-											"value": "LHR",
-											"application": null,
-											"area": null,
-											"uom": null
-										},
-										"date": "2015-12-24T21:00:00.000+0000",
-										"time": null,
-										"changeOfDay": null,
-										"airportName": null,
-										"terminal": null,
-										"refs": []
-									},
-									"marketingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3916",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
-										"refs": []
-									},
-									"operatingCarrier": {
-										"airlineID": {
-											"value": "9A",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"name": "Athena Air",
-										"flightNumber": {
-											"value": "3916",
-											"operationalSuffix": null
-										},
-										"resBookDesigCode": null,
+							},
+							"offerDetailAssociation": null,
+							"includedService": {
+								"bundleReference": null,
+								"serviceReferences": [{
+									"serviceID": {
+										"value": "1022",
+										"owner": "9A",
 										"refs": [],
-										"disclosures": null
+										"objectKey": null
 									},
-									"equipment": {
-										"aircraftCode": {
-											"value": "E95",
-											"refs": [],
-											"objectMetaReferences": []
-										},
-										"changeOfGaugeInd": null,
-										"refs": [],
-										"name": "E95 - EMBRAER 195 JET",
-										"airlineEquipCode": null
+									"name": {
+										"value": "Advance Seat selection"
 									},
-									"classOfService": null,
-									"flightDetail": {
-										"flightSegmentType": null,
-										"flightDistance": null,
-										"flightDuration": {
-											"value": null,
-											"application": null,
-											"refs": []
-										},
-										"stops": null,
-										"resDateTime": null,
-										"tourOperatorFlightID": null,
+									"encoding": {
+										"rfic": null,
+										"type": null,
+										"code": null,
+										"subCode": null,
 										"refs": []
 									},
-									"onTimePerformance": null,
-									"settlement": null,
-									"segmentKey": "SEG2",
-									"connectInd": null,
-									"electronicTicketInd": null,
-									"ticketlessInd": null,
-									"secureFlight": null,
-									"refs": []
-								}
-							}],
-							"allOriginDestinationInd": null,
-							"originDestinationReferences": [{
-								"departureCode": {
-									"value": "ARN",
-									"application": null,
-									"area": null,
-									"uom": null
-								},
-								"arrivalCode": {
-									"value": "LHR",
-									"application": null,
-									"area": null,
-									"uom": null
-								},
-								"originDestinationKey": "OD1",
-								"refs": [],
-								"totalJourney": null,
-								"flightReferences": {
-									"value": [{
-										"journey": {
-											"time": "PT3H15M",
-											"distance": null,
-											"refs": []
-										},
-										"segmentReferences": {
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
+									"timeLimits": null,
+									"feeMethod": {
+										"value": "OC"
+									},
+									"descriptions": {
+										"description": [{
+											"text": {
+												"value": "A convenient option that lets you reserve your preferred seat",
 												"refs": []
+											},
+											"markupStyle": null,
+											"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
+											"media": [{
+												"objectID": {
+													"value": "preferred_seat.jpg",
+													"owner": null,
+													"refs": []
+												},
+												"mediaLink": null,
+												"attachmentID": null
 											}, {
-												"departure": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "LHR",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
+												"objectID": null,
+												"mediaLink": {
+													"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
 													"refs": [],
-													"disclosures": null
+													"objectMetaReferences": []
 												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": null,
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG2",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
+												"attachmentID": null
 											}],
-											"onPoint": null,
-											"offPoint": null
-										},
-										"settlement": null,
-										"flightKey": "FL1",
-										"refs": []
-									}],
-									"onPoint": null,
-									"offPoint": null
-								},
-								"checkedBag": null,
-								"carryOnBag": null
-							}],
-							"allFlightInd": null,
-							"flightReferences": {
-								"value": [{
-									"journey": {
-										"time": "PT3H15M",
-										"distance": null,
-										"refs": []
-									},
-									"segmentReferences": {
-										"value": [{
-											"departure": {
-												"airportCode": {
-													"value": "ARN",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"airportName": null,
-												"terminal": null,
-												"refs": []
-											},
-											"arrival": {
-												"airportCode": {
-													"value": "FRA",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"changeOfDay": null,
-												"airportName": "Frankfurt International",
-												"terminal": null,
-												"refs": []
-											},
-											"marketingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3803",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": []
-											},
-											"operatingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3803",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": [],
-												"disclosures": null
-											},
-											"equipment": {
-												"aircraftCode": {
-													"value": "E95",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"changeOfGaugeInd": null,
-												"refs": [],
-												"name": "E95 - EMBRAER 195 JET",
-												"airlineEquipCode": null
-											},
-											"classOfService": null,
-											"flightDetail": {
-												"flightSegmentType": null,
-												"flightDistance": null,
-												"flightDuration": {
-													"value": "PT2H10M",
-													"application": null,
-													"refs": []
-												},
-												"stops": null,
-												"resDateTime": null,
-												"tourOperatorFlightID": null,
-												"refs": []
-											},
-											"onTimePerformance": null,
-											"settlement": null,
-											"segmentKey": "SEG1",
-											"connectInd": null,
-											"electronicTicketInd": null,
-											"ticketlessInd": null,
-											"secureFlight": null,
-											"refs": []
-										}, {
-											"departure": {
-												"airportCode": {
-													"value": "FRA",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"airportName": "Frankfurt International",
-												"terminal": null,
-												"refs": []
-											},
-											"arrival": {
-												"airportCode": {
-													"value": "LHR",
-													"application": null,
-													"area": null,
-													"uom": null
-												},
-												"date": "2015-12-24T21:00:00.000+0000",
-												"time": null,
-												"changeOfDay": null,
-												"airportName": null,
-												"terminal": null,
-												"refs": []
-											},
-											"marketingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3916",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": []
-											},
-											"operatingCarrier": {
-												"airlineID": {
-													"value": "9A",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"name": "Athena Air",
-												"flightNumber": {
-													"value": "3916",
-													"operationalSuffix": null
-												},
-												"resBookDesigCode": null,
-												"refs": [],
-												"disclosures": null
-											},
-											"equipment": {
-												"aircraftCode": {
-													"value": "E95",
-													"refs": [],
-													"objectMetaReferences": []
-												},
-												"changeOfGaugeInd": null,
-												"refs": [],
-												"name": "E95 - EMBRAER 195 JET",
-												"airlineEquipCode": null
-											},
-											"classOfService": null,
-											"flightDetail": {
-												"flightSegmentType": null,
-												"flightDistance": null,
-												"flightDuration": {
-													"value": null,
-													"application": null,
-													"refs": []
-												},
-												"stops": null,
-												"resDateTime": null,
-												"tourOperatorFlightID": null,
-												"refs": []
-											},
-											"onTimePerformance": null,
-											"settlement": null,
-											"segmentKey": "SEG2",
-											"connectInd": null,
-											"electronicTicketInd": null,
-											"ticketlessInd": null,
-											"secureFlight": null,
-											"refs": []
+											"objectKey": null,
+											"refs": [],
+											"application": null
 										}],
-										"onPoint": null,
-										"offPoint": null
-									},
-									"settlement": null,
-									"flightKey": "FL1",
-									"refs": []
-								}],
-								"onPoint": null,
-								"offPoint": null
-							}
-						},
-						"priceClass": {
-							"priceClassReference": {
-								"name": "M-EFO",
-								"code": "M",
-								"descriptions": [],
-								"fareBasisCode": {
-									"displayAllInd": null,
-									"allExemptInd": null,
-									"pricingInd": null,
-									"connectionInd": null,
-									"ticketlessInd": null,
-									"associateInd": null,
-									"taxOnEMDInd": null,
-									"stopOverInd": null,
-									"taxInd": null,
-									"otherChargeInd": null,
-									"poolingInd": null,
-									"specialItemsInd": null,
-									"taxesInd": null,
-									"netFareInd": null,
-									"reissueOnlyInd": null,
-									"autoExchangeInd": null,
-									"alertInd": null,
-									"authenticationInd": null,
-									"marketingInd": null,
-									"multiPayFormInd": null,
-									"noticeInd": null,
-									"partialInd": null,
-									"warningInd": null,
-									"failedPaymentInd": null,
-									"partialPaymentInd": null,
-									"verificationInd": null,
-									"priceVarianceInd": null,
-									"invGuaranteedInd": null,
-									"waitlistInd": null,
-									"bundleInd": null,
-									"invGuarRequestedInd": null,
-									"exitRowInd": null,
-									"premiumInd": null,
-									"upperDeckInd": null,
-									"taxIncludedInd": null,
-									"feeIncludedInd": null,
-									"leadPricingInd": null,
-									"timestamp": null,
-									"metadataToken": null,
-									"refs": [],
-									"objectKey": null,
-									"code": "EFO",
-									"application": null,
-									"eticketInd": null
-								},
-								"classOfService": [],
-								"associations": [],
-								"displayOrder": null,
-								"objectKey": "PC3",
-								"refs": []
-							}
-						},
-						"offerDetailAssociation": null,
-						"includedService": {
-							"bundleReference": null,
-							"serviceReferences": [{
-								"serviceID": {
-									"value": "1022",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Advance Seat selection"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "A convenient option that lets you reserve your preferred seat",
-											"refs": []
-										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-										"media": [{
-											"objectID": {
-												"value": "preferred_seat.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/preferred_seat.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
-										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
-									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
 										"refs": []
 									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": null
-									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
+									"settlement": {
+										"method": {
+											"code": "AD",
+											"definition": "Internal Airline Document",
+											"tableName": null,
+											"link": null,
+											"refs": []
 										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
+										"interlineSettlementValue": null
+									},
+									"price": [{
+										"total": {
+											"value": 0,
+											"taxable": true,
+											"code": null
+										},
+										"refundableValue": null,
+										"details": null,
+										"taxes": null,
+										"fees": null,
+										"passengerReferences": [{
 											"pricedInd": null,
 											"refs": [],
 											"objectKey": "SH1",
@@ -7245,210 +7261,210 @@ const offers = {
 											"passengerAssociation": null,
 											"age": null,
 											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
+										}],
+										"refs": []
+									}],
+									"bookingInstructions": null,
+									"validatingCarrier": null,
+									"associations": [{
+										"traveler": {
+											"allTravelerInd": null,
+											"travelerReferences": [{
+												"pricedInd": null,
+												"refs": [],
+												"objectKey": "SH1",
+												"ptc": {
+													"value": "ADT",
+													"quantity": 1
 												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
+												"residenceCode": null,
+												"passengerAssociation": null,
+												"age": null,
+												"citizenshipCountryCode": null
+											}]
+										},
+										"flight": {
+											"allFlightInd": null,
+											"allOriginDestinationInd": null,
+											"allSegmentInd": null,
+											"originDestinationReferencesOrSegmentReferences": [{
+												"value": [{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
 														"refs": []
 													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
 													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV1",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}, {
-								"serviceID": {
-									"value": "1021",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Meal"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "Vegetarian Vegan Meal",
-											"refs": []
+												}],
+												"onPoint": null,
+												"offPoint": null
+											}]
 										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-										"media": [{
-											"objectID": {
-												"value": "int_economy_promo.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
-										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
+										"offer": [],
+										"otherAssociations": [],
+										"seatReference": null
 									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
+									"baggageDeterminingCarrier": null,
+									"objectKey": "SV1",
+									"refs": [],
+									"detail": null,
+									"bdcanalysisResult": null
+								}, {
+									"serviceID": {
+										"value": "1021",
+										"owner": "9A",
+										"refs": [],
+										"objectKey": null
+									},
+									"name": {
+										"value": "Meal"
+									},
+									"encoding": {
+										"rfic": null,
+										"type": null,
+										"code": null,
+										"subCode": null,
 										"refs": []
 									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 0,
-										"taxable": true,
-										"code": null
+									"timeLimits": null,
+									"feeMethod": {
+										"value": "OC"
 									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
+									"descriptions": {
+										"description": [{
+											"text": {
+												"value": "Vegetarian Vegan Meal",
+												"refs": []
+											},
+											"markupStyle": null,
+											"link": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+											"media": [{
+												"objectID": {
+													"value": "int_economy_promo.jpg",
+													"owner": null,
+													"refs": []
+												},
+												"mediaLink": null,
+												"attachmentID": null
+											}, {
+												"objectID": null,
+												"mediaLink": {
+													"value": "http://athena.jrtechnologies.com/ServiceImage/int_economy_promo.jpg",
+													"refs": [],
+													"objectMetaReferences": []
+												},
+												"attachmentID": null
+											}],
+											"objectKey": null,
+											"refs": [],
+											"application": null
+										}],
+										"refs": []
+									},
+									"settlement": {
+										"method": {
+											"code": "AD",
+											"definition": "Internal Airline Document",
+											"tableName": null,
+											"link": null,
+											"refs": []
 										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
+										"interlineSettlementValue": null
+									},
+									"price": [{
+										"total": {
+											"value": 0,
+											"taxable": true,
+											"code": null
+										},
+										"refundableValue": null,
+										"details": null,
+										"taxes": null,
+										"fees": null,
+										"passengerReferences": [{
 											"pricedInd": null,
 											"refs": [],
 											"objectKey": "SH1",
@@ -7460,304 +7476,304 @@ const offers = {
 											"passengerAssociation": null,
 											"age": null,
 											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}, {
-												"departure": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "LHR",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": null,
-														"application": null,
-														"refs": []
-													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG2",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV3",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}]
-						},
-						"associatedService": {
-							"bundleReference": null,
-							"serviceReferences": [{
-								"serviceID": {
-									"value": "1023",
-									"owner": "9A",
-									"refs": [],
-									"objectKey": null
-								},
-								"name": {
-									"value": "Inflight entertainment"
-								},
-								"encoding": {
-									"rfic": null,
-									"type": null,
-									"code": null,
-									"subCode": null,
-									"refs": []
-								},
-								"timeLimits": null,
-								"feeMethod": {
-									"value": "OC"
-								},
-								"descriptions": {
-									"description": [{
-										"text": {
-											"value": "The latest blockbusters, classics from film history, music and games",
-											"refs": []
-										},
-										"markupStyle": null,
-										"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-										"media": [{
-											"objectID": {
-												"value": "comfort-eco-int-1_title.jpg",
-												"owner": null,
-												"refs": []
-											},
-											"mediaLink": null,
-											"attachmentID": null
-										}, {
-											"objectID": null,
-											"mediaLink": {
-												"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
-												"refs": [],
-												"objectMetaReferences": []
-											},
-											"attachmentID": null
 										}],
-										"objectKey": null,
-										"refs": [],
-										"application": null
+										"refs": []
 									}],
-									"refs": []
-								},
-								"settlement": {
-									"method": {
-										"code": "AD",
-										"definition": "Internal Airline Document",
-										"tableName": null,
-										"link": null,
+									"bookingInstructions": null,
+									"validatingCarrier": null,
+									"associations": [{
+										"traveler": {
+											"allTravelerInd": null,
+											"travelerReferences": [{
+												"pricedInd": null,
+												"refs": [],
+												"objectKey": "SH1",
+												"ptc": {
+													"value": "ADT",
+													"quantity": 1
+												},
+												"residenceCode": null,
+												"passengerAssociation": null,
+												"age": null,
+												"citizenshipCountryCode": null
+											}]
+										},
+										"flight": {
+											"allFlightInd": null,
+											"allOriginDestinationInd": null,
+											"allSegmentInd": null,
+											"originDestinationReferencesOrSegmentReferences": [{
+												"value": [{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}, {
+													"departure": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "LHR",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": null,
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG2",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}],
+												"onPoint": null,
+												"offPoint": null
+											}]
+										},
+										"offer": [],
+										"otherAssociations": [],
+										"seatReference": null
+									}],
+									"baggageDeterminingCarrier": null,
+									"objectKey": "SV3",
+									"refs": [],
+									"detail": null,
+									"bdcanalysisResult": null
+								}]
+							},
+							"associatedService": {
+								"bundleReference": null,
+								"serviceReferences": [{
+									"serviceID": {
+										"value": "1023",
+										"owner": "9A",
+										"refs": [],
+										"objectKey": null
+									},
+									"name": {
+										"value": "Inflight entertainment"
+									},
+									"encoding": {
+										"rfic": null,
+										"type": null,
+										"code": null,
+										"subCode": null,
 										"refs": []
 									},
-									"interlineSettlementValue": null
-								},
-								"price": [{
-									"total": {
-										"value": 500,
-										"taxable": true,
-										"code": null
+									"timeLimits": null,
+									"feeMethod": {
+										"value": "OC"
 									},
-									"refundableValue": null,
-									"details": null,
-									"taxes": null,
-									"fees": null,
-									"passengerReferences": [{
-										"pricedInd": null,
-										"refs": [],
-										"objectKey": "SH1",
-										"ptc": {
-											"value": "ADT",
-											"quantity": 1
+									"descriptions": {
+										"description": [{
+											"text": {
+												"value": "The latest blockbusters, classics from film history, music and games",
+												"refs": []
+											},
+											"markupStyle": null,
+											"link": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+											"media": [{
+												"objectID": {
+													"value": "comfort-eco-int-1_title.jpg",
+													"owner": null,
+													"refs": []
+												},
+												"mediaLink": null,
+												"attachmentID": null
+											}, {
+												"objectID": null,
+												"mediaLink": {
+													"value": "http://athena.jrtechnologies.com/ServiceImage/comfort-eco-int-1_title.jpg",
+													"refs": [],
+													"objectMetaReferences": []
+												},
+												"attachmentID": null
+											}],
+											"objectKey": null,
+											"refs": [],
+											"application": null
+										}],
+										"refs": []
+									},
+									"settlement": {
+										"method": {
+											"code": "AD",
+											"definition": "Internal Airline Document",
+											"tableName": null,
+											"link": null,
+											"refs": []
 										},
-										"residenceCode": null,
-										"passengerAssociation": null,
-										"age": null,
-										"citizenshipCountryCode": null
-									}],
-									"refs": []
-								}],
-								"bookingInstructions": null,
-								"validatingCarrier": null,
-								"associations": [{
-									"traveler": {
-										"allTravelerInd": null,
-										"travelerReferences": [{
+										"interlineSettlementValue": null
+									},
+									"price": [{
+										"total": {
+											"value": 500,
+											"taxable": true,
+											"code": null
+										},
+										"refundableValue": null,
+										"details": null,
+										"taxes": null,
+										"fees": null,
+										"passengerReferences": [{
 											"pricedInd": null,
 											"refs": [],
 											"objectKey": "SH1",
@@ -7769,213 +7785,234 @@ const offers = {
 											"passengerAssociation": null,
 											"age": null,
 											"citizenshipCountryCode": null
-										}]
-									},
-									"flight": {
-										"allFlightInd": null,
-										"allOriginDestinationInd": null,
-										"allSegmentInd": null,
-										"originDestinationReferencesOrSegmentReferences": [{
-											"value": [{
-												"departure": {
-													"airportCode": {
-														"value": "ARN",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
+										}],
+										"refs": []
+									}],
+									"bookingInstructions": null,
+									"validatingCarrier": null,
+									"associations": [{
+										"traveler": {
+											"allTravelerInd": null,
+											"travelerReferences": [{
+												"pricedInd": null,
+												"refs": [],
+												"objectKey": "SH1",
+												"ptc": {
+													"value": "ADT",
+													"quantity": 1
 												},
-												"arrival": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3803",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": "PT2H10M",
-														"application": null,
+												"residenceCode": null,
+												"passengerAssociation": null,
+												"age": null,
+												"citizenshipCountryCode": null
+											}]
+										},
+										"flight": {
+											"allFlightInd": null,
+											"allOriginDestinationInd": null,
+											"allSegmentInd": null,
+											"originDestinationReferencesOrSegmentReferences": [{
+												"value": [{
+													"departure": {
+														"airportCode": {
+															"value": "ARN",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": null,
+														"terminal": null,
 														"refs": []
 													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
-													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG1",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}, {
-												"departure": {
-													"airportCode": {
-														"value": "FRA",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"airportName": "Frankfurt International",
-													"terminal": null,
-													"refs": []
-												},
-												"arrival": {
-													"airportCode": {
-														"value": "LHR",
-														"application": null,
-														"area": null,
-														"uom": null
-													},
-													"date": "2015-12-24T21:00:00.000+0000",
-													"time": null,
-													"changeOfDay": null,
-													"airportName": null,
-													"terminal": null,
-													"refs": []
-												},
-												"marketingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": []
-												},
-												"operatingCarrier": {
-													"airlineID": {
-														"value": "9A",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"name": "Athena Air",
-													"flightNumber": {
-														"value": "3916",
-														"operationalSuffix": null
-													},
-													"resBookDesigCode": null,
-													"refs": [],
-													"disclosures": null
-												},
-												"equipment": {
-													"aircraftCode": {
-														"value": "E95",
-														"refs": [],
-														"objectMetaReferences": []
-													},
-													"changeOfGaugeInd": null,
-													"refs": [],
-													"name": "E95 - EMBRAER 195 JET",
-													"airlineEquipCode": null
-												},
-												"classOfService": null,
-												"flightDetail": {
-													"flightSegmentType": null,
-													"flightDistance": null,
-													"flightDuration": {
-														"value": null,
-														"application": null,
+													"arrival": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
 														"refs": []
 													},
-													"stops": null,
-													"resDateTime": null,
-													"tourOperatorFlightID": null,
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3803",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": "PT2H10M",
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG1",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
 													"refs": []
-												},
-												"onTimePerformance": null,
-												"settlement": null,
-												"segmentKey": "SEG2",
-												"connectInd": null,
-												"electronicTicketInd": null,
-												"ticketlessInd": null,
-												"secureFlight": null,
-												"refs": []
-											}],
-											"onPoint": null,
-											"offPoint": null
-										}]
-									},
-									"offer": [],
-									"otherAssociations": [],
-									"seatReference": null
-								}],
-								"baggageDeterminingCarrier": null,
-								"objectKey": "SV2",
-								"refs": [],
-								"detail": null,
-								"bdcanalysisResult": null
-							}]
-						},
-						"otherAssociation": []
-					}]
+												}, {
+													"departure": {
+														"airportCode": {
+															"value": "FRA",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"airportName": "Frankfurt International",
+														"terminal": null,
+														"refs": []
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "LHR",
+															"application": null,
+															"area": null,
+															"uom": null
+														},
+														"date": "2015-12-24T21:00:00.000+0000",
+														"time": null,
+														"changeOfDay": null,
+														"airportName": null,
+														"terminal": null,
+														"refs": []
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": []
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "9A",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"name": "Athena Air",
+														"flightNumber": {
+															"value": "3916",
+															"operationalSuffix": null
+														},
+														"resBookDesigCode": null,
+														"refs": [],
+														"disclosures": null
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "E95",
+															"refs": [],
+															"objectMetaReferences": []
+														},
+														"changeOfGaugeInd": null,
+														"refs": [],
+														"name": "E95 - EMBRAER 195 JET",
+														"airlineEquipCode": null
+													},
+													"classOfService": null,
+													"flightDetail": {
+														"flightSegmentType": null,
+														"flightDistance": null,
+														"flightDuration": {
+															"value": null,
+															"application": null,
+															"refs": []
+														},
+														"stops": null,
+														"resDateTime": null,
+														"tourOperatorFlightID": null,
+														"refs": []
+													},
+													"onTimePerformance": null,
+													"settlement": null,
+													"segmentKey": "SEG2",
+													"connectInd": null,
+													"electronicTicketInd": null,
+													"ticketlessInd": null,
+													"secureFlight": null,
+													"refs": []
+												}],
+												"onPoint": null,
+												"offPoint": null
+											}]
+										},
+										"offer": [],
+										"otherAssociations": [],
+										"seatReference": null
+									}],
+									"baggageDeterminingCarrier": null,
+									"objectKey": "SV2",
+									"refs": [],
+									"detail": null,
+									"bdcanalysisResult": null
+								}]
+							},
+							"otherAssociation": []
+						}
+						]
+					}
 				}
-			}
 			],
 			"priceCalendar": []
 		}]
@@ -8199,187 +8236,187 @@ const offers = {
 				"segmentReferences": {
 					"value": [
 						{
-						"departure": {
-							"airportCode": {
-								"value": "ARN",
-								"application": null,
-								"area": null,
-								"uom": null
-							},
-							"date": "2015-12-24T21:00:00.000+0000",
-							"time": null,
-							"airportName": null,
-							"terminal": null,
-							"refs": []
-						},
-						"arrival": {
-							"airportCode": {
-								"value": "FRA",
-								"application": null,
-								"area": null,
-								"uom": null
-							},
-							"date": "2015-12-24T21:00:00.000+0000",
-							"time": null,
-							"changeOfDay": null,
-							"airportName": "Frankfurt International",
-							"terminal": null,
-							"refs": []
-						},
-						"marketingCarrier": {
-							"airlineID": {
-								"value": "9A",
-								"refs": [],
-								"objectMetaReferences": []
-							},
-							"name": "Athena Air",
-							"flightNumber": {
-								"value": "3803",
-								"operationalSuffix": null
-							},
-							"resBookDesigCode": null,
-							"refs": []
-						},
-						"operatingCarrier": {
-							"airlineID": {
-								"value": "9A",
-								"refs": [],
-								"objectMetaReferences": []
-							},
-							"name": "Athena Air",
-							"flightNumber": {
-								"value": "3803",
-								"operationalSuffix": null
-							},
-							"resBookDesigCode": null,
-							"refs": [],
-							"disclosures": null
-						},
-						"equipment": {
-							"aircraftCode": {
-								"value": "E95",
-								"refs": [],
-								"objectMetaReferences": []
-							},
-							"changeOfGaugeInd": null,
-							"refs": [],
-							"name": "E95 - EMBRAER 195 JET",
-							"airlineEquipCode": null
-						},
-						"classOfService": null,
-						"flightDetail": {
-							"flightSegmentType": null,
-							"flightDistance": null,
-							"flightDuration": {
-								"value": "PT2H10M",
-								"application": null,
+							"departure": {
+								"airportCode": {
+									"value": "ARN",
+									"application": null,
+									"area": null,
+									"uom": null
+								},
+								"date": "2015-12-24T21:00:00.000+0000",
+								"time": null,
+								"airportName": null,
+								"terminal": null,
 								"refs": []
 							},
-							"stops": null,
-							"resDateTime": null,
-							"tourOperatorFlightID": null,
+							"arrival": {
+								"airportCode": {
+									"value": "FRA",
+									"application": null,
+									"area": null,
+									"uom": null
+								},
+								"date": "2015-12-24T21:00:00.000+0000",
+								"time": null,
+								"changeOfDay": null,
+								"airportName": "Frankfurt International",
+								"terminal": null,
+								"refs": []
+							},
+							"marketingCarrier": {
+								"airlineID": {
+									"value": "9A",
+									"refs": [],
+									"objectMetaReferences": []
+								},
+								"name": "Athena Air",
+								"flightNumber": {
+									"value": "3803",
+									"operationalSuffix": null
+								},
+								"resBookDesigCode": null,
+								"refs": []
+							},
+							"operatingCarrier": {
+								"airlineID": {
+									"value": "9A",
+									"refs": [],
+									"objectMetaReferences": []
+								},
+								"name": "Athena Air",
+								"flightNumber": {
+									"value": "3803",
+									"operationalSuffix": null
+								},
+								"resBookDesigCode": null,
+								"refs": [],
+								"disclosures": null
+							},
+							"equipment": {
+								"aircraftCode": {
+									"value": "E95",
+									"refs": [],
+									"objectMetaReferences": []
+								},
+								"changeOfGaugeInd": null,
+								"refs": [],
+								"name": "E95 - EMBRAER 195 JET",
+								"airlineEquipCode": null
+							},
+							"classOfService": null,
+							"flightDetail": {
+								"flightSegmentType": null,
+								"flightDistance": null,
+								"flightDuration": {
+									"value": "PT2H10M",
+									"application": null,
+									"refs": []
+								},
+								"stops": null,
+								"resDateTime": null,
+								"tourOperatorFlightID": null,
+								"refs": []
+							},
+							"onTimePerformance": null,
+							"settlement": null,
+							"segmentKey": "SEG1",
+							"connectInd": null,
+							"electronicTicketInd": null,
+							"ticketlessInd": null,
+							"secureFlight": null,
 							"refs": []
 						},
-						"onTimePerformance": null,
-						"settlement": null,
-						"segmentKey": "SEG1",
-						"connectInd": null,
-						"electronicTicketInd": null,
-						"ticketlessInd": null,
-						"secureFlight": null,
-						"refs": []
-					},
 						{
-						"departure": {
-							"airportCode": {
-								"value": "FRA",
-								"application": null,
-								"area": null,
-								"uom": null
-							},
-							"date": "2015-12-24T21:00:00.000+0000",
-							"time": null,
-							"airportName": "Frankfurt International",
-							"terminal": null,
-							"refs": []
-						},
-						"arrival": {
-							"airportCode": {
-								"value": "LHR",
-								"application": null,
-								"area": null,
-								"uom": null
-							},
-							"date": "2015-12-24T21:00:00.000+0000",
-							"time": null,
-							"changeOfDay": null,
-							"airportName": null,
-							"terminal": null,
-							"refs": []
-						},
-						"marketingCarrier": {
-							"airlineID": {
-								"value": "9A",
-								"refs": [],
-								"objectMetaReferences": []
-							},
-							"name": "Athena Air",
-							"flightNumber": {
-								"value": "3916",
-								"operationalSuffix": null
-							},
-							"resBookDesigCode": null,
-							"refs": []
-						},
-						"operatingCarrier": {
-							"airlineID": {
-								"value": "9A",
-								"refs": [],
-								"objectMetaReferences": []
-							},
-							"name": "Athena Air",
-							"flightNumber": {
-								"value": "3916",
-								"operationalSuffix": null
-							},
-							"resBookDesigCode": null,
-							"refs": [],
-							"disclosures": null
-						},
-						"equipment": {
-							"aircraftCode": {
-								"value": "E95",
-								"refs": [],
-								"objectMetaReferences": []
-							},
-							"changeOfGaugeInd": null,
-							"refs": [],
-							"name": "E95 - EMBRAER 195 JET",
-							"airlineEquipCode": null
-						},
-						"classOfService": null,
-						"flightDetail": {
-							"flightSegmentType": null,
-							"flightDistance": null,
-							"flightDuration": {
-								"value": null,
-								"application": null,
+							"departure": {
+								"airportCode": {
+									"value": "FRA",
+									"application": null,
+									"area": null,
+									"uom": null
+								},
+								"date": "2015-12-24T21:00:00.000+0000",
+								"time": null,
+								"airportName": "Frankfurt International",
+								"terminal": null,
 								"refs": []
 							},
-							"stops": null,
-							"resDateTime": null,
-							"tourOperatorFlightID": null,
+							"arrival": {
+								"airportCode": {
+									"value": "LHR",
+									"application": null,
+									"area": null,
+									"uom": null
+								},
+								"date": "2015-12-24T21:00:00.000+0000",
+								"time": null,
+								"changeOfDay": null,
+								"airportName": null,
+								"terminal": null,
+								"refs": []
+							},
+							"marketingCarrier": {
+								"airlineID": {
+									"value": "9A",
+									"refs": [],
+									"objectMetaReferences": []
+								},
+								"name": "Athena Air",
+								"flightNumber": {
+									"value": "3916",
+									"operationalSuffix": null
+								},
+								"resBookDesigCode": null,
+								"refs": []
+							},
+							"operatingCarrier": {
+								"airlineID": {
+									"value": "9A",
+									"refs": [],
+									"objectMetaReferences": []
+								},
+								"name": "Athena Air",
+								"flightNumber": {
+									"value": "3916",
+									"operationalSuffix": null
+								},
+								"resBookDesigCode": null,
+								"refs": [],
+								"disclosures": null
+							},
+							"equipment": {
+								"aircraftCode": {
+									"value": "E95",
+									"refs": [],
+									"objectMetaReferences": []
+								},
+								"changeOfGaugeInd": null,
+								"refs": [],
+								"name": "E95 - EMBRAER 195 JET",
+								"airlineEquipCode": null
+							},
+							"classOfService": null,
+							"flightDetail": {
+								"flightSegmentType": null,
+								"flightDistance": null,
+								"flightDuration": {
+									"value": null,
+									"application": null,
+									"refs": []
+								},
+								"stops": null,
+								"resDateTime": null,
+								"tourOperatorFlightID": null,
+								"refs": []
+							},
+							"onTimePerformance": null,
+							"settlement": null,
+							"segmentKey": "SEG2",
+							"connectInd": null,
+							"electronicTicketInd": null,
+							"ticketlessInd": null,
+							"secureFlight": null,
 							"refs": []
-						},
-						"onTimePerformance": null,
-						"settlement": null,
-						"segmentKey": "SEG2",
-						"connectInd": null,
-						"electronicTicketInd": null,
-						"ticketlessInd": null,
-						"secureFlight": null,
-						"refs": []
-					}],
+						}],
 					"onPoint": null,
 					"offPoint": null
 				},
@@ -8388,7 +8425,8 @@ const offers = {
 				"refs": []
 			}
 		],
-		"originDestinationList": [{
+		"originDestinationList": [
+			{
 			"departureCode": {
 				"value": "ARN",
 				"application": null,
@@ -8782,7 +8820,8 @@ const offers = {
 		"serviceBundleList": [{
 			"itemCount": 3,
 			"associations": {
-				"serviceReference": [{
+				"serviceReference": [
+					{
 					"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
 					"declaredType": "java.lang.Object",
 					"scope": "javax.xml.bind.JAXBElement$GlobalScope",
@@ -9095,7 +9134,8 @@ const offers = {
 					"nil": false,
 					"globalScope": true,
 					"typeSubstituted": true
-				}, {
+				},
+					{
 					"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
 					"declaredType": "java.lang.Object",
 					"scope": "javax.xml.bind.JAXBElement$GlobalScope",
@@ -9318,7 +9358,8 @@ const offers = {
 					"nil": false,
 					"globalScope": true,
 					"typeSubstituted": true
-				}, {
+				},
+					{
 					"name": "{http://www.iata.org/IATA/EDIST}ServiceReference",
 					"declaredType": "java.lang.Object",
 					"scope": "javax.xml.bind.JAXBElement$GlobalScope",
@@ -9631,7 +9672,8 @@ const offers = {
 					"nil": false,
 					"globalScope": true,
 					"typeSubstituted": true
-				}],
+				}
+				],
 				"serviceID": []
 			},
 			"selection": {

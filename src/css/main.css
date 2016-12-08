@@ -11,16 +11,6 @@ html {
 
 }
 
-/*.preloader .like-table{
-	display: table;
-}
-
-.preloader .like-table-cell{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-}*/
-
 .preloader img {
 	opacity: 0.4;
 	position: absolute;

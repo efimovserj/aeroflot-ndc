@@ -151,12 +151,13 @@ class SearchFlights extends Component {
 								className: "form-control",
 								value: 'Откуда'
 							}}
-
 							onChange={(current) => {
-								const changeParams = Object.assign({}, searchParams);
-								changeParams.airportFrom = current;
-
-								this.setState({ searchParams: changeParams });
+								this.setState({
+									searchParams: {
+										...searchParams,
+										airportFrom: current,
+									}
+								});
 							}}
 						/>
 					</div>
@@ -176,10 +177,12 @@ class SearchFlights extends Component {
 							}}
 
 							onChange={(current) => {
-								const changeParams = Object.assign({}, searchParams);
-								changeParams.airportTo = current;
-
-								this.setState({ searchParams: changeParams });
+								this.setState({
+									searchParams: {
+										...searchParams,
+										airportTo: current,
+									}
+								});
 							}}
 						/>
 					</div>
@@ -189,6 +192,7 @@ class SearchFlights extends Component {
 					<div className="col-xs-2">
 						<p>Дата вылета</p>
 					</div>
+
 					<div className="col-xs-2">
 						<Calendar
 							isManualInputAllowed={false}
@@ -196,10 +200,12 @@ class SearchFlights extends Component {
 							value={dateFrom}
 							minDate={moment()}
 							onChange={(result) => {
-								const changeParams = Object.assign({}, searchParams);
-								changeParams.dateFrom = result;
-
-								this.setState({ searchParams: changeParams });
+								this.setState({
+									searchParams: {
+										...searchParams,
+										dateFrom: result,
+									}
+								});
 							}}
 						/>
 					</div>
@@ -209,6 +215,7 @@ class SearchFlights extends Component {
 					<div className="col-xs-2">
 						<p>Дата прибытия</p>
 					</div>
+
 					<div className="col-xs-2">
 						<Calendar
 							isManualInputAllowed={false}
@@ -216,10 +223,12 @@ class SearchFlights extends Component {
 							value={dateTo}
 							minDate={moment()}
 							onChange={(result) => {
-								const changeParams = Object.assign({}, searchParams);
-								changeParams.dateTo = result;
-
-								this.setState({ searchParams: changeParams });
+								this.setState({
+									searchParams: {
+										...searchParams,
+										dateTo: result,
+									}
+								});
 							}}
 						/>
 					</div>
@@ -228,11 +237,12 @@ class SearchFlights extends Component {
 				<div className="row">
 					<div className="col-xs-12">
 						<input type="checkbox" value={paymentMiles} onChange={() => {
-
-							const changeParams = Object.assign({}, searchParams);
-							changeParams.paymentMiles = !paymentMiles;
-
-							this.setState({ searchParams: changeParams });
+							this.setState({
+								searchParams: {
+									...searchParams,
+									paymentMiles: !paymentMiles,
+								}
+							});
 						}}/>
 						<span>Оплата милями</span>
 					</div>
@@ -244,16 +254,17 @@ class SearchFlights extends Component {
 					<div className="col-xs-1">
 						<p>Взрослые</p>
 					</div>
+
 					<div className="col-xs-3">
 						<select className="form-control"
 						        onChange={(e) => this.setPassengerCounter(e, 'adults')}
 						        disabled={passengers.youth > 0 && !paymentMiles}
 						>
-							{ passengerCounter.adults.map((item, i) => {
+							{passengerCounter.adults.map((item, i) => {
 								return (
 									<option key={i} value={item}>{item}</option>
 								)
-							}) }
+							})}
 						</select>
 						<small>(от 12 лет)</small>
 					</div>
@@ -261,6 +272,7 @@ class SearchFlights extends Component {
 					<div className="col-xs-1">
 						<p>Дети</p>
 					</div>
+
 					<div className="col-xs-3">
 						<select className="form-control"
 						        onChange={(e) => this.setPassengerCounter(e, 'children')}
@@ -278,6 +290,7 @@ class SearchFlights extends Component {
 					<div className="col-xs-1">
 						{!paymentMiles && <p>Младенцы</p>}
 					</div>
+
 					<div className="col-xs-3">
 						{!paymentMiles && <div>
 							<select className="form-control"
@@ -296,27 +309,32 @@ class SearchFlights extends Component {
 						}
 
 					</div>
+
 					<div className="col-xs-12">
 						{paymentMiles &&
 						<p className="text-danger">Оформление премиальных билетов за мили программы Аэрофлот
-							Бонус
-							не применяется для бронирования младенцев, молодежи и для нескольких пунктов
+							Бонус не применяется для бронирования младенцев, молодежи и для нескольких пунктов
 							назначения</p>
 						}
 					</div>
 				</div>
 
-				{!paymentMiles && <div className="row">
+				{!paymentMiles &&
+				<div className="row">
 					<div className="col-xs-12">
 						<p className="text-danger"> Тип пассажира "Молодежь" не комбинируется с другими типами
 							пассажиров.</p>
 					</div>
+
 					<div className="col-xs-1">
 						<p>Молодежь</p>
 					</div>
+
 					<div className="col-xs-3">
-						<select value={passengers.youth} className="form-control"
-						        onChange={(e) => this.setPassengerCounter(e, 'youth')}>
+						<select value={passengers.youth}
+						        className="form-control"
+						        onChange={(e) => this.setPassengerCounter(e, 'youth')}
+						>
 							{ passengerCounter.youth.map((item, i) => {
 								return (
 									<option key={i} value={item}>{item}</option>
@@ -330,11 +348,12 @@ class SearchFlights extends Component {
 
 				<h2>Предпочтения</h2>
 
-
-				{!paymentMiles && <div className="row">
+				{!paymentMiles &&
+				<div className="row">
 					<div className="col-xs-2">
 						<p>Класс обслуживания</p>
 					</div>
+
 					<div className="col-xs-10">
 						<Select
 							itemList={serviceList}
@@ -343,12 +362,13 @@ class SearchFlights extends Component {
 							inputProps={{
 								placeholder: 'Enter service type'
 							}}
-
 							onChange={(current) => {
-								const changeParams = Object.assign({}, searchParams);
-								changeParams.currentService = current;
-
-								this.setState({ searchParams: changeParams });
+								this.setState({
+									searchParams: {
+										...searchParams,
+										currentService: current,
+									}
+								});
 							}}
 						/>
 					</div>
@@ -359,6 +379,7 @@ class SearchFlights extends Component {
 					<div className="col-xs-2">
 						<p>Страна</p>
 					</div>
+
 					<div className="col-xs-4">
 						<Select
 							itemList={countriesList}
@@ -369,13 +390,16 @@ class SearchFlights extends Component {
 							}}
 
 							onChange={(current) => {
-								const changeParams = Object.assign({}, searchParams);
-								changeParams.currentCountry = current;
-
-								this.setState({ searchParams: changeParams });
+								this.setState({
+									searchParams: {
+										...searchParams,
+										currentCountry: current,
+									}
+								});
 							}}
 						/>
 					</div>
+
 					<div className="col-xs-2">
 						<p>Валюта: {currentCountry.currencyTitle}</p>
 					</div>
