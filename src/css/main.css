@@ -21,3 +21,17 @@ html {
 	margin: -100px 0 0 -100px;
 
 }
+
+img.service_img {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	opacity: 0.5;
+}
+
+img.service_img.active {
+	opacity: 1;
+}

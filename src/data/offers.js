@@ -296,7 +296,8 @@ const offers = {
 																		"allOriginDestinationInd": null,
 																		"allSegmentInd": null,
 																		"originDestinationReferencesOrSegmentReferences": [{
-																			"value": [{
+																			"value": [
+																				{
 																				"departure": {
 																					"airportCode": {
 																						"value": "ARN",
@@ -386,7 +387,8 @@ const offers = {
 																				"ticketlessInd": null,
 																				"secureFlight": null,
 																				"refs": []
-																			}, {
+																			},
+																				{
 																				"departure": {
 																					"airportCode": {
 																						"value": "FRA",
@@ -1926,7 +1928,8 @@ const offers = {
 											},
 											"interlineSettlementValue": null
 										},
-										"price": [{
+										"price": [
+											{
 											"total": {
 												"value": 0,
 												"taxable": true,
@@ -2508,7 +2511,8 @@ const offers = {
 												"allFlightInd": null,
 												"allOriginDestinationInd": null,
 												"allSegmentInd": null,
-												"originDestinationReferencesOrSegmentReferences": [{
+												"originDestinationReferencesOrSegmentReferences": [
+													{
 													"value": [{
 														"departure": {
 															"airportCode": {
@@ -2599,7 +2603,8 @@ const offers = {
 														"ticketlessInd": null,
 														"secureFlight": null,
 														"refs": []
-													}, {
+													},
+														{
 														"departure": {
 															"airportCode": {
 																"value": "FRA",
