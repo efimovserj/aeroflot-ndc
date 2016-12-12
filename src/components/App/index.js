@@ -20,9 +20,9 @@ class App extends Component {
 		super(props);
 		this.state = {
 			status: {
-				search: true,
+				search: false,
 				chooseFlight: false,
-				passengers: false,
+				passengers: true,
 				confirmInfo: false,
 				buyTicket: false,
 				final: false,
