@@ -88,7 +88,6 @@ class Service extends Component {
 					choose: !this.state.data.choose,
 				}
 			}, () => {
-				console.log('service', this.state.data);
 				this.props.onChange(this.state.data)
 			}
 		)
@@ -129,8 +128,6 @@ class Offer extends Component {
 	calculateTotalPrice = (service) => {
 		let result = this.state.data.totalPrice;
 
-		console.log(typeof result);
-
 		if (service.choose) {
 			result += service.price;
 		} else if (!service.choose) {
@@ -143,6 +140,15 @@ class Offer extends Component {
 				totalPrice: result,
 			}
 		})
+	}
+
+	chooseOffer = () => {
+		this.setState({
+			data: {
+				...this.state.data,
+				choose: !this.state.data.choose,
+			}
+		}, () => this.props.onChange(this.state.data))
 	}
 
 	render() {
@@ -184,7 +190,7 @@ class Offer extends Component {
 
 										{segment.services.include.map((service) => {
 											return (
-												<Service data={service} key={service.id}/>
+												<Service data={service} key={service.id} />
 											)
 										})}
 									</div>
@@ -206,7 +212,7 @@ class Offer extends Component {
 								</div>
 
 								<div className="col-xs-1">
-
+									{/*Non-Flex economy*/}
 								</div>
 							</div>
 						)
@@ -215,6 +221,10 @@ class Offer extends Component {
 
 				<div className="col-xs-2">
 					Стоимость {data.totalPrice} {data.currency}
+
+					<p onClick={this.chooseOffer} className={data.choose ? 'active' : ''}>
+						{data.choose ? 'Unselect' : 'Select'}
+					</p>
 				</div>
 			</div>
 		)
@@ -310,21 +320,46 @@ class ShowFlightsResult extends Component {
 
 	}
 
+	setChosenOffer = (offer, offerId) => {
+		let tmpOffers = this.state.customOffers.slice();
+		tmpOffers[offerId] = offer;
+
+		this.setState({
+			chosenFlight: offer.choose ? offer : {},
+			customOffers: tmpOffers,
+		})
+	}
+
 	render() {
 		const { offersGroup, dataLists, searchParams } = this.props;
-		const { customOffers } = this.state;
+		const { customOffers, chosenFlight } = this.state;
 
 		return (
 			<div>
-
 				<SearchParams dataLists={dataLists} searchParams={searchParams}/>
 
 				<p>Всего найдено <strong>{offersGroup.totalOfferQuantity}</strong> рейса.</p>
 
-				{customOffers.map((offer) => {
-					return (
-						<Offer data={offer} key={offer.id}/>
-					)
+				{customOffers.map((offer, id) => {
+					if (chosenFlight.id) {
+						if (offer.choose) {
+							return (
+								<Offer data={offer}
+								       key={offer.id}
+								       onChange={(data) => this.setChosenOffer(data, id)}
+								/>
+							)
+						}
+					} else {
+						return (
+							<Offer data={offer}
+							       key={offer.id}
+							       onChange={(data) => this.setChosenOffer(data, id)}
+							/>
+						)
+					}
+
+					return false;
 				})}
 
 			</div>

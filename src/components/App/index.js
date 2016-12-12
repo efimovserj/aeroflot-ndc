@@ -8,6 +8,7 @@ import './../../css/main.css';
 import SearchFlights from '../SearchFlights'
 import PreLoader from '../PreLoader';
 import ShowFlightsResult from '../ShowFlightsResult';
+import PassengersDetail from '../PassengersDetail';
 
 // import static data
 import airports from '../../data/airports';
@@ -32,6 +33,8 @@ class App extends Component {
 	}
 
 	setSearchParams = (searchParams) => {
+
+		console.log(searchParams);
 		let status = Object.create(this.state.status);
 		// const self = this;
 
@@ -71,8 +74,6 @@ class App extends Component {
 	render() {
 		const { status, searchResult, searchParams } = this.state;
 
-		// console.log(searchParams)
-
 		return (
 			<div className="App">
 				{status.search && <SearchFlights airports={airports} callback={this.setSearchParams}/>}
@@ -84,6 +85,11 @@ class App extends Component {
 					searchParams={searchParams.coreQuery.originDestinations[0]}
 				/>
 				}
+
+				{status.passengers && <PassengersDetail
+					dataLists={searchResult.dataLists}
+					callback={this.setSearchParams}
+				/>}
 
 				{status.waiting && <PreLoader />}
 			</div>

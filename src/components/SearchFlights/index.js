@@ -63,49 +63,92 @@ class SearchFlights extends Component {
 	}
 
 	sendData = () => {
-		const { dateFrom, dateTo, airportFrom, airportTo, passengers } = this.state.searchParams;
+		const {
+			dateFrom,
+			dateTo,
+			airportFrom,
+			airportTo,
+			passengers,
+			currentCountry,
+			currentService,
+		} = this.state.searchParams;
 
-		let request = {
-			pointOfSaleEvent: {
-				code: 9,
-				definition: 'Shop agent'
+		let request = Object.assign(senderConfig, {
+			"parameters": {
+				"currCodes": [
+					{
+						"value": currentCountry.currency
+					}
+				]
 			},
-			onds: [{
-				flights: [{
-					departure: {
-						date: moment(dateFrom).format('YYYY-MM-DD'),
-						airportCode: airportFrom.id,
-					},
-					arrival: {
-						date: moment(dateTo).format('YYYY-MM-DD'),
-						airportCode: airportTo.id,
-					},
-					airline: senderConfig.sender
-				}]
-			}],
-			cabin: 'S',
-			fareCodes: ['BRO'],
-			travelers: [{
-				anonymous: true,
-				count: passengers.adults,
-				type: 'ADT'
-			}],
-		};
+			"coreQuery": {
+				"originDestinations": [
+					{
+						"departure": {
+							"airportCode": {
+								"value": airportFrom.id,
+							},
+							"date": moment(dateFrom),
+						},
+						"arrival": {
+							"airportCode": {
+								"value": airportTo.id,
+							},
+							"date": moment(dateTo),
+						},
+						"marketingCarrierAirline": {
+							"airlineID": {
+								"value": "C9"
+							},
+							"name": "Kronos Air"
+						}
+					}
+				]
+			},
+			"preference": {
+				"cabinPreferences": {
+					"cabinType": [
+						{
+							"code": currentService.id,
+							"definition": currentService.text
+						}
+					]
+				}
+			},
+			"metadata": {
+				"other": [
+					{
+						"currencyMetadatas": [
+							{
+								"metadataKey": currentCountry.currency,
+								"decimals": 2
+							}
+						]
+					}
+				]
+			},
+		});
 
 		if (passengers.children > 0) {
-			request.travelers.push({
-				anonymous: true,
-				count: passengers.children,
-				type: 'CNN'
-			})
+			request.travelers[0].anonymousTraveler.push({
+					"anonymousTraveler": [{
+						"ptc": {
+							quantity: passengers.children,
+							value: 'CNN'
+						}
+					}],
+				})
 		}
 
 		if (passengers.babies > 0) {
-			request.travelers.push({
-				anonymous: true,
-				count: passengers.babies,
-				type: 'INF'
-			})
+			request.travelers[0].anonymousTraveler.push({
+					"anonymousTraveler": [{
+						"ptc": {
+							quantity: passengers.babies,
+							value: 'INF'
+						}
+					}],
+				})
 		}
 
 		this.props.callback(request);
