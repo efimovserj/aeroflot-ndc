@@ -1,14 +1,174 @@
 import React, { Component } from 'react';
-// import moment from 'moment';
+import moment from 'moment';
 
 // import library from "../../lib/library";
+import Select from '../select';
+import Calendar from '../calendar';
 
 import passengersTypes from '../../data/passengersTypes';
+import appealList from '../../data/appealList';
+import suffixList from '../../data/suffixList';
 
 class TravelerInformation extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			mainInfo: {
+				appeal: '',
+				firstName: '',
+				secondName: '',
+				middleName: '',
+				suffix: '',
+				birthDate: '',
+				sex: '',
+			}
+		}
+	}
+
+	handleSecondNameInput = (e) => {
+		this.setState({
+			mainInfo: {
+				...this.state.mainInfo,
+				secondName: e.target.value,
+			}
+		}, this.sendMainInfo)
+	}
+
+	handleFirstNameInput = (e) => {
+		this.setState({
+			mainInfo: {
+				...this.state.mainInfo,
+				firstName: e.target.value,
+			}
+		}, this.sendMainInfo)
+	}
+
+	handleMiddleNameInput = (e) => {
+		this.setState({
+			mainInfo: {
+				...this.state.mainInfo,
+				middleName: e.target.value,
+			}
+		}, this.sendMainInfo)
+	}
+
+	handleSuffixSelect = (e) => {
+		this.setState({
+			mainInfo: {
+				...this.state.mainInfo,
+				suffix: e.target.value,
+			}
+		}, this.sendMainInfo)
+	}
+
+	handleBirthDate = (result) => {
+		this.setState({
+			mainInfo: {
+				...this.state.mainInfo,
+				birthDate: result,
+			}
+		}, this.sendMainInfo)
+	}
+
+	handleAppealSelect = (e) => {
+		this.setState({
+			mainInfo: {
+				...this.state.mainInfo,
+				appeal: e.target.value,
+			}
+		}, this.sendMainInfo)
+	}
+
+	handleSexInput = (e) => {
+		this.setState({
+			mainInfo: {
+				...this.state.mainInfo,
+				sex: e.target.value,
+			}
+		}, this.sendMainInfo)
+	}
+
+	sendMainInfo = () => {
+		this.props.onChange(this.state.mainInfo)
+	}
+
 	render() {
 		return (
-			<div>TravelerInformation</div>
+			<div>
+				<div className="row">
+					<div className="col-xs-2">
+						<p>Обращение</p>
+						<select className="form-control" onChange={this.handleAppealSelect}>
+							{appealList.map((appeal, id) => {
+								return (
+									<option key={id} value={appeal.id}>{appeal.text}</option>
+								)
+							})}
+						</select>
+					</div>
+
+					<div className="col-xs-2">
+						<p>Фамилия*</p>
+						<input className="form-control" type="text" onChange={this.handleSecondNameInput}/>
+					</div>
+
+					<div className="col-xs-2">
+						<p>Имя*</p>
+						<input className="form-control" type="text" onChange={this.handleFirstNameInput}/>
+					</div>
+
+					<div className="col-xs-2">
+						<p>Отчество**</p>
+						<input className="form-control" type="text" onChange={this.handleMiddleNameInput}/>
+					</div>
+
+					<div className="col-xs-2">
+						<p>Суффикс</p>
+						<select className="form-control" onChange={this.handleSuffixSelect}>
+							{suffixList.map((suffix, id) => {
+								return (
+									<option key={id} value={suffix.id}>{suffix.text}</option>
+								)
+							})}
+						</select>
+					</div>
+
+					<p className="text-danger col-xs-12">
+						**отчество (если имеется) вводится только для внутренних перевозок по Российской
+						Федерации
+					</p>
+				</div>
+
+				<div className="row">
+					<h4 className="col-xs-12">Информация о путешественнике</h4>
+
+					<div className="col-xs-2">
+						<p>Дата рождения:*</p>
+						<Calendar
+							isManualInputAllowed={false}
+							format="DD.MM.YYYY"
+							value={this.state.mainInfo.birthDate}
+							minDate={moment("01-01-1911", "MM-DD-YYYY")}
+							maxDate={moment()}
+							onChange={(result) => {
+								this.handleBirthDate(result)
+							}}
+						/>
+					</div>
+
+					<div className="col-xs-2">
+						<p>Пол:*</p>
+
+						<label>
+							<input type="radio" name='sex' value='men' onClick={this.handleSexInput} /> Мужской
+						</label>
+
+						<label>
+							<input type="radio" name='sex' value='women' onClick={this.handleSexInput} /> Женский
+						</label>
+					</div>
+				</div>
+			</div>
 		)
 	}
 }
@@ -16,7 +176,23 @@ class TravelerInformation extends Component {
 class TravelerDocument extends Component {
 	render() {
 		return (
-			<div>TravelerDocument</div>
+			<div>
+				<div className="row">
+					<h4 className="col-xs-12">Предпочтения в путешествии</h4>
+
+					<p className="col-xs-2">Участник программы Аэрофлот Бонус</p>
+
+					<div className="col-xs-2">
+						<select className="form-control" onChange={this.handleSuffixSelect}>
+							{suffixList.map((suffix, id) => {
+								return (
+									<option key={id} value={suffix.id}>{suffix.text}</option>
+								)
+							})}
+						</select>
+					</div>
+				</div>
+			</div>
 		)
 	}
 }
@@ -42,18 +218,12 @@ class PassengersDetail extends Component {
 	componentDidMount() {
 		let passengers = {};
 
-		this.props.dataLists.anonymousTravelerList.map(type => {
+		this.props.dataLists.anonymousTravelerList.forEach(type => {
 			passengers[type.ptc.value] = [];
 
 			for (let count = 1; count <= type.ptc.quantity; count++) {
 				passengers[type.ptc.value].push({
-					appeal: '',
-					firstName: '',
-					secondName: '',
-					middleName: '',
-					suffix: '',
-					birthDate: '',
-					sex: '',
+					mainInfo: {},
 					preference: {
 						name: '',
 						number: '',
@@ -71,11 +241,23 @@ class PassengersDetail extends Component {
 		})
 
 		this.setState({ passengers });
+	}
 
+	setMainInfo = (info, id, type) => {
+		let tmpPassengers = this.state.passengers[type.id].slice();
+
+		tmpPassengers[id] = info;
+
+		this.setState({
+			passengers: {
+				...this.state.passengers,
+				[type.id]: tmpPassengers,
+			},
+		})
 	}
 
 	render() {
-		const { dataLists, searchParams } = this.props;
+		const { dataLists } = this.props;
 		const { passengers } = this.state;
 
 		return (
@@ -83,6 +265,7 @@ class PassengersDetail extends Component {
 				<div className="row">
 					<div className="col-xs-4">
 						<h4>Пассажиры</h4>
+
 						<ul>
 							{dataLists.anonymousTravelerList.map((type, id) => {
 								let title = '';
@@ -114,10 +297,8 @@ class PassengersDetail extends Component {
 						<div id="passenger-notification" className="alertFullWidth">
 							Фамилия, имя, отчество и номер документа пассажира вводятся латинскими буквами. При
 							внесении данных заграничного паспорта - как указано в заграничном паспорте. При
-							внесении
-							данных паспорта гражданина РФ в поле «Срок действия» вводится любая дата более
-							поздняя,
-							чем дата Вашего полета. Номер документа вводится без пробелов.
+							внесении данных паспорта гражданина РФ в поле «Срок действия» вводится любая дата
+							более поздняя, чем дата Вашего полета. Номер документа вводится без пробелов.
 
 							<p className="singleLine">
 								Информация о документе пассажира вносится по требованию Министерства транспорта РФ.
@@ -132,7 +313,7 @@ class PassengersDetail extends Component {
 
 						<h4>
 							Пассажирам c одинаковыми именами и фамилиями требуется указать суффикс.<br />
-							Внимание ! Взрослый пассажир, сопровождающий ребенка, не может быть моложе 18 лет.
+							Внимание! Взрослый пассажир, сопровождающий ребенка, не может быть моложе 18 лет.
 						</h4>
 
 						<small className="field-required-legend">
@@ -141,24 +322,20 @@ class PassengersDetail extends Component {
 					</div>
 				</div>
 
-				{passengersTypes.forEach((type, id) => {
-					console.log('passengersTypes', passengersTypes);
-					console.log('passengers', passengers);
-					console.log('type.id', type.id);
-					console.log('passengers[type.id]', passengers[type.id]);
-
+				{passengersTypes.map((type, id) => {
 					if (passengers[type.id]) {
 						return (
-							<div>
+							<div key={id}>
 								<h4>{type.text}</h4>
 
-								{passengers[type.id].map((passenger, passid) => {
-									console.log('alarm', passenger);
-
+								{passengers[type.id].map((passenger, passId) => {
 									return (
-										<div key={passid}>
-											{type.id};
-											<TravelerInformation />
+										<div key={passId}>
+											<TravelerInformation mainInfo={passenger.mainInfo}
+											                     onChange={(mainInfo) => {
+												                     this.setMainInfo(mainInfo, id, type)
+											                     }}
+											/>
 											<TravelerPreferences />
 											<TravelerDocument />
 										</div>
@@ -167,6 +344,8 @@ class PassengersDetail extends Component {
 							</div>
 						)
 					}
+
+					return null;
 
 				})}
 			</div>
