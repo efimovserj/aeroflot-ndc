@@ -3,6 +3,8 @@ import moment from 'moment';
 
 import library from "../../lib/library";
 
+import Button from '../button';
+
 class SearchParams extends Component {
 	render() {
 		const { dataLists, searchParams } = this.props;
@@ -361,6 +363,12 @@ class ShowFlightsResult extends Component {
 
 					return false;
 				})}
+
+				<Button title='Оплатить'
+				        onChange={this.sendData}
+				        type="button"
+				        class="btn btn-primary"
+				/>
 
 			</div>
 		)

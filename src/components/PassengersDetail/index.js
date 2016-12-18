@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import moment from 'moment';
 
-// import library from "../../lib/library";
-import Select from '../select';
+// import Components
 import Calendar from '../calendar';
+import Button from '../button';
 
+// import data
 import passengersTypes from '../../data/passengersTypes';
 import appealList from '../../data/appealList';
 import suffixList from '../../data/suffixList';
+import bonusPartner from '../../data/bonusPartner';
+import specialRequests from '../../data/specialRequests';
+import countries from '../../data/countries';
 
 class TravelerInformation extends Component {
 	constructor(props) {
@@ -160,36 +164,12 @@ class TravelerInformation extends Component {
 						<p>Пол:*</p>
 
 						<label>
-							<input type="radio" name='sex' value='men' onClick={this.handleSexInput} /> Мужской
+							<input type="radio" name='sex' value='men' onClick={this.handleSexInput}/> Мужской
 						</label>
 
 						<label>
-							<input type="radio" name='sex' value='women' onClick={this.handleSexInput} /> Женский
+							<input type="radio" name='sex' value='women' onClick={this.handleSexInput}/> Женский
 						</label>
-					</div>
-				</div>
-			</div>
-		)
-	}
-}
-
-class TravelerDocument extends Component {
-	render() {
-		return (
-			<div>
-				<div className="row">
-					<h4 className="col-xs-12">Предпочтения в путешествии</h4>
-
-					<p className="col-xs-2">Участник программы Аэрофлот Бонус</p>
-
-					<div className="col-xs-2">
-						<select className="form-control" onChange={this.handleSuffixSelect}>
-							{suffixList.map((suffix, id) => {
-								return (
-									<option key={id} value={suffix.id}>{suffix.text}</option>
-								)
-							})}
-						</select>
 					</div>
 				</div>
 			</div>
@@ -198,9 +178,233 @@ class TravelerDocument extends Component {
 }
 
 class TravelerPreferences extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			preference: {
+				name: '',
+				number: '',
+				specialRequest: '',
+			},
+		};
+	}
+
+	handleBonusPartnerSelect = (e) => {
+		this.setState({
+			preference: {
+				...this.state.preference,
+				name: e.target.value,
+			}
+		}, this.sendPreference)
+	}
+
+	handleNumberInput = (e) => {
+		this.setState({
+			preference: {
+				...this.state.preference,
+				number: e.target.value,
+			}
+		}, this.sendPreference)
+	}
+
+	handleSpecialRequestSelect = (e) => {
+		this.setState({
+			preference: {
+				...this.state.preference,
+				specialRequest: e.target.value,
+			}
+		}, this.sendPreference)
+	}
+
+	sendPreference = () => {
+		this.props.onChange(this.state.preference)
+	}
+
 	render() {
+		const {preference} = this.state;
+
 		return (
-			<div>TravelerPreferences</div>
+			<div>
+				<div className="row">
+					<h4 className="col-xs-12">Предпочтения в путешествии</h4>
+
+					<p className="col-xs-2">Участник программы Аэрофлот Бонус</p>
+
+					<div className="col-xs-2">
+						<select className="form-control" onChange={this.handleBonusPartnerSelect}>
+							{bonusPartner.map((partner, id) => {
+								return (
+									<option key={id} value={partner.id}>{partner.text}</option>
+								)
+							})}
+						</select>
+					</div>
+
+					<div className="col-xs-2">
+						<input type="number"
+						       className="form-control"
+						       placeholder="Номер"
+						       value={preference.number}
+						       onChange={this.handleNumberInput}
+						/>
+					</div>
+
+					<div className="col-xs-4">
+						Специальные запросы:
+						<select className="form-control" onChange={this.handleSpecialRequestSelect}>
+							{specialRequests.map((request, id) => {
+								return (
+									<option key={id} value={request.id}>{request.text}</option>
+								)
+							})}
+						</select>
+					</div>
+
+					<div className="col-xs-12">
+						<div id="extra-services-request" className="singleLine">
+							<p>
+								Если вам нужны услуги, требующие подтверждения (носилки, сопровождение, провоз
+								медицинского оборудования или собственного кресла-коляски),пожалуйста, закажите их
+								через
+								<a href="https://www.aeroflot.ru/feedback/questions/extra_services/service_booking"
+								   target="_blank"
+								>
+									<b> «Обратную связь»</b>
+								</a>.
+								Вы можете завершить бронирование самостоятельно и указать его номер в заявке, или
+								указать в заявке параметры бронирования, и оно будет создано для вас сотрудником
+								компании.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		)
+	}
+}
+
+class TravelerDocument extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			document: {
+				type: 'passport',
+				number: '',
+				country: '',
+				expire: moment(),
+				citizenship: ''
+			}
+		};
+	}
+
+	handleNumberInput = (e) => {
+		this.setState({
+			document: {
+				...this.state.document,
+				number: e.target.value,
+			}
+		}, this.sendDocument)
+	}
+
+	handleCountrySelect = (e) => {
+		this.setState({
+			document: {
+				...this.state.document,
+				country: e.target.value,
+			}
+		}, this.sendDocument)
+	}
+
+	handleExpireDate = (date) => {
+		this.setState({
+			document: {
+				...this.state.document,
+				expire: date,
+			}
+		}, this.sendDocument)
+	}
+
+	handleCitizenshipSelect = (e) => {
+		this.setState({
+			document: {
+				...this.state.document,
+				citizenship: e.target.value,
+			}
+		}, this.sendDocument)
+	}
+
+	sendDocument = () => {
+		this.props.onChange(this.state.document)
+	}
+
+	render() {
+		const {document} = this.state;
+
+		return (
+			<div>
+				<div className="row">
+					<div className="col-xs-2">Тип документа:</div>
+					<div className="col-xs-4">
+						<select className="form-control">
+							<option>Паспорт/Св. о рождении</option>
+						</select>
+					</div>
+				</div>
+
+				<div className="row">
+					<div className="col-xs-2">Серия и номер:*</div>
+					<div className="col-xs-4">
+						<input type="text"
+						       onChange={this.handleNumberInput}
+						       value={document.number}
+						       className="form-control"
+						/>
+					</div>
+				</div>
+
+				<div className="row">
+					<div className="col-xs-2">Страна выдачи:*</div>
+					<div className="col-xs-4">
+						<select className="form-control" onChange={this.handleCountrySelect}>
+							{countries.map((country, id) => {
+								return (
+									<option key={id} value={country.id}>{country.text}</option>
+								)
+							})}
+						</select>
+					</div>
+				</div>
+
+				<div className="row">
+					<div className="col-xs-2">Срок действия:*</div>
+					<div className="col-xs-4">
+						<Calendar
+							isManualInputAllowed={false}
+							format="DD.MM.YYYY"
+							value={document.expire}
+							minDate={moment("01-01-1911", "MM-DD-YYYY")}
+							maxDate={moment()}
+							onChange={(result) => {
+								this.handleExpireDate(result)
+							}}
+						/>
+					</div>
+				</div>
+
+				<div className="row">
+					<div className="col-xs-2">Гражданство:*</div>
+					<div className="col-xs-4">
+						<select className="form-control" onChange={this.handleCitizenshipSelect}>
+							{countries.map((country, id) => {
+								return (
+									<option key={id} value={country.id}>{country.text}</option>
+								)
+							})}
+						</select>
+					</div>
+				</div>
+			</div>
 		)
 	}
 }
@@ -224,29 +428,19 @@ class PassengersDetail extends Component {
 			for (let count = 1; count <= type.ptc.quantity; count++) {
 				passengers[type.ptc.value].push({
 					mainInfo: {},
-					preference: {
-						name: '',
-						number: '',
-						specialRequest: '',
-					},
-					document: {
-						type: '',
-						number: '',
-						country: '',
-						expire: '',
-						citizenship: ''
-					}
+					preference: {},
+					document: {}
 				})
 			}
 		})
 
-		this.setState({ passengers });
+		this.setState({passengers});
 	}
 
 	setMainInfo = (info, id, type) => {
 		let tmpPassengers = this.state.passengers[type.id].slice();
 
-		tmpPassengers[id] = info;
+		tmpPassengers[id]['mainInfo'] = info;
 
 		this.setState({
 			passengers: {
@@ -256,9 +450,39 @@ class PassengersDetail extends Component {
 		})
 	}
 
+	setPreference = (preference, id, type) => {
+		let tmpPassengers = this.state.passengers[type.id].slice();
+
+		tmpPassengers[id]['preference'] = preference;
+
+		this.setState({
+			passengers: {
+				...this.state.passengers,
+				[type.id]: tmpPassengers,
+			},
+		})
+	}
+
+	setDocument = (document, id, type) => {
+		let tmpPassengers = this.state.passengers[type.id].slice();
+
+		tmpPassengers[id]['document'] = document;
+
+		this.setState({
+			passengers: {
+				...this.state.passengers,
+				[type.id]: tmpPassengers,
+			},
+		})
+	}
+
+	sendData = () => {
+		this.props.callback(this.state.passengers);
+	};
+
 	render() {
-		const { dataLists } = this.props;
-		const { passengers } = this.state;
+		const {dataLists} = this.props;
+		const {passengers} = this.state;
 
 		return (
 			<div>
@@ -336,8 +560,16 @@ class PassengersDetail extends Component {
 												                     this.setMainInfo(mainInfo, id, type)
 											                     }}
 											/>
-											<TravelerPreferences />
-											<TravelerDocument />
+
+											<TravelerPreferences preference={passenger.preference}
+											                     onChange={(preference) => {
+												                     this.setPreference(preference, id, type)
+											                     }}
+											/>
+											<TravelerDocument document={passenger.document}
+											                  onChange={(document) => {
+												                  this.setDocument(document, id, type)
+											                  }}/>
 										</div>
 									)
 								})}
@@ -346,8 +578,13 @@ class PassengersDetail extends Component {
 					}
 
 					return null;
-
 				})}
+
+				<Button title='Продолжить'
+				        onChange={this.sendData}
+				        type="button"
+				        class="btn btn-primary"
+				/>
 			</div>
 		)
 	}

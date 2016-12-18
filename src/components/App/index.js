@@ -9,10 +9,12 @@ import SearchFlights from '../SearchFlights'
 import PreLoader from '../PreLoader';
 import ShowFlightsResult from '../ShowFlightsResult';
 import PassengersDetail from '../PassengersDetail';
+import PaymentInfo from '../PaymentInfo';
 
 // import static data
 import airports from '../../data/airports';
-import offers from '../../data/offers';
+//import offers from '../../data/offers';
+import offers from '../../data/reqres/offer-small';
 import request from '../../data/request';
 
 class App extends Component {
@@ -20,11 +22,10 @@ class App extends Component {
 		super(props);
 		this.state = {
 			status: {
-				search: false,
+				search: true,
 				chooseFlight: false,
-				passengers: true,
-				confirmInfo: false,
-				buyTicket: false,
+				passengers: false,
+				payment: false,
 				final: false,
 				waiting: false,
 			},
@@ -71,6 +72,14 @@ class App extends Component {
 
 	};
 
+	setPassengers = (data) => {
+		this.setState({passengers: data})
+	}
+
+	setPaymentInfo = (data) => {
+		this.setState({paymentInfo: data})
+	}
+
 	render() {
 		const { status, searchResult, searchParams } = this.state;
 
@@ -88,7 +97,11 @@ class App extends Component {
 
 				{status.passengers && <PassengersDetail
 					dataLists={searchResult.dataLists}
-					callback={this.setSearchParams}
+					callback={this.setPassengers}
+				/>}
+
+				{status.payment && <PaymentInfo
+					callback={this.setPaymentInfo}
 				/>}
 
 				{status.waiting && <PreLoader />}
