@@ -7,7 +7,7 @@ class PreLoader extends Component {
 
 	render() {
 		return (
-				<p className="preloader"><img src={preloader} alt="preloader"/></p>
+				<div className="preloader"><img src={preloader} alt="preloader"/></div>
 		);
 	}
 }

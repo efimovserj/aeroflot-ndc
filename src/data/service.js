@@ -1,15 +1,15 @@
 const service = [
 	{
 		id: 'M',
-		text: 'Эконом'
+		text: 'Economy'
 	},
 	{
 		id: 'C',
-		text: 'Комфорт'
+		text: 'Comfort'
 	},
 	{
 		id: 'B',
-		text: 'Бизнес'
+		text: 'Business'
 	}
 ];
 

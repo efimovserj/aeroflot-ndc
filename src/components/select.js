@@ -142,7 +142,7 @@ class Select extends React.Component {
 				</button>
 
 
-				<ul className='dropdown-menu' role='listbox' style={{ width: '100%' }}>
+				<ul className='dropdown-menu' role='listbox'>
 
 					{(filter) ? (
 						<li style={{ padding: '5px' }}>
@@ -151,7 +151,6 @@ class Select extends React.Component {
 								tabIndex='-1'
 								type='search'
 								className='form-control ng-pristine ng-valid'
-								style={{ width: '100%' }}
 								value={filterValue}
 								onChange={this.filterList}
 							/>

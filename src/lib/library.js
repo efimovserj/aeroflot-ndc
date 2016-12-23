@@ -1,4 +1,4 @@
-const urlBase = 'http://192.168.192.44:8080/api';
+const urlBase = 'http://192.168.192.39:8395/api';
 
 const urlsLibrary = {
 	oneway: urlBase + '/offers',

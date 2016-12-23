@@ -21,7 +21,7 @@ class SearchParams extends Component {
 								title = 'Взрослых: '
 							}
 
-							if (type.ptc.value === 'CNN') {
+							if (type.ptc.value === 'CHD') {
 								title = 'Детей: '
 							}
 
@@ -160,7 +160,6 @@ class Offer extends Component {
 			<div className="row">
 				<div className="col-xs-10">
 					{data.segments.map((segment, segmentId) => {
-
 						return (
 							<div className="row" key={segmentId}>
 								<div className="col-xs-2">
@@ -171,12 +170,12 @@ class Offer extends Component {
 								<div className="col-xs-5">
 									<div className="row">
 										<div className="col-xs-3">
-											{moment(segment.departure.date).format("HH:mm")} <br />
+											{segment.departure.time} <br />
 											{segment.departure.airportCode}
 										</div>
 
 										<div className="col-xs-3">
-											{moment(segment.arrival.date).format("HH:mm")} <br />
+											{segment.arrival.time} <br />
 											{segment.arrival.airportCode}
 										</div>
 
@@ -192,7 +191,7 @@ class Offer extends Component {
 
 										{segment.services.include.map((service) => {
 											return (
-												<Service data={service} key={service.id} />
+												<Service data={service} key={service.id}/>
 											)
 										})}
 									</div>
@@ -237,8 +236,14 @@ class ShowFlightsResult extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			chosenFlight: {},
-			customOffers: [],
+			chosenFlight: {
+				'OD1': {},
+				'OD2': {},
+			},
+			customOffers: {
+				'OD1': [],
+				'OD2': [],
+			},
 		};
 	}
 
@@ -247,18 +252,22 @@ class ShowFlightsResult extends Component {
 	}
 
 	createCustomOffers = () => {
-		let offersGroup = [];
+		let offersGroup = {
+			'OD1': [],
+			'OD2': [],
+		};
 
 		this.props.offersGroup.airlineOffer.forEach((offer) => {
 			let flight = {
 				id: offer.offerID.value,
+				originDestinationKey: offer.pricedOffer.associations[0].applicableFlight.originDestinationReferences[0].originDestinationKey,
 				totalPrice: Number(offer.totalPrice.detailCurrencyPrice.total.value),
 				currency: offer.totalPrice.detailCurrencyPrice.total.code,
 				segments: this.getSegments(offer.pricedOffer.associations[0]),
 				choose: false,
 			};
 
-			offersGroup.push(flight);
+			offersGroup[flight.originDestinationKey].push(flight);
 
 			this.setState({
 				customOffers: offersGroup,
@@ -279,11 +288,13 @@ class ShowFlightsResult extends Component {
 					airportCode: seg.ref.departure.airportCode.value,
 					airportName: seg.ref.departure.airportName,
 					date: seg.ref.departure.date,
+					time: seg.ref.departure.time,
 				},
 				arrival: {
 					airportCode: seg.ref.arrival.airportCode.value,
 					airportName: seg.ref.arrival.airportName,
 					date: seg.ref.arrival.date,
+					time: seg.ref.arrival.time,
 				},
 				services: {
 					include: this.getService(pathToAssociations.includedService.serviceReferences, 'include'),
@@ -297,6 +308,8 @@ class ShowFlightsResult extends Component {
 	}
 
 	getService = (pathToServices, type) => {
+		pathToServices = pathToServices || [];
+
 		return pathToServices.map((service) => {
 			let result = {
 				id: service.serviceID.value,
@@ -323,12 +336,20 @@ class ShowFlightsResult extends Component {
 	}
 
 	setChosenOffer = (offer, offerId) => {
-		let tmpOffers = this.state.customOffers.slice();
+		let tmpOffers = this.state.customOffers[offer.originDestinationKey].slice();
 		tmpOffers[offerId] = offer;
+		
+		console.log('this.state.customOffers', this.state.customOffers);
 
 		this.setState({
-			chosenFlight: offer.choose ? offer : {},
-			customOffers: tmpOffers,
+			chosenFlight: {
+				...this.state.chosenFlight,
+				[offer.originDestinationKey]: offer.choose ? offer : {}
+			},
+			customOffers: {
+				...this.state.customOffers,
+				[offer.originDestinationKey]: tmpOffers,
+			}
 		})
 	}
 
@@ -336,14 +357,40 @@ class ShowFlightsResult extends Component {
 		const { offersGroup, dataLists, searchParams } = this.props;
 		const { customOffers, chosenFlight } = this.state;
 
+		console.log('customOffers', customOffers);
+
 		return (
 			<div>
 				<SearchParams dataLists={dataLists} searchParams={searchParams}/>
 
 				<p>Всего найдено <strong>{offersGroup.totalOfferQuantity}</strong> рейса.</p>
 
-				{customOffers.map((offer, id) => {
-					if (chosenFlight.id) {
+				<h2>Туда</h2>
+				{customOffers['OD1'].map((offer, id) => {
+					if (chosenFlight['OD1'].id) {
+						if (offer.choose) {
+							return (
+								<Offer data={offer}
+								       key={offer.id}
+								       onChange={(data) => this.setChosenOffer(data, id)}
+								/>
+							)
+						}
+					} else {
+						return (
+							<Offer data={offer}
+							       key={offer.id }
+							       onChange={(data) => this.setChosenOffer(data, id)}
+							/>
+						)
+					}
+
+					return false;
+				})}
+
+				<h2>Сюда</h2>
+				{customOffers['OD2'].map((offer, id) => {
+					if (chosenFlight['OD2'].id) {
 						if (offer.choose) {
 							return (
 								<Offer data={offer}

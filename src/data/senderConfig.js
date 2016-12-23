@@ -69,7 +69,7 @@ const senderConfig = {
 	"echoToken": "8fdb1c621a7a4454aa3360556e7784d5",
 	"timeStamp": "2015-12-10T12:39:00.000+0000",
 	"target": "Test",
-	"version": "15.2",
+	"version": "16.1",
 	"transactionIdentifier": "a",
 	"sequenceNmbr": 201,
 	"retransmissionIndicator": false,
