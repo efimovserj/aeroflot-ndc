@@ -448,7 +448,7 @@ class SearchFlights extends Component {
 						</div>
 					</div>
 					}
-				</div>
+				</div>	
 
 				<div className="block">
 					<h2>Предпочтения</h2>

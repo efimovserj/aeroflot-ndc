@@ -37,9 +37,15 @@ class App extends Component {
 		let status = Object.create(this.state.status);
 		const self = this;
 
-		status.waiting = true;
+		//status.waiting = true;
 
-		this.setState({ status });
+		this.setState({ status: {
+			...this.state.status,
+			waiting: true,
+            //search: 'done',
+		} }, () => {
+            console.log('status.waitingololo', status.waiting);
+		});
 
 		/*library.lib.getResponse({
 		 method: 'POST',
@@ -62,11 +68,13 @@ class App extends Component {
 		status.chooseFlight = true;
 		status.waiting = false;
 
-		this.setState({
-			searchParams: request,
-			searchResult: response,
-			status,
-		})
+		setTimeout(() => {self.setState({
+            searchParams: request,
+            searchResult: response,
+            status,
+        })}, 3000)
+
+
 
 	};
 
@@ -81,12 +89,13 @@ class App extends Component {
 	render() {
 		const { status, searchResult, searchParams } = this.state;
 
+		console.log('status.waiting', status.waiting);
 		return (
 			<div className="App">
 
 				<Navigation status={this.state.status}/>
 
-				<div className="container">
+				<div className={['container', status.waiting ? 'preloading' : ''].join(' ')}>
 					{(status.search && status.search !== 'done') && <SearchFlights airports={airports} callback={this.setSearchParams}/>}
 
 					{status.chooseFlight &&
@@ -105,9 +114,10 @@ class App extends Component {
 					{status.payment && <PaymentInfo
 						callback={this.setPaymentInfo}
 					/>}
+
+                    {status.waiting && <PreLoader status={status.waiting} />}
 				</div>
 
-				{status.waiting && <PreLoader />}
 			</div>
 		);
 	}
