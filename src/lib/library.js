@@ -1,7 +1,8 @@
-const urlBase = 'http://192.168.192.39:8395/api';
+// const urlBase = 'http://192.168.192.39:8395/api';
+const urlBase = '';
 
 const urlsLibrary = {
-	oneway: urlBase + '/offers',
+	oneway: urlBase + '/api/offers',
 };
 
 const noop = () => {

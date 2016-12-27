@@ -25,6 +25,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-bottom: 20px; }
 
+.icon-departure {
+  transform: rotate(45deg); }
+
+.icon-arrive {
+  transform: rotate(135deg); }
+
 .App {
   padding: 40px 0; }
 
@@ -36,24 +42,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   border: 1px solid #000;
   border-top: 0;
-  padding: 10px 20px;
+  padding: 0 20px 10px;
   background: #fff;
   border-radius: 0 0 10px 10px;
   transition: max-height 2s ease-in 0ms;
   box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5); }
-  .container img.service_img {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    opacity: 0.5; }
-  .container img.service_img.active {
-    opacity: 1; }
   .container .btn-dropdown-toggle {
     display: block;
-    width: 100%;
+    width: 1001%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
@@ -71,11 +67,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3px; }
   .container .block {
     padding: 5px 15px;
-    -webkit-border-radius: 0 0 20px 20px;
-    -moz-border-radius: 0 0 20px 20px;
     border-radius: 0 0 20px 20px;
-    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; }
     .container .block .direction {
@@ -127,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
           .container.navigator ul li.active.done {
             background: #02458d;
             color: #fff;
-            border-bottom: 1px solid #001933;
+            border-bottom: 1px solid #02458d;
             cursor: pointer; }
           .container.navigator ul li.active:first-child {
             border-left: 0; }
@@ -150,5 +142,95 @@ h1, h2, h3, h4, h5, h6 {
       height: 200px;
       width: 200px;
       margin: -100px 0 0 -100px; }
+
+.total-result {
+  background: #02458d;
+  color: #fff;
+  margin: 0 -20px 20px;
+  padding: 10px 40px 20px;
+  position: relative; }
+  .total-result:after {
+    content: ' ';
+    display: block;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    border-top: 1px solid #000000;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    box-shadow: 0 -20px 30px rgba(0, 0, 0, 0.5); }
+  .total-result h4 {
+    margin-bottom: 10px; }
+  .total-result .passengers-list {
+    list-style: none;
+    padding-left: 0; }
+    .total-result .passengers-list li {
+      margin-bottom: 5px; }
+
+.search-result p {
+  padding: 10px; }
+.search-result .flight {
+  padding-top: 20px; }
+  .search-result .flight h4 {
+    color: #02458d;
+    margin: 0;
+    font-style: italic;
+    text-align: center; }
+  .search-result .flight .flightNumber {
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; }
+.search-result .segments-list {
+  position: relative; }
+  .search-result .segments-list .segment {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0; }
+    .search-result .segments-list .segment:last-child {
+      border: 0; }
+    .search-result .segments-list .segment .info .col-xs-3 {
+      padding: 0;
+      border-left: 1px solid #fff; }
+    .search-result .segments-list .segment .info p {
+      text-align: center; }
+      .search-result .segments-list .segment .info p.airport-code {
+        background: #eee; }
+.search-result .service .like-link {
+  color: #02458d;
+  text-decoration: underline;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer; }
+.search-result .service small {
+  display: block;
+  margin: 5px 0; }
+.search-result .services-editor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  transition: width 400ms ease-in 0ms;
+  border-left: 1px solid #eee; }
+  .search-result .services-editor.active {
+    width: 100%;
+    opacity: 1; }
+    .search-result .services-editor.active .content {
+      opacity: 1; }
+  .search-result .services-editor .content {
+    opacity: 0;
+    transition: opacity 200ms ease-in 600ms; }
+    .search-result .services-editor .content .service img {
+      width: 100%;
+      max-height: 160px;
+      outline: 1px solid #eee;
+      border: 1px solid #eee; }
+    .search-result .services-editor .content .service .active img {
+      outline: 1px solid #02458d;
+      border: 1px solid #FFB20D; }
 
 /*# sourceMappingURL=main.css.map */

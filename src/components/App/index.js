@@ -12,6 +12,7 @@ import ShowFlightsResult from '../ShowFlightsResult';
 import PassengersDetail from '../PassengersDetail';
 import PaymentInfo from '../PaymentInfo';
 import Navigation from '../Navigation';
+import TotalResult from '../TotalResult';
 
 // import static data
 import airports from '../../data/airports';
@@ -33,50 +34,60 @@ class App extends Component {
 		};
 	}
 
-	setSearchParams = (searchParams) => {
+	setSearchParamsMock = () => {
 		let status = Object.create(this.state.status);
 		const self = this;
 
-		//status.waiting = true;
 
-		this.setState({ status: {
-			...this.state.status,
-			waiting: true,
-            //search: 'done',
-		} }, () => {
-            console.log('status.waitingololo', status.waiting);
+		this.setState({
+			status: {
+				...this.state.status,
+				waiting: true,
+			}
 		});
-
-		/*library.lib.getResponse({
-		 method: 'POST',
-		 data: searchParams,
-		 url: library.lib.urlsLibrary.oneway,
-		 callback: (response) => {
-		 status.search = 'done';
-		 status.chooseFlight = true;
-		 status.waiting = false;
-
-		 self.setState({
-		 searchParams: searchParams,
-		 searchResult: JSON.parse(response),
-		 status,
-		 })
-		 }
-		 });*/
 
 		status.search = 'done';
 		status.chooseFlight = true;
 		status.waiting = false;
 
-		setTimeout(() => {self.setState({
-            searchParams: request,
-            searchResult: response,
-            status,
-        })}, 3000)
-
-
-
+		setTimeout(() => {
+			self.setState({
+				searchParams: request,
+				searchResult: response,
+				status,
+			})
+		}, 1000)
 	};
+
+	setSearchParams = (searchParams) => {
+		let status = Object.create(this.state.status);
+		const self = this;
+
+		this.setState({
+			status: {
+				...this.state.status,
+				waiting: true,
+			}
+		});
+
+		library.lib.getResponse({
+			method: 'POST',
+			data: searchParams,
+			url: library.lib.urlsLibrary.oneway,
+			callback: (response) => {
+				status.search = 'done';
+				status.chooseFlight = true;
+				status.waiting = false;
+
+				self.setState({
+					searchParams: searchParams,
+					searchResult: JSON.parse(response),
+					status,
+				})
+			}
+		});
+	};
+
 
 	setPassengers = (data) => {
 		this.setState({ passengers: data })
@@ -89,14 +100,18 @@ class App extends Component {
 	render() {
 		const { status, searchResult, searchParams } = this.state;
 
-		console.log('status.waiting', status.waiting);
 		return (
 			<div className="App">
 
 				<Navigation status={this.state.status}/>
 
 				<div className={['container', status.waiting ? 'preloading' : ''].join(' ')}>
-					{(status.search && status.search !== 'done') && <SearchFlights airports={airports} callback={this.setSearchParams}/>}
+
+					{status.chooseFlight &&
+					<TotalResult dataLists={searchResult.dataLists} searchParams={searchParams.coreQuery.originDestinations[0]}/>}
+
+					{(status.search && status.search !== 'done') &&
+					<SearchFlights airports={airports} callback={this.setSearchParamsMock}/>}
 
 					{status.chooseFlight &&
 					<ShowFlightsResult
@@ -115,7 +130,7 @@ class App extends Component {
 						callback={this.setPaymentInfo}
 					/>}
 
-                    {status.waiting && <PreLoader status={status.waiting} />}
+					{status.waiting && <PreLoader status={status.waiting}/>}
 				</div>
 
 			</div>

@@ -199,7 +199,6 @@ class SearchFlights extends Component {
 		})
 	}
 
-
 	render() {
 		const { airports } = this.props;
 		let { searchParams } = this.state;

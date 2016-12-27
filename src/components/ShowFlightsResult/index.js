@@ -1,75 +1,86 @@
 import React, { Component } from 'react';
-import moment from 'moment';
+// import moment from 'moment';
 
 import library from "../../lib/library";
 
 import Button from '../button';
 
-class SearchParams extends Component {
+class ServicesList extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			showHide: false,
+			choose: 0,
+		}
+	}
+
+	showHideServices = () => {
+		this.setState({
+			showHide: !this.state.showHide,
+		})
+	}
+
+	componentWillReceiveProps(nextProps) {
+		let count = 0;
+
+		nextProps.additional.forEach(service => {
+			if (service.choose) {
+				count++
+			}
+		})
+
+		this.setState({
+			choose: count
+		})
+
+	}
+
 	render() {
-		const { dataLists, searchParams } = this.props;
+		const { include, additional, segment, segmentId } = this.props;
 
 		return (
-			<div className="row">
-				<div className="col-xs-4">
-					<h4>Пассажиры</h4>
-					<ul>
-						{dataLists.anonymousTravelerList.map((type, id) => {
-							let title = '';
+			<div>
+				{!!include.length
+					? (<p><span className="like-link" onClick={this.showHideServices}>
+							{include.length} included in price extra{include.length > 1 ? 's' : ''}
+						</span></p>)
+					: (<p>Included in price extras not available</p>)
+				}
 
-							if (type.ptc.value === 'ADT') {
-								title = 'Взрослых: '
+				{!!additional.length
+					? (<div>
+						<p>Available
+							<span className="like-link" onClick={this.showHideServices}>
+								{additional.length} optional extra{additional.length > 1 ? 's' : ''}
+							</span>
+							{this.state.choose
+								? <small>( Choosed {this.state.choose} of {additional.length} )</small>
+								: null
 							}
+						</p>
+					</div>)
+					: (<p>Optional extras not available</p>)
+				}
 
-							if (type.ptc.value === 'CHD') {
-								title = 'Детей: '
-							}
 
-							if (type.ptc.value === 'INF') {
-								title = 'Младенцев: '
-							}
+				<div className={['services-editor', this.state.showHide ? 'active' : ' '].join(' ')}>
+					<div className="content">
+						<p>Included in price extras </p>
 
-							return (
-								<li key={id}>{title} {type.ptc.quantity}</li>
-							)
-						})}
-					</ul>
+						<Service data={include}
+						         text="included in price extras"
+						/>
+
+						<p>Optional extras </p>
+
+						<Service data={additional}
+						         text="optional extras"
+						         onChange={(service, serviceId) =>
+							         this.props.onChange(service, segment, segmentId, serviceId)
+						         }
+						/>
+					</div>
 				</div>
-
-				<div className="col-xs-4">
-					<h4>Вылет</h4>
-					<p>
-						{
-							/*
-							 searchParams.departure.airportName
-							 ? searchParams.departure.airportName + ' '
-							 : ''
-							 */
-
-							`(${searchParams.departure.airportCode.value})
-								${moment(searchParams.departure.date).format('YYYY-MM-DD')}`
-						}
-					</p>
-				</div>
-
-				<div className="col-xs-4">
-					<h4>Прилет</h4>
-					<p>
-						{
-							/*
-							 searchParams.arrival.airportName
-							 ? searchParams.arrival.airportName + ' '
-							 : ''
-							 */
-
-							`(${searchParams.arrival.airportCode.value})
-								${moment(searchParams.arrival.date).format('YYYY-MM-DD')}`
-						}
-					</p>
-				</div>
-
-				<hr />
-				<hr />
 			</div>
 		)
 	}
@@ -79,33 +90,64 @@ class Service extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			data: this.props.data,
+			serviceList: this.props.data,
 		};
 	}
 
-	changeServiceStatus = () => {
+	changeServiceStatus = (serviceId) => {
+
+		let tmpServiceList = this.state.serviceList.slice();
+
+		tmpServiceList[serviceId].choose = !tmpServiceList[serviceId].choose;
+
 		this.setState({
-				data: {
-					...this.state.data,
-					choose: !this.state.data.choose,
-				}
+				serviceList: tmpServiceList
 			}, () => {
-				this.props.onChange(this.state.data)
+				this.props.onChange(this.state.serviceList[serviceId])
 			}
 		)
 	}
 
 	render() {
-		let { data } = this.state;
+		let { serviceList } = this.state;
+
 
 		return (
-			<img
-				className={["service_img", data.choose ? 'active' : ''].join(' ')}
-				src={data.description.img}
-				alt={data.description.text}
-				title={data.name}
-				onClick={data.changeable ? this.changeServiceStatus : library.lib.noop }
-			/>
+			<div className="service row">
+				{serviceList.map((service, id) => {
+
+					console.log('service',service);
+					return (
+						<div className="col-xs-4">
+							<div className="row">
+								<div className="col-xs-8">
+									<img key={id}
+									     className={["service_img", service.choose ? 'active' : ''].join(' ')}
+									     src={service.description.img}
+									     alt={service.description.text}
+									     title={service.name}
+									     onClick={service.changeable ? () => this.changeServiceStatus(id) : library.lib.noop }
+									/>
+								</div>
+
+								<div className="col-xs-4">
+									<div className="row">
+										<div className="col-xs-12">
+											{service.name}
+										</div>
+										<div className="col-xs-12">
+											{service.price} {}
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					)
+				})
+				}
+			</div>
 		)
 	}
 }
@@ -157,63 +199,43 @@ class Offer extends Component {
 		let { data } = this.state;
 
 		return (
-			<div className="row">
-				<div className="col-xs-10">
+			<div className="row block">
+				<div className="col-xs-10 segments-list">
 					{data.segments.map((segment, segmentId) => {
 						return (
-							<div className="row" key={segmentId}>
-								<div className="col-xs-2">
-									{segment.airlineName} <br />
-									{segment.flightNumber}
+							<div className="row segment" key={segmentId}>
+								<div className="col-xs-2 flight">
+									<h4>{segment.airlineName}</h4>
+									<p className="flightNumber">{segment.flightNumber}</p>
 								</div>
 
-								<div className="col-xs-5">
-									<div className="row">
+								<div className="col-xs-6">
+									<div className="row info">
 										<div className="col-xs-3">
-											{segment.departure.time} <br />
-											{segment.departure.airportCode}
+											<p>{segment.departure.time}</p>
+											<p className="airport-code">{segment.departure.airportCode}</p>
 										</div>
 
 										<div className="col-xs-3">
-											{segment.arrival.time} <br />
-											{segment.arrival.airportCode}
+											<p>{segment.arrival.time}</p>
+											<p className="airport-code">{segment.arrival.airportCode}</p>
 										</div>
 
 										<div className="col-xs-3">
-											{segment.flightDuration}
+											<p>{segment.flightDuration}</p>
 										</div>
 									</div>
 								</div>
 
-								<div className="col-xs-4">
-									<div>
-										<span>Included in price</span>
-
-										{segment.services.include.map((service) => {
-											return (
-												<Service data={service} key={service.id}/>
-											)
-										})}
-									</div>
-
-									<div>
-										<span>Optional extras</span>
-
-										{segment.services.additional.map((service, serviceId) => {
-											return (
-												<Service data={service}
-												         key={service.id}
-												         onChange={(service) =>
-													         this.changeOfferService(service, segment, segmentId, serviceId)
-												         }
-												/>
-											)
-										})}
-									</div>
-								</div>
-
-								<div className="col-xs-1">
-									{/*Non-Flex economy*/}
+								<div className="col-xs-4 service">
+									<ServicesList include={segment.services.include}
+									              additional={segment.services.additional}
+									              segment={segment}
+									              segmentId={segmentId}
+									              onChange={(service, serviceId) =>
+										              this.changeOfferService(service, segment, segmentId, serviceId)
+									              }
+									/>
 								</div>
 							</div>
 						)
@@ -221,7 +243,7 @@ class Offer extends Component {
 				</div>
 
 				<div className="col-xs-2">
-					Стоимость {data.totalPrice} {data.currency}
+					<p>{data.totalPrice} {data.currency}</p>
 
 					<p onClick={this.chooseOffer} className={data.choose ? 'active' : ''}>
 						{data.choose ? 'Unselect' : 'Select'}
@@ -338,8 +360,6 @@ class ShowFlightsResult extends Component {
 	setChosenOffer = (offer, offerId) => {
 		let tmpOffers = this.state.customOffers[offer.originDestinationKey].slice();
 		tmpOffers[offerId] = offer;
-		
-		console.log('this.state.customOffers', this.state.customOffers);
 
 		this.setState({
 			chosenFlight: {
@@ -354,16 +374,12 @@ class ShowFlightsResult extends Component {
 	}
 
 	render() {
-		const { offersGroup, dataLists, searchParams } = this.props;
+		// const { offersGroup } = this.props;
 		const { customOffers, chosenFlight } = this.state;
 
-		console.log('customOffers', customOffers);
-
 		return (
-			<div>
-				<SearchParams dataLists={dataLists} searchParams={searchParams}/>
-
-				<p>Всего найдено <strong>{offersGroup.totalOfferQuantity}</strong> рейса.</p>
+			<div className="search-result">
+				{/*<p>Всего найдено <strong>{offersGroup.totalOfferQuantity}</strong> рейса.</p>*/}
 
 				<h2>Туда</h2>
 				{customOffers['OD1'].map((offer, id) => {
