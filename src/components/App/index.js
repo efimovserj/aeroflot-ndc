@@ -88,6 +88,18 @@ class App extends Component {
 		});
 	};
 
+	setFlightParams = (flightParams) => {
+		let status = Object.create(this.state.status);
+
+		status.chooseFlight = 'done';
+		status.passengers = true;
+
+		this.setState({
+			flightParams,
+			status,
+		})
+	};
+
 
 	setPassengers = (data) => {
 		this.setState({ passengers: data })
@@ -108,16 +120,18 @@ class App extends Component {
 				<div className={['container', status.waiting ? 'preloading' : ''].join(' ')}>
 
 					{status.chooseFlight &&
-					<TotalResult dataLists={searchResult.dataLists} searchParams={searchParams.coreQuery.originDestinations[0]}/>}
+					<TotalResult dataLists={searchResult.dataLists}
+					             searchParams={searchParams.coreQuery.originDestinations[0]}/>}
 
 					{(status.search && status.search !== 'done') &&
 					<SearchFlights airports={airports} callback={this.setSearchParamsMock}/>}
 
-					{status.chooseFlight &&
+					{(status.chooseFlight && status.chooseFlight !== 'done') &&
 					<ShowFlightsResult
 						offersGroup={searchResult.offersGroup.airlineOffers[0]}
 						dataLists={searchResult.dataLists}
 						searchParams={searchParams.coreQuery.originDestinations[0]}
+						callback={this.setFlightParams}
 					/>
 					}
 

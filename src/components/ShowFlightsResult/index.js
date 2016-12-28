@@ -49,13 +49,13 @@ class ServicesList extends Component {
 
 				{!!additional.length
 					? (<div>
-						<p>Available
+						<p>Available&nbsp;
 							<span className="like-link" onClick={this.showHideServices}>
 								{additional.length} optional extra{additional.length > 1 ? 's' : ''}
 							</span>
 							{this.state.choose
 								? <small>( Choosed {this.state.choose} of {additional.length} )</small>
-								: null
+								: <small>&nbsp;</small>
 							}
 						</p>
 					</div>)
@@ -64,14 +64,15 @@ class ServicesList extends Component {
 
 
 				<div className={['services-editor', this.state.showHide ? 'active' : ' '].join(' ')}>
+					<span className="done" onClick={this.showHideServices}>&times;</span>
 					<div className="content">
-						<p>Included in price extras </p>
+						<p className="title-service-list">Included in price extras </p>
 
 						<Service data={include}
 						         text="included in price extras"
 						/>
 
-						<p>Optional extras </p>
+						<p className="title-service-list">Optional extras </p>
 
 						<Service data={additional}
 						         text="optional extras"
@@ -111,42 +112,44 @@ class Service extends Component {
 	render() {
 		let { serviceList } = this.state;
 
+		if (!serviceList.length) {
+			return (
+				<p><strong>Not available</strong></p>
+			)
+		}
 
 		return (
-			<div className="service row">
-				{serviceList.map((service, id) => {
+			<div className="service-list">
+				<div className="row head">
+					<div className="col-xs-3">Name</div>
+					<div className="col-xs-6">Description</div>
+					<div className="col-xs-2 price">Price</div>
+					<div className="col-xs-1">Info</div>
+				</div>
 
-					console.log('service',service);
+				{serviceList.map((service, id) => {
 					return (
-						<div className="col-xs-4">
-							<div className="row">
-								<div className="col-xs-8">
-									<img key={id}
-									     className={["service_img", service.choose ? 'active' : ''].join(' ')}
+						<div key={id}
+						     className={["row", "service", service.choose ? 'active' : ''].join(' ')}
+						     onClick={service.changeable ? () => this.changeServiceStatus(id) : library.lib.noop }
+						>
+							<div className="col-xs-3">{service.name}</div>
+							<div className="col-xs-6">{service.description.text}</div>
+							<div className="col-xs-2 price">{service.price}</div>
+							<div className="col-xs-1 info">
+								<span>?</span>
+								<div className="info-img">
+									<img className="service_img"
 									     src={service.description.img}
 									     alt={service.description.text}
 									     title={service.name}
-									     onClick={service.changeable ? () => this.changeServiceStatus(id) : library.lib.noop }
 									/>
+									<p>{service.name}</p>
 								</div>
-
-								<div className="col-xs-4">
-									<div className="row">
-										<div className="col-xs-12">
-											{service.name}
-										</div>
-										<div className="col-xs-12">
-											{service.price} {}
-										</div>
-									</div>
-								</div>
-
 							</div>
-
 						</div>
 					)
-				})
-				}
+				})}
 			</div>
 		)
 	}
@@ -242,12 +245,16 @@ class Offer extends Component {
 					})}
 				</div>
 
-				<div className="col-xs-2">
-					<p>{data.totalPrice} {data.currency}</p>
+				<div className="col-xs-2 total">
+					<div className="total-container">
+						<p className="total-price">{data.totalPrice}</p>
+						<p className="total-currency">{data.currency}</p>
 
-					<p onClick={this.chooseOffer} className={data.choose ? 'active' : ''}>
-						{data.choose ? 'Unselect' : 'Select'}
-					</p>
+						<p onClick={this.chooseOffer}
+						   className={['selector', data.choose ? 'active' : ''].join(' ')}>
+							{data.choose ? 'Unselect' : 'Select'}
+						</p>
+					</div>
 				</div>
 			</div>
 		)
@@ -354,7 +361,6 @@ class ShowFlightsResult extends Component {
 
 			return result;
 		})
-
 	}
 
 	setChosenOffer = (offer, offerId) => {
@@ -373,14 +379,17 @@ class ShowFlightsResult extends Component {
 		})
 	}
 
+	sendData = () => {
+		if (this.state.chosenFlight['OD1'].choose && this.state.chosenFlight['OD2'].choose) {
+			this.props.callback(this.state.customOffers);
+		}
+	};
+
 	render() {
-		// const { offersGroup } = this.props;
 		const { customOffers, chosenFlight } = this.state;
 
 		return (
 			<div className="search-result">
-				{/*<p>Всего найдено <strong>{offersGroup.totalOfferQuantity}</strong> рейса.</p>*/}
-
 				<h2>Туда</h2>
 				{customOffers['OD1'].map((offer, id) => {
 					if (chosenFlight['OD1'].id) {
@@ -427,11 +436,17 @@ class ShowFlightsResult extends Component {
 					return false;
 				})}
 
-				<Button title='Оплатить'
-				        onChange={this.sendData}
-				        type="button"
-				        class="btn btn-primary"
-				/>
+				<div className="row">
+					<div className="col-xs-2">
+						<Button title='Оплатить'
+						        buttonProps={{
+							        type: "button",
+							        className: "btn btn-primary"
+						        }}
+						        onChange={this.sendData}
+						/>
+					</div>
+				</div>
 
 			</div>
 		)

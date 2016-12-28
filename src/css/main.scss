@@ -80,7 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 5px 15px;
 		border-radius: 0 0 20px 20px;
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1);
-		margin-bottom: 20px;
+		margin-bottom: 30px;
+		position: relative;
 
 		.direction {
 			border-right: 1px solid #eee;
@@ -91,8 +92,8 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 
-	.row {
-		margin-bottom: 15px;
+	.row.block {
+		margin-bottom: 30px;
 	}
 
 	&.navigator {
@@ -250,6 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 		.segment {
 			border-bottom: 1px solid #eee;
 			padding: 10px 0;
+			//position: relative;
 
 			&:last-child {
 				border: 0
@@ -278,6 +280,10 @@ h1, h2, h3, h4, h5, h6 {
 			text-decoration: underline;
 			font-family: 'Open Sans', sans-serif;
 			cursor: pointer;
+
+			&:hover {
+				text-decoration: none;
+			}
 		}
 
 		small {
@@ -293,37 +299,179 @@ h1, h2, h3, h4, h5, h6 {
 		width: 1px;
 		height: 100%;
 		background: #fff;
-		transition: width 400ms ease-in 0ms;
+		transition: width 200ms ease-in 200ms;
 		border-left: 1px solid #eee;
 
 		&.active {
 			width: 100%;
 			opacity: 1;
-			// transition: width 1s ease-in 200ms;
+			transition: width 200ms ease-in 0ms;
 
-			.content {
-				opacity: 1;
-				// transition: opacity 200ms ease-in 10s;
+			.done {
+				right: 0;
 			}
+
+			.done, .content {
+				opacity: 1;
+				transition: opacity 200ms ease-in 200ms;
+			}
+		}
+
+		.done {
+			position: absolute;
+			top: -30px;
+			color: #02458d;
+			font-size: 30px;
+			opacity: 0;
+			cursor: pointer;
+			right: -9999px;
+			transition: opacity 200ms ease-in 0ms;
 		}
 
 		.content {
 			opacity: 0;
-			transition: opacity 200ms ease-in 600ms;
+			transition: opacity 200ms ease-in 0ms;
+			padding: 0 10px;
+			overflow-y: auto;
+			height: 100%;
+
+			.title-service-list {
+				color: #02458d;
+				font-weight: bold;
+			}
+
+			.service-list {
+				padding: 15px;
+			}
+
+			.head {
+				text-align: center;
+				color: #02458d;
+				border-bottom: 1px solid #eee;
+				padding: 0 0 10px;
+				margin-top: -15px;
+				margin-bottom: 0;
+
+				.price {
+					font-family: 'Ubuntu', sans-serif;
+				}
+			}
+
+			.price {
+				text-align: right;
+				font-family: 'Open Sans', sans-serif;
+			}
+
+			.info {
+				text-align: center;
+			}
 
 			.service {
-				img {
-					width: 100%;
-					max-height: 160px;
-					outline: 1px solid #eee;
-					border: 1px solid #eee;
+				padding: 15px 0;
+				margin-bottom: 0;
+				cursor: pointer;
+				transition: background 100ms ease-in;
+
+				&:nth-child(2n-1) {
+					background: #eee;
 				}
 
-				.active {
-					img {
-						outline: 1px solid #02458d;
-						border: 1px solid #FFB20D;
+				.info {
+					.info-img{
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 25%;
+						opacity: 0;
+						z-index: 0;
+						background: #fff;
+						height: 100%;
+						border-right: 1px solid #eee;
+
+						img{
+							max-width: 100%;
+							max-height: 250px;
+							margin: 0 auto;
+						}
 					}
+
+					span {
+						display: block;
+						width: 20px;
+						height: 20px;
+						margin: -5px auto 0;
+						border: 1px solid;
+						line-height: 20px;
+						border-radius: 10px;
+						transition: all 100ms ease-in;
+
+						&:hover {
+							border-color: #FFB20D;
+							background: #FFB20D;
+							color: #fff;;
+
+							& + .info-img {
+								opacity: 1;
+								z-index: 10;
+								transition: opacity 100ms ease-in;
+							}
+						}
+
+					}
+				}
+
+
+				&.active, &.active:hover {
+					background: #02458d;
+					color: #fff;
+
+					.info-img {
+						color: #000;
+					}
+				}
+
+				&:hover {
+					background: #ddd;
+				}
+			}
+		}
+	}
+
+	.total {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		height: 100%;
+		margin-top: -115px;
+
+		.total-container {
+
+			.total-price,
+			.total-currency {
+				font-size: 24px;
+				color: #02458d;
+				text-align: center;
+				font-family: 'Open Sans', sans-serif;
+				margin-bottom: -10px;
+				line-height: 30px;
+			}
+
+			.selector {
+				padding: 10px;
+				text-align: center;
+				color: #02458d;
+				text-decoration: underline;
+				font-size: 16px;
+				margin-top: 10px;
+				transition: color 200ms ease-in;
+				cursor: pointer;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				&.active {
+					color: #FFB20D;
 				}
 			}
 		}
