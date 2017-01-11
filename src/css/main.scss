@@ -16,7 +16,7 @@ body {
 	margin: 0;
 	-webkit-text-size-adjust: none;
 	font-size: 14px;
-	line-height: 1;
+	line-height: 1.5;
 	cursor: default;
 	position: relative;
 	background: rgba(87, 121, 158, 1);
@@ -37,13 +37,17 @@ h1, h2, h3, h4, h5, h6 {
 	transform: rotate(135deg)
 }
 
+.date-picker{
+	position: relative;
+}
+
 .App {
 	padding: 40px 0;
 }
 
 .container {
 	position: relative;
-	overflow: hidden;
+	overflow: initial;
 	width: 90%;
 	max-height: 10000px;
 	margin: 0 auto;
@@ -53,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: #fff;
 
 	border-radius: 0 0 10px 10px;
-	transition: max-height 2s ease-in 0ms;
+	//transition: max-height 2s ease-in 0ms;
 	box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5);
 
 	.btn-dropdown-toggle {
@@ -85,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 		.direction {
 			border-right: 1px solid #eee;
+			padding-bottom: 20px;
 
 			label {
 				display: block;
@@ -104,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 		margin: 0 auto;
 		padding: 0;
 		border-radius: 10px 10px 0 0;
+		overflow: hidden;
 
 		ul {
 			margin: 0;
@@ -146,7 +152,6 @@ h1, h2, h3, h4, h5, h6 {
 						background: #02458d;
 						color: #fff;
 						border-bottom: 1px solid #02458d;
-						cursor: pointer;
 					}
 
 					&:first-child {
@@ -161,6 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 	&.preloading {
 		max-height: 300px;
 		transition: max-height 0.4s ease-out 0s;
+		overflow: hidden;
 	}
 
 	.preloader {
@@ -250,8 +256,8 @@ h1, h2, h3, h4, h5, h6 {
 
 		.segment {
 			border-bottom: 1px solid #eee;
-			padding: 10px 0;
-			//position: relative;
+			// padding: 10px 0;
+			// position: relative;
 
 			&:last-child {
 				border: 0
@@ -301,11 +307,13 @@ h1, h2, h3, h4, h5, h6 {
 		background: #fff;
 		transition: width 200ms ease-in 200ms;
 		border-left: 1px solid #eee;
+		overflow: hidden;
 
 		&.active {
 			width: 100%;
 			opacity: 1;
 			transition: width 200ms ease-in 0ms;
+			overflow: inherit;
 
 			.done {
 				right: 0;
@@ -338,6 +346,13 @@ h1, h2, h3, h4, h5, h6 {
 			.title-service-list {
 				color: #02458d;
 				font-weight: bold;
+				text-align: right;
+				border-bottom: 1px dashed #02458d;
+				font-size: 16px;
+			}
+
+			.not-avaible-service-list {
+				text-align: right;
 			}
 
 			.service-list {
@@ -390,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
 
 						img{
 							max-width: 100%;
-							max-height: 250px;
+							max-height: 215px;
 							margin: 0 auto;
 						}
 					}
@@ -475,5 +490,11 @@ h1, h2, h3, h4, h5, h6 {
 				}
 			}
 		}
+	}
+}
+
+.passenger-detail {
+	.sex {
+		margin-right: 10px;
 	}
 }

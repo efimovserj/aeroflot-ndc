@@ -1,8 +1,10 @@
-// const urlBase = 'http://192.168.192.39:8395/api';
-const urlBase = '';
+const urlBase = 'http://192.168.192.126:8395/api/';
+// const urlBase = '';
 
 const urlsLibrary = {
-	oneway: urlBase + '/api/offers',
+	oneway: urlBase + 'offers',
+	orders: urlBase + 'orders',
+	processId: urlBase + 'orders/',
 };
 
 const noop = () => {
@@ -10,10 +12,6 @@ const noop = () => {
 
 let getResponse = ({ method, data = null, url, callback }) => {
 	const xhr = new XMLHttpRequest();
-
-	// console.log('method',method);
-	// console.log('data',data);
-	// console.log('url',url);
 
 	xhr.open(method, url, true);
 

@@ -24,7 +24,7 @@ class SearchFlights extends Component {
 				passengers: {
 					adults: 1,
 					children: 0,
-					babies: 0,
+					infants: 0,
 					youth: 0,
 					quantity: 6,
 				},
@@ -38,7 +38,7 @@ class SearchFlights extends Component {
 	}
 
 	generatePassengerCounter = () => {
-		const { adults, children, babies, quantity } = this.state.searchParams.passengers;
+		const { adults, children, infants, quantity } = this.state.searchParams.passengers;
 		let selfCounter = [];
 
 		for (let i = 0; i <= quantity; i++) {
@@ -46,9 +46,9 @@ class SearchFlights extends Component {
 		}
 
 		const result = {
-			adults: selfCounter.slice(1, quantity - (children + babies) + 1),
-			children: selfCounter.slice(0, quantity - (adults + babies) + 1),
-			babies: selfCounter.slice(0, Math.min((quantity - children - adults), adults) + 1),
+			adults: selfCounter.slice(1, quantity - (children + infants) + 1),
+			children: selfCounter.slice(0, quantity - (adults + infants) + 1),
+			infants: selfCounter.slice(0, Math.min((quantity - children - adults), adults) + 1),
 			youth: selfCounter.slice(0, quantity + 1),
 		}
 
@@ -152,11 +152,11 @@ class SearchFlights extends Component {
 			})
 		}
 
-		if (passengers.babies > 0) {
+		if (passengers.infants > 0) {
 			request.travelers.push({
 				"anonymousTraveler": [{
 					"ptc": {
-						quantity: passengers.babies,
+						quantity: passengers.infants,
 						value: 'INF'
 					}
 				}],
@@ -222,7 +222,7 @@ class SearchFlights extends Component {
 		return (
 			<div>
 				<div className="block">
-					<h2>Куда и когда</h2>
+					<h2>Date and Direction</h2>
 
 					<div className="row">
 						<div className="col-xs-3 direction">
@@ -233,7 +233,7 @@ class SearchFlights extends Component {
 									       value='roundWay'
 									       onChange={this.handleDirection}
 									       defaultChecked
-									/>&nbsp;Туда и обратно</p>
+									/>&nbsp;Roundtrip</p>
 							</label>
 
 							<label>
@@ -242,11 +242,11 @@ class SearchFlights extends Component {
 									       name="direction"
 									       value='oneWay'
 									       onChange={this.handleDirection}
-									/>&nbsp;В одну сторону
+									/>&nbsp;One way
 								</p>
 							</label>
 
-							<label>
+							{ false && <label>
 								<input type="checkbox" value={paymentMiles} onChange={() => {
 									this.setState({
 										searchParams: {
@@ -257,13 +257,13 @@ class SearchFlights extends Component {
 								}}
 								/>
 								&nbsp;Оплата милями
-							</label>
+							</label> }
 						</div>
 
 						<div className="col-xs-9">
 							<div className="row">
 								<div className="col-xs-2">
-									<p>Откуда</p>
+									<p>From</p>
 								</div>
 
 								<div className="col-xs-6">
@@ -276,7 +276,7 @@ class SearchFlights extends Component {
 										}}
 										buttonProps={{
 											className: "form-control",
-											value: 'Откуда'
+											value: 'From'
 										}}
 										onChange={(current) => {
 											this.setState({
@@ -309,7 +309,7 @@ class SearchFlights extends Component {
 
 							<div className="row">
 								<div className="col-xs-2">
-									<p>Куда</p>
+									<p>To</p>
 								</div>
 
 								<div className="col-xs-6">
@@ -355,12 +355,12 @@ class SearchFlights extends Component {
 				</div>
 
 				<div className="block">
-					<h2>Пассажиры</h2>
+					<h2>Passengers</h2>
 
 					<div className="row">
 
 						<div className="col-xs-3">
-							<p>Взрослые</p>
+							<p>Adults</p>
 							<select className="form-control"
 							        onChange={(e) => this.setPassengerCounter(e, 'adults')}
 							        disabled={passengers.youth > 0 && !paymentMiles}
@@ -371,11 +371,11 @@ class SearchFlights extends Component {
 									)
 								})}
 							</select>
-							<small>(от 12 лет)</small>
+							<small>(from 12 years old)</small>
 						</div>
 
 						<div className="col-xs-3">
-							<p>Дети</p>
+							<p>Children</p>
 
 							<select className="form-control"
 							        onChange={(e) => this.setPassengerCounter(e, 'children')}
@@ -387,25 +387,25 @@ class SearchFlights extends Component {
 									)
 								}) }
 							</select>
-							<small>(от 0 до 12 лет)</small>
+							<small>(from 0 to 12 years old)</small>
 						</div>
 
 						<div className="col-xs-3">
 							{!paymentMiles && <div>
-								<p>Младенцы</p>
+								<p>Infant</p>
 
 								<select className="form-control"
-								        value={passengers.babies}
-								        onChange={(e) => this.setPassengerCounter(e, 'babies')}
+								        value={passengers.infants}
+								        onChange={(e) => this.setPassengerCounter(e, 'infants')}
 								        disabled={passengers.youth > 0 && !paymentMiles}
 								>
-									{ passengerCounter.babies.map((item, i) => {
+									{ passengerCounter.infants.map((item, i) => {
 										return (
 											<option key={i} value={item}>{item}</option>
 										)
 									}) }
 								</select>
-								<small>(до 2 лет)</small>
+								<small>(to 2 years old)</small>
 							</div>
 							}
 
@@ -414,9 +414,9 @@ class SearchFlights extends Component {
 
 					{paymentMiles && <div className="row">
 						<div className="col-xs-12">
-							<p className="text-danger">Оформление премиальных билетов за мили программы Аэрофлот
-								Бонус не применяется для бронирования младенцев, молодежи и для нескольких пунктов
-								назначения</p>
+							<p className="text-danger">Registration of award tickets for Aeroflot Bonus miles
+								program is not applicable for babies booking, youth and for multiple destinations
+							</p>
 						</div>
 					</div>}
 
@@ -425,13 +425,13 @@ class SearchFlights extends Component {
 						<div className="col-xs-12">
 							<hr />
 
-							<p className="text-danger"> Тип пассажира "Молодежь" не комбинируется с другими типами
-								пассажиров.</p>
+							<p className="text-danger"> Passenger type "Youth" can not be combined with other
+								types of passengers.</p>
 						</div>
 
 
 						<div className="col-xs-3">
-							<p>Молодежь</p>
+							<p>Youth</p>
 
 							<select value={passengers.youth}
 							        className="form-control"
@@ -443,45 +443,18 @@ class SearchFlights extends Component {
 									)
 								}) }
 							</select>
-							<small>(от 12 до 25 лет)</small>
+							<small>(from 12 to 25 years old)</small>
 						</div>
 					</div>
 					}
 				</div>	
 
 				<div className="block">
-					<h2>Предпочтения</h2>
-
-					{!paymentMiles &&
-					<div className="row">
-						<div className="col-xs-3">
-							<p>Класс обслуживания</p>
-						</div>
-
-						<div className="col-xs-3">
-							<Select
-								itemList={serviceList}
-								currentItem={currentService}
-								filter={false}
-								inputProps={{
-									placeholder: 'Enter service type'
-								}}
-								onChange={(current) => {
-									this.setState({
-										searchParams: {
-											...searchParams,
-											currentService: current,
-										}
-									});
-								}}
-							/>
-						</div>
-					</div>
-					}
+					<h2>Preferences</h2>
 
 					<div className="row">
 						<div className="col-xs-3">
-							<p>Страна</p>
+							<p>Country</p>
 						</div>
 
 						<div className="col-xs-3">
@@ -505,14 +478,42 @@ class SearchFlights extends Component {
 						</div>
 
 						<div className="col-xs-3">
-							<p>Валюта: {currentCountry.currencyTitle}</p>
+							<p>Currency: {currentCountry.currencyTitle}</p>
 						</div>
 					</div>
+
+					{!paymentMiles &&
+					<div className="row">
+						<div className="col-xs-3">
+							<p>Class of service</p>
+						</div>
+
+						<div className="col-xs-3">
+							<Select
+								itemList={serviceList}
+								currentItem={currentService}
+								filter={false}
+								inputProps={{
+									placeholder: 'Enter service type'
+								}}
+								onChange={(current) => {
+									this.setState({
+										searchParams: {
+											...searchParams,
+											currentService: current,
+										}
+									});
+								}}
+							/>
+						</div>
+					</div>
+					}
+
 				</div>
 
 				<div className="row">
 					<div className="col-xs-2">
-						<Button title='Найти рейсы'
+						<Button title='Search'
 						        buttonProps={{
 							        type: "button",
 							        className: "btn btn-primary"

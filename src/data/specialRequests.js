@@ -1,27 +1,27 @@
 const specialRequests = [
 	{
 		id: 'none',
-		text: ''
+		text: 'нет'
 	},
 	{
 		id: 'BLND',
-		text: 'Пассажир с нарушением зрения'
+		text: 'Passengers with visual impairment'
 	},
 	{
 		id: 'DEAF',
-		text: 'Пассажир с нарушением слуха'
+		text: 'Passengers with impaired hearing'
 	},
 	{
 		id: 'WCHR',
-		text: 'Требуется коляска  к /от самолета'
+		text: 'It requires wheelchair to/from aircraft'
 	},
 	{
 		id: 'WCHS',
-		text: 'Требуется  помощь в передвижении по трапу'
+		text: 'Need help in the movement of the ramp'
 	},
 	{
 		id: 'WCHC',
-		text: 'Пассажир не может самостоятельно передвигаться'
+		text: 'Passenger can not walk'
 	}
 ];
 

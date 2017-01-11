@@ -1,15 +1,15 @@
 const passengersTypes = [
 	{
 		id: 'ADT',
-		text: 'Взрослый'
+		text: 'Adults'
 	},
 	{
-		id: 'CNN',
-		text: 'Ребенок'
+		id: 'CHD',
+		text: 'Children'
 	},
 	{
 		id: 'INF',
-		text: 'Младенец без места'
+		text: 'Infants'
 	}
 ];
 

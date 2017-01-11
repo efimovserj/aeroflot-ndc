@@ -1,11 +1,11 @@
 const bonusPartner = [
 	{
 		id: 'none',
-		text: 'Авиакомпания'
+		text: 'Airline'
 	},
 	{
 		id: 'aeroflot',
-		text: 'Аэрофлот'
+		text: 'Aeroflot'
 	}
 ];
 

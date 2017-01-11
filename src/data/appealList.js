@@ -1,15 +1,15 @@
 const appealList = [
 	{
 		id: 'none',
-		text: 'Обращение'
+		text: 'Appeal'
 	},
 	{
 		id: 'mr',
-		text: 'Г-н'
+		text: 'Mr.'
 	},
 	{
 		id: 'mrs',
-		text: 'Г-жа'
+		text: 'Mrs.'
 	},
 ];
 

@@ -23,9 +23,9 @@ class App extends Component {
 		super(props);
 		this.state = {
 			status: {
-				search: true,
+				search: false,
 				chooseFlight: false,
-				passengers: false,
+				passengers: true,
 				payment: false,
 				final: false,
 				waiting: false,
@@ -100,9 +100,61 @@ class App extends Component {
 		})
 	};
 
-
 	setPassengers = (data) => {
+		let status = Object.create(this.state.status);
+		// const self = this;
+
+		this.setState({
+			status: {
+				...this.state.status,
+				waiting: true,
+			}
+		});
+
+		library.lib.getResponse({
+			method: 'POST',
+			data,
+			url: library.lib.urlsLibrary.orders,
+			callback: (response) => {
+
+				let promise = new Promise((resolve) => {
+						resolve( this.getOrderId(response) );
+				});
+
+				promise.then(
+					order => {
+						status.passengers = 'done';
+						status.payment = true;
+						status.waiting = false;
+
+						this.setState({
+							order: order,
+							status,
+						})
+					}
+				);
+
+			}
+		});
+
 		this.setState({ passengers: data })
+	}
+
+	getOrderId = (order) => {
+		return new Promise((resolve) => {
+			library.lib.getResponse({
+				method: 'POST',
+				data: order,
+				url: library.lib.urlsLibrary.processId + order,
+				callback: (response) => {
+					if (typeof response === 'string') {
+						setTimeout(() => this.getOrderId(order), 1000);
+					} else {
+						resolve(response);
+					}
+				}
+			});
+		})
 	}
 
 	setPaymentInfo = (data) => {
@@ -121,7 +173,7 @@ class App extends Component {
 
 					{status.chooseFlight &&
 					<TotalResult dataLists={searchResult.dataLists}
-					             searchParams={searchParams.coreQuery.originDestinations[0]}/>}
+					             searchParams={searchParams.coreQuery.originDestinations}/>}
 
 					{(status.search && status.search !== 'done') &&
 					<SearchFlights airports={airports} callback={this.setSearchParamsMock}/>}
@@ -153,3 +205,4 @@ class App extends Component {
 }
 
 export default App;
+

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import moment from 'moment';
 
 // import Components
@@ -101,7 +101,7 @@ class TravelerInformation extends Component {
 			<div>
 				<div className="row">
 					<div className="col-xs-2">
-						<p>Обращение</p>
+						<p>Appeal</p>
 						<select className="form-control" onChange={this.handleAppealSelect}>
 							{appealList.map((appeal, id) => {
 								return (
@@ -111,23 +111,23 @@ class TravelerInformation extends Component {
 						</select>
 					</div>
 
-					<div className="col-xs-2">
-						<p>Фамилия*</p>
+					<div className="col-xs-3">
+						<p>Second name*</p>
 						<input className="form-control" type="text" onChange={this.handleSecondNameInput}/>
 					</div>
 
 					<div className="col-xs-2">
-						<p>Имя*</p>
+						<p>First name*</p>
 						<input className="form-control" type="text" onChange={this.handleFirstNameInput}/>
 					</div>
 
-					<div className="col-xs-2">
-						<p>Отчество**</p>
+					<div className="col-xs-3">
+						<p>Middle name**</p>
 						<input className="form-control" type="text" onChange={this.handleMiddleNameInput}/>
 					</div>
 
 					<div className="col-xs-2">
-						<p>Суффикс</p>
+						<p>Suffix</p>
 						<select className="form-control" onChange={this.handleSuffixSelect}>
 							{suffixList.map((suffix, id) => {
 								return (
@@ -138,16 +138,16 @@ class TravelerInformation extends Component {
 					</div>
 
 					<p className="text-danger col-xs-12">
-						**отчество (если имеется) вводится только для внутренних перевозок по Российской
-						Федерации
+						**Middle name (if any) is introduced only for internal transport in the Russian
+						Federation
 					</p>
 				</div>
 
 				<div className="row">
-					<h4 className="col-xs-12">Информация о путешественнике</h4>
+					<h4 className="col-xs-12">Information about traveler</h4>
 
 					<div className="col-xs-2">
-						<p>Дата рождения:*</p>
+						<p>Date of Birth:*</p>
 						<Calendar
 							isManualInputAllowed={false}
 							format="DD.MM.YYYY"
@@ -161,14 +161,14 @@ class TravelerInformation extends Component {
 					</div>
 
 					<div className="col-xs-2">
-						<p>Пол:*</p>
+						<p>Sex:*</p>
 
-						<label>
-							<input type="radio" name='sex' value='men' onClick={this.handleSexInput}/> Мужской
+						<label className="sex">
+							<input type="radio" name='sex' value='men' onClick={this.handleSexInput}/> Male
 						</label>
 
-						<label>
-							<input type="radio" name='sex' value='women' onClick={this.handleSexInput}/> Женский
+						<label className="sex">
+							<input type="radio" name='sex' value='women' onClick={this.handleSexInput}/> Female
 						</label>
 					</div>
 				</div>
@@ -221,7 +221,7 @@ class TravelerPreferences extends Component {
 	}
 
 	render() {
-		const {preference} = this.state;
+		const { preference } = this.state;
 
 		return (
 			<div>
@@ -230,7 +230,7 @@ class TravelerPreferences extends Component {
 
 					<p className="col-xs-2">Участник программы Аэрофлот Бонус</p>
 
-					<div className="col-xs-2">
+					<div className="col-xs-3">
 						<select className="form-control" onChange={this.handleBonusPartnerSelect}>
 							{bonusPartner.map((partner, id) => {
 								return (
@@ -248,9 +248,12 @@ class TravelerPreferences extends Component {
 						       onChange={this.handleNumberInput}
 						/>
 					</div>
+				</div>
 
-					<div className="col-xs-4">
-						Специальные запросы:
+				<div className="row">
+					<p className="col-xs-2">Специальные запросы:</p>
+
+					<div className="col-xs-3">
 						<select className="form-control" onChange={this.handleSpecialRequestSelect}>
 							{specialRequests.map((request, id) => {
 								return (
@@ -339,21 +342,30 @@ class TravelerDocument extends Component {
 	}
 
 	render() {
-		const {document} = this.state;
+		const { document } = this.state;
 
 		return (
 			<div>
 				<div className="row">
-					<div className="col-xs-2">Тип документа:</div>
+					<h4 className="col-xs-12">Information about the travel document</h4>
+					<p className="col-xs-12">
+						<strong>Attention traveling to USA!</strong><br />
+						Due to the additional checks US Immigration Service on the accuracy of the entered information to passengers purchasing air tickets on flights to US cities is required to fill in the field very closely with the passport data.
+
+						After receiving your visa information and address of residence in the United States, you should contact the sales office for inclusion of this information in your reservation, or provide information to the employee at the front desk Aeroflot.
+					</p>
+				</div>
+				<div className="row">
+					<div className="col-xs-2">Document type:</div>
 					<div className="col-xs-4">
 						<select className="form-control">
-							<option>Паспорт/Св. о рождении</option>
+							<option>Passport/Birth certificate</option>
 						</select>
 					</div>
 				</div>
 
 				<div className="row">
-					<div className="col-xs-2">Серия и номер:*</div>
+					<div className="col-xs-2">Series and number:*</div>
 					<div className="col-xs-4">
 						<input type="text"
 						       onChange={this.handleNumberInput}
@@ -364,7 +376,7 @@ class TravelerDocument extends Component {
 				</div>
 
 				<div className="row">
-					<div className="col-xs-2">Страна выдачи:*</div>
+					<div className="col-xs-2">Country extradition:*</div>
 					<div className="col-xs-4">
 						<select className="form-control" onChange={this.handleCountrySelect}>
 							{countries.map((country, id) => {
@@ -377,7 +389,7 @@ class TravelerDocument extends Component {
 				</div>
 
 				<div className="row">
-					<div className="col-xs-2">Срок действия:*</div>
+					<div className="col-xs-2">Validity:*</div>
 					<div className="col-xs-4">
 						<Calendar
 							isManualInputAllowed={false}
@@ -393,7 +405,7 @@ class TravelerDocument extends Component {
 				</div>
 
 				<div className="row">
-					<div className="col-xs-2">Гражданство:*</div>
+					<div className="col-xs-2">Citizenship:*</div>
 					<div className="col-xs-4">
 						<select className="form-control" onChange={this.handleCitizenshipSelect}>
 							{countries.map((country, id) => {
@@ -434,11 +446,15 @@ class PassengersDetail extends Component {
 			}
 		})
 
-		this.setState({passengers});
+		this.setState({ passengers });
 	}
 
 	setMainInfo = (info, id, type) => {
 		let tmpPassengers = this.state.passengers[type.id].slice();
+
+		console.log("id", id);
+		console.log("type", type);
+		console.log("type[id]", type.id);
 
 		tmpPassengers[id]['mainInfo'] = info;
 
@@ -476,72 +492,47 @@ class PassengersDetail extends Component {
 		})
 	}
 
-	sendData = () => {
+		sendData = () => {
 		this.props.callback(this.state.passengers);
 	};
 
 	render() {
-		const {dataLists} = this.props;
-		const {passengers} = this.state;
+		//const {dataLists} = this.props;
+		const { passengers } = this.state;
 
 		return (
 			<div>
 				<div className="row">
-					<div className="col-xs-4">
-						<h4>Пассажиры</h4>
-
-						<ul>
-							{dataLists.anonymousTravelerList.map((type, id) => {
-								let title = '';
-
-								if (type.ptc.value === 'ADT') {
-									title = 'Взрослых: '
-								}
-
-								if (type.ptc.value === 'CNN') {
-									title = 'Детей: '
-								}
-
-								if (type.ptc.value === 'INF') {
-									title = 'Младенцев: '
-								}
-
-								return (
-									<li key={id}>{title} {type.ptc.quantity}</li>
-								)
-							})}
-						</ul>
-					</div>
-				</div>
-
-				<div className="row">
 					<div className="col-xs-12">
-						<h2>Информация о пассажирах</h2>
+						<h2>Information about passengers</h2>
 
 						<div id="passenger-notification" className="alertFullWidth">
-							Фамилия, имя, отчество и номер документа пассажира вводятся латинскими буквами. При
-							внесении данных заграничного паспорта - как указано в заграничном паспорте. При
-							внесении данных паспорта гражданина РФ в поле «Срок действия» вводится любая дата
-							более поздняя, чем дата Вашего полета. Номер документа вводится без пробелов.
+							<p>Last name, first name, middle name and the document number of the passenger must be
+								entered in Latin characters. When making passport data - as mentioned in the
+								passport. When making the data of the passport of a Russian citizen in the field
+								"Term" entered any date later than the date of your flight. The document number is
+								entered without spaces.</p>
 
 							<p className="singleLine">
-								Информация о документе пассажира вносится по требованию Министерства транспорта РФ.
+								Information about the passenger document introduced at the request of the Ministry
+								of Transport.
 							</p>
 
-							<a href="https://www.aeroflot.ru/cms/before_and_after_fly/rules_online?_ga=1.57626666.
+							<p><a href="https://www.aeroflot.ru/cms/before_and_after_fly/rules_online?_ga=1.57626666.
 					1656093309.1481571411"
 							   target="_blank">
-								Пассажир несет ответственность за корректность ввода паспортных данных.
-							</a>
+								Passenger is responsible for the correctness of entering the passport data.
+							</a></p>
 						</div>
-
-						<h4>
-							Пассажирам c одинаковыми именами и фамилиями требуется указать суффикс.<br />
-							Внимание! Взрослый пассажир, сопровождающий ребенка, не может быть моложе 18 лет.
-						</h4>
+						<strong>
+							<p>Passengers are c the same first and last names must specify the suffix.<br />
+								Attention! An adult passenger accompanying the child can not be younger than 18
+								years.
+							</p>
+						</strong>
 
 						<small className="field-required-legend">
-							Все поля, отмеченные * , являются обязательными для заполнения
+							All fields marked * are mandatory
 						</small>
 					</div>
 				</div>
@@ -549,27 +540,29 @@ class PassengersDetail extends Component {
 				{passengersTypes.map((type, id) => {
 					if (passengers[type.id]) {
 						return (
-							<div key={id}>
-								<h4>{type.text}</h4>
+							<div key={id}  className="passenger-detail">
+								<h2>{type.text}</h2>
 
 								{passengers[type.id].map((passenger, passId) => {
 									return (
-										<div key={passId}>
-											<TravelerInformation mainInfo={passenger.mainInfo}
+										<div key={passId} className="block">
+											{false && <TravelerInformation mainInfo={passenger.mainInfo}
 											                     onChange={(mainInfo) => {
-												                     this.setMainInfo(mainInfo, id, type)
+												                     this.setMainInfo(mainInfo, passId, type)
 											                     }}
-											/>
+											/>}
 
-											<TravelerPreferences preference={passenger.preference}
-											                     onChange={(preference) => {
-												                     this.setPreference(preference, id, type)
-											                     }}
-											/>
-											<TravelerDocument document={passenger.document}
-											                  onChange={(document) => {
-												                  this.setDocument(document, id, type)
-											                  }}/>
+											{false && <TravelerPreferences preference={passenger.preference}
+											                              onChange={(preference) => {
+												                              this.setPreference(preference, passId, type)
+											                              }}
+											/>}
+
+											{false && <TravelerDocument document={passenger.document}
+											                            onChange={(document) => {
+												                            this.setDocument(document, passId, type)
+											                            }}
+											/> }
 										</div>
 									)
 								})}
@@ -580,10 +573,12 @@ class PassengersDetail extends Component {
 					return null;
 				})}
 
-				<Button title='Продолжить'
+				<Button title='Go to the payment'
+				        buttonProps={{
+					        type: "button",
+					        className: "btn btn-primary",
+				        }}
 				        onChange={this.sendData}
-				        type="button"
-				        class="btn btn-primary"
 				/>
 			</div>
 		)

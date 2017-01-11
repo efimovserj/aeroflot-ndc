@@ -1,15 +1,15 @@
 const suffixList = [
 	{
 		id: 'none',
-		text: 'Суффикс  '
+		text: 'Suffix  '
 	},
 	{
 		id: 'older',
-		text: 'Старший'
+		text: 'Older'
 	},
 	{
 		id: 'jr',
-		text: 'Младший'
+		text: 'Jr'
 	},
 	{
 		id: 'second',

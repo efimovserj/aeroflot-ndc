@@ -49,7 +49,7 @@ class ServicesList extends Component {
 
 				{!!additional.length
 					? (<div>
-						<p>Available&nbsp;
+						Available&nbsp;
 							<span className="like-link" onClick={this.showHideServices}>
 								{additional.length} optional extra{additional.length > 1 ? 's' : ''}
 							</span>
@@ -57,7 +57,6 @@ class ServicesList extends Component {
 								? <small>( Choosed {this.state.choose} of {additional.length} )</small>
 								: <small>&nbsp;</small>
 							}
-						</p>
 					</div>)
 					: (<p>Optional extras not available</p>)
 				}
@@ -114,7 +113,7 @@ class Service extends Component {
 
 		if (!serviceList.length) {
 			return (
-				<p><strong>Not available</strong></p>
+				<p className="not-avaible-service-list"><strong>Not available</strong></p>
 			)
 		}
 
@@ -390,7 +389,7 @@ class ShowFlightsResult extends Component {
 
 		return (
 			<div className="search-result">
-				<h2>Туда</h2>
+				<h2>Forward direction</h2>
 				{customOffers['OD1'].map((offer, id) => {
 					if (chosenFlight['OD1'].id) {
 						if (offer.choose) {
@@ -413,7 +412,7 @@ class ShowFlightsResult extends Component {
 					return false;
 				})}
 
-				<h2>Сюда</h2>
+				<h2>Reverse direction</h2>
 				{customOffers['OD2'].map((offer, id) => {
 					if (chosenFlight['OD2'].id) {
 						if (offer.choose) {
@@ -438,10 +437,11 @@ class ShowFlightsResult extends Component {
 
 				<div className="row">
 					<div className="col-xs-2">
-						<Button title='Оплатить'
+						<Button title='Continue to order'
 						        buttonProps={{
 							        type: "button",
-							        className: "btn btn-primary"
+							        className: "btn btn-primary",
+							        disabled: !chosenFlight["OD1"].choose || !chosenFlight["OD2"].choose,
 						        }}
 						        onChange={this.sendData}
 						/>

@@ -7,23 +7,23 @@ class Navigation extends Component {
 			itemList: [
 				{
 					type: 'search',
-					title: 'Поиск',
+					title: 'Search',
 				},
 				{
 					type: 'chooseFlight',
-					title: 'Выбор рейса',
+					title: 'Flights',
 				},
 				{
 					type: 'passengers',
-					title: 'Пассажиры',
+					title: 'Passengers',
 				},
 				{
 					type: 'payment',
-					title: 'Оплата',
+					title: 'Payment',
 				},
 				{
 					type: 'final',
-					title: 'Итоговая',
+					title: 'Final',
 				}
 			]
 		}}
