@@ -23,21 +23,313 @@ class App extends Component {
 		super(props);
 		this.state = {
 			status: {
-				search: false,
+				search: true,
 				chooseFlight: false,
 				passengers: false,
-				payment: true,
+				payment: false,
 				final: false,
 				waiting: false,
 			},
 			searchResult: offers || {},
+			order: {
+				"document": {
+					"name": "KRONOS NDC GATEWAY",
+					"referenceVersion": "1.0"
+				},
+				"party": {
+					"sender": {
+						"travelAgencySender": {
+							"contacts": [
+								{
+									"emailContact": {
+										"address": {
+											"value": "ndc@usdtravel.com"
+										}
+									}
+								}
+							],
+							"pseudoCity": {
+								"value": "A4A"
+							},
+							"agencyID": {
+								"value": "C9",
+								"owner": "C9"
+							},
+							"agentUser": {
+								"name": "ksmith",
+								"agentUserID": {
+									"value": "ramesh@jrt.com"
+								},
+								"userRole": "ADMIN"
+							},
+							"iatanumber": "98417900"
+						}
+					}
+				},
+				"query": {
+					"orderItems": {
+						shoppingResponse: {},
+					},
+					"dataLists": {
+						"flightSegmentList": [],
+						"flightList": [],
+						"originDestinationList": []
+					},
+					/*"passengers": {
+						"passenger": []
+					},*/
+					"passengers": {
+						"passenger": [
+							{
+								"objectKey": "PAX1",
+								"ptc": {
+									"value": "ADT",
+									"quantity": 1
+								},
+								"residenceCode": {
+									"value": "US"
+								},
+								"age": {
+									"birthDate": {
+										"value": "1985-09-04T20:00:00.000+0000"
+									}
+								},
+								"name": {
+									"surname": {
+										"value": "Patel"
+									},
+									"given": [
+										{
+											"value": "Ramesh"
+										}
+									],
+									"middle": [
+										{
+											"value": "N"
+										}
+									]
+								},
+								"contacts": [
+									{
+										"addressContact": {
+											"street": [
+												"22 Main Street"
+											],
+											"postalCode": "14202",
+											"countryCode": {
+												"value": "DE"
+											}
+										}
+									},
+									{
+										"emailContact": {
+											"address": {
+												"value": "ramesh@jrtechnologies.com"
+											}
+										}
+									},
+									{
+										"phoneContact": {
+											"application": "Emergency",
+											"number": [
+												{
+													"value": "9869159259"
+												}
+											]
+										}
+									}
+								]
+							},
+							{
+								"objectKey": "PAX1",
+								"ptc": {
+									"value": "ADT",
+									"quantity": 1
+								},
+								"residenceCode": {
+									"value": "US"
+								},
+								"age": {
+									"birthDate": {
+										"value": "1985-09-04T20:00:00.000+0000"
+									}
+								},
+								"name": {
+									"surname": {
+										"value": "Patel"
+									},
+									"given": [
+										{
+											"value": "Ramesh"
+										}
+									],
+									"middle": [
+										{
+											"value": "N"
+										}
+									]
+								},
+								"contacts": [
+									{
+										"addressContact": {
+											"street": [
+												"22 Main Street"
+											],
+											"postalCode": "14202",
+											"countryCode": {
+												"value": "DE"
+											}
+										}
+									},
+									{
+										"emailContact": {
+											"address": {
+												"value": "ramesh@jrtechnologies.com"
+											}
+										}
+									},
+									{
+										"phoneContact": {
+											"application": "Emergency",
+											"number": [
+												{
+													"value": "9869159259"
+												}
+											]
+										}
+									}
+								]
+							},
+						]
+					},
+					/*"payments": [
+					 {
+					 "method": {
+					 "paymentCard": {
+					 "cardCode": "",
+					 "cardNumber": {
+					 "value": ""
+					 },
+					 "seriesCode": {
+					 "value": ""
+					 },
+					 "effectiveExpireDate": {
+					 "effective": ""
+					 }
+					 }
+					 },
+					 "amount": {
+					 "value": 0,
+					 "taxable": true
+					 },
+					 "payer": {
+					 "name": {
+					 "surname": {
+					 "value": ""
+					 },
+					 "given": [
+					 {
+					 "value": ""
+					 }
+					 ]
+					 },
+					 "contacts": [
+					 {
+					 "addressContact": {
+					 "street": [
+					 "22 Main Street"
+					 ],
+					 "cityName": "FRA",
+					 "postalCode": "14201",
+					 "countryCode": {
+					 "value": "DE"
+					 }
+					 },
+					 "emailContact": {
+					 "address": {
+					 "value": "ramesh@jrtechnologies.com"
+					 }
+					 }
+					 }
+					 ]
+					 }
+					 }
+					 ],*/
+					"payments": [
+						{
+							"method": {
+								"paymentCard": {
+									"cardCode": "MC",
+									"cardNumber": {
+										"value": "1111222233334444"
+									},
+									"seriesCode": {
+										"value": "584"
+									},
+									"effectiveExpireDate": {
+										"effective": "0322"
+									}
+								}
+							},
+							"amount": {
+								"value": 90722,
+								"taxable": true
+							},
+							"payer": {
+								"name": {
+									"surname": {
+										"value": "Patel"
+									},
+									"given": [
+										{
+											"value": "Ramesh"
+										}
+									]
+								},
+								"contacts": [
+									{
+										"addressContact": {
+											"street": [
+												"22 Main Street"
+											],
+											"cityName": "FRA",
+											"postalCode": "14201",
+											"countryCode": {
+												"value": "DE"
+											}
+										},
+										"emailContact": {
+											"address": {
+												"value": "ramesh@jrtechnologies.com"
+											}
+										}
+									}
+								]
+							}
+						}
+					],
+					"metadata": {
+						"other": [
+							{
+								"currencyMetadatas": [
+									{
+										"metadataKey": "EUR",
+										"decimals": 2
+									}
+								]
+							}
+						]
+					}
+				},
+				"target": "Production",
+				"version": "16.1"
+			}
 		};
 	}
 
 	setSearchParamsMock = () => {
-		let status = Object.create(this.state.status);
+		let status = Object.assign({}, this.state.status);
 		const self = this;
-
 
 		this.setState({
 			status: {
@@ -45,6 +337,11 @@ class App extends Component {
 				waiting: true,
 			}
 		});
+
+		let changedOrderQuery = Object.assign({}, this.state.order.query);
+
+		changedOrderQuery.orderItems.shoppingResponse = response.shoppingResponseID;
+		changedOrderQuery.orderItems.shoppingResponse.offers = [];
 
 		status.search = 'done';
 		status.chooseFlight = true;
@@ -54,13 +351,17 @@ class App extends Component {
 			self.setState({
 				searchParams: request,
 				searchResult: response,
+				order: {
+					...this.state.order,
+					query: changedOrderQuery,
+				},
 				status,
 			})
 		}, 1000)
 	};
 
 	setSearchParams = (searchParams) => {
-		let status = Object.create(this.state.status);
+		let status = Object.assign({}, this.state.status);
 		const self = this;
 
 		this.setState({
@@ -89,8 +390,33 @@ class App extends Component {
 	};
 
 	setFlightParams = (flightParams) => {
+		let query = Object.assign({}, this.state.order.query);
+
+		query.dataLists = {
+			"flightSegmentList": [],
+			"flightList": [],
+			"originDestinationList": [],
+		};
+
+		for (let opt in flightParams) {
+			if ({}.hasOwnProperty.call(flightParams, opt)) {
+				query.orderItems.shoppingResponse.offers.push({
+					offerID: flightParams[opt].offerID,
+					offerItems: flightParams[opt].offerItems,
+				});
+
+				query.dataLists.flightSegmentList = query.dataLists.flightSegmentList.concat(flightParams[opt].flightSegmentList);
+				query.dataLists.flightList.push(flightParams[opt].flightList[0]);
+				query.dataLists.originDestinationList.push(flightParams[opt].originDestinationList);
+			}
+		}
+
 		this.setState({
 			flightParams,
+			order: {
+				...this.state.order,
+				query: query,
+			},
 			status: {
 				...this.state.status,
 				chooseFlight: 'done',
@@ -101,7 +427,7 @@ class App extends Component {
 	};
 
 	setPassengers = (data) => {
-		let status = Object.create(this.state.status);
+		let status = Object.assign({}, this.state.status);
 
 		this.setState({
 			status: {

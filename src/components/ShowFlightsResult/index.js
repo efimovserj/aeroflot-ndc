@@ -287,13 +287,34 @@ class ShowFlightsResult extends Component {
 
 		this.props.offersGroup.airlineOffer.forEach((offer) => {
 			let flight = {
+				offerID: offer.offerID,
 				id: offer.offerID.value,
 				originDestinationKey: offer.pricedOffer.associations[0].applicableFlight.originDestinationReferences[0].originDestinationKey,
 				totalPrice: Number(offer.totalPrice.detailCurrencyPrice.total.value),
 				currency: offer.totalPrice.detailCurrencyPrice.total.code,
 				segments: this.getSegments(offer.pricedOffer.associations[0]),
+				flightList: offer.pricedOffer.associations[0].applicableFlight.flightReferences.value,
+				originDestinationList: offer.pricedOffer.associations[0].applicableFlight.originDestinationReferences[0],
+				flightSegmentList: [],
 				choose: false,
+				offerItems: [],
 			};
+
+			offer.pricedOffer.offerPrice.forEach((item) => {
+				flight.offerItems.push({
+					"offerItemID": {
+						"value": item.offerItemID,
+						"owner": offer.offerID.owner,
+					},
+					"passengers": [
+						"<?xml version=\"1.0\" encoding=\"UTF-16\"?>\n<PassengerReference xmlns=\"http://www.iata.org/IATA/EDIST\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">PAX1</PassengerReference>"
+					]
+				})
+			});
+
+			offer.pricedOffer.associations[0].applicableFlight.flightSegmentReference.forEach((item) => {
+				flight.flightSegmentList.push(item.ref)
+			});
 
 			offersGroup[flight.originDestinationKey].push(flight);
 
@@ -301,7 +322,6 @@ class ShowFlightsResult extends Component {
 				customOffers: offersGroup,
 			})
 		})
-
 	}
 
 	getSegments = (pathToAssociations) => {
@@ -380,7 +400,7 @@ class ShowFlightsResult extends Component {
 
 	sendData = () => {
 		if (this.state.chosenFlight['OD1'].choose && this.state.chosenFlight['OD2'].choose) {
-			this.props.callback(this.state.customOffers);
+			this.props.callback(this.state.chosenFlight);
 		}
 	};
 
