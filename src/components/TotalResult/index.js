@@ -5,7 +5,7 @@ import moment from 'moment';
 class TotalResult extends Component {
 	render() {
 		const { dataLists, searchParams } = this.props;
-
+		
 		return (
 			<div className="total-result">
 				<div className="row">

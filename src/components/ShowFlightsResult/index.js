@@ -208,7 +208,7 @@ class Offer extends Component {
 							<div className="row segment" key={segmentId}>
 								<div className="col-xs-2 flight">
 									<h4>{segment.airlineName}</h4>
-									<p className="flightNumber">{segment.flightNumber}</p>
+									<p className="flightNumber">{segment.airlineID} {segment.flightNumber}</p>
 								</div>
 
 								<div className="col-xs-6">

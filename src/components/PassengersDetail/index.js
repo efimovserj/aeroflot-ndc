@@ -29,6 +29,10 @@ class TravelerInformation extends Component {
 		}
 	}
 
+	shouldComponentUpdate(nextProps) {
+		return nextProps === this.props;
+	}
+
 	handleSecondNameInput = (e) => {
 		this.setState({
 			mainInfo: {
@@ -301,6 +305,10 @@ class TravelerDocument extends Component {
 		};
 	}
 
+	shouldComponentUpdate(nextProps) {
+		return nextProps === this.props;
+	}
+
 	handleNumberInput = (e) => {
 		this.setState({
 			document: {
@@ -350,9 +358,13 @@ class TravelerDocument extends Component {
 					<h4 className="col-xs-12">Information about the travel document</h4>
 					<p className="col-xs-12">
 						<strong>Attention traveling to USA!</strong><br />
-						Due to the additional checks US Immigration Service on the accuracy of the entered information to passengers purchasing air tickets on flights to US cities is required to fill in the field very closely with the passport data.
+						Due to the additional checks US Immigration Service on the accuracy of the entered
+						information to passengers purchasing air tickets on flights to US cities is required to
+						fill in the field very closely with the passport data.
 
-						After receiving your visa information and address of residence in the United States, you should contact the sales office for inclusion of this information in your reservation, or provide information to the employee at the front desk Aeroflot.
+						After receiving your visa information and address of residence in the United States, you
+						should contact the sales office for inclusion of this information in your reservation,
+						or provide information to the employee at the front desk Aeroflot.
 					</p>
 				</div>
 				<div className="row">
@@ -452,10 +464,6 @@ class PassengersDetail extends Component {
 	setMainInfo = (info, id, type) => {
 		let tmpPassengers = this.state.passengers[type.id].slice();
 
-		console.log("id", id);
-		console.log("type", type);
-		console.log("type[id]", type.id);
-
 		tmpPassengers[id]['mainInfo'] = info;
 
 		this.setState({
@@ -492,7 +500,7 @@ class PassengersDetail extends Component {
 		})
 	}
 
-		sendData = () => {
+	sendData = () => {
 		this.props.callback(this.state.passengers);
 	};
 
@@ -520,7 +528,7 @@ class PassengersDetail extends Component {
 
 							<p><a href="https://www.aeroflot.ru/cms/before_and_after_fly/rules_online?_ga=1.57626666.
 					1656093309.1481571411"
-							   target="_blank">
+							      target="_blank">
 								Passenger is responsible for the correctness of entering the passport data.
 							</a></p>
 						</div>
@@ -540,28 +548,28 @@ class PassengersDetail extends Component {
 				{passengersTypes.map((type, id) => {
 					if (passengers[type.id]) {
 						return (
-							<div key={id}  className="passenger-detail">
+							<div key={id} className="passenger-detail">
 								<h2>{type.text}</h2>
 
 								{passengers[type.id].map((passenger, passId) => {
 									return (
 										<div key={passId} className="block">
-											{false && <TravelerInformation mainInfo={passenger.mainInfo}
-											                     onChange={(mainInfo) => {
-												                     this.setMainInfo(mainInfo, passId, type)
-											                     }}
+											{<TravelerInformation mainInfo={passenger.mainInfo}
+											                      onChange={(mainInfo) => {
+												                      this.setMainInfo(mainInfo, passId, type)
+											                      }}
 											/>}
 
 											{false && <TravelerPreferences preference={passenger.preference}
-											                              onChange={(preference) => {
-												                              this.setPreference(preference, passId, type)
-											                              }}
+											                               onChange={(preference) => {
+												                               this.setPreference(preference, passId, type)
+											                               }}
 											/>}
 
-											{false && <TravelerDocument document={passenger.document}
-											                            onChange={(document) => {
-												                            this.setDocument(document, passId, type)
-											                            }}
+											{<TravelerDocument document={passenger.document}
+											                   onChange={(document) => {
+												                   this.setDocument(document, passId, type)
+											                   }}
 											/> }
 										</div>
 									)

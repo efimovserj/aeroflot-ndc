@@ -48,8 +48,9 @@ class PaymentInfo extends Component {
 
 		return (
 			<div>
+				<h2>Payment</h2>
 				<div className="row">
-					<div className="col-xs-2">Введите номер вашей карты:</div>
+					<div className="col-xs-2">Card number:</div>
 
 					<div className="col-xs-4">
 						<input type="number"
@@ -61,7 +62,7 @@ class PaymentInfo extends Component {
 				</div>
 
 				<div className="row">
-					<div className="col-xs-2">Срок действия карты:</div>
+					<div className="col-xs-2">Expire:</div>
 
 					<div className="col-xs-2">
 						<select className='form-control'
@@ -85,7 +86,7 @@ class PaymentInfo extends Component {
 				</div>
 
 				<div className="row">
-					<div className="col-xs-2">Имя владельца карты:</div>
+					<div className="col-xs-2">Owner:</div>
 
 					<div className="col-xs-4">
 						<input type="text"
@@ -97,7 +98,7 @@ class PaymentInfo extends Component {
 				</div>
 
 				<div className="row">
-					<div className="col-xs-2">CVC@/CVV2 код:</div>
+					<div className="col-xs-2">CVC@/CVV2:</div>
 
 					<div className="col-xs-4">
 						<input type="number"
@@ -109,10 +110,12 @@ class PaymentInfo extends Component {
 					</div>
 				</div>
 
-				<Button title='Оплатить'
+				<Button title='Create order'
+				        buttonProps={{
+					        type: "button",
+					        className: "btn btn-primary",
+				        }}
 				        onChange={this.sendData}
-				        type="button"
-				        class="btn btn-primary"
 				/>
 			</div>
 		)

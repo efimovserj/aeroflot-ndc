@@ -25,8 +25,8 @@ class App extends Component {
 			status: {
 				search: false,
 				chooseFlight: false,
-				passengers: true,
-				payment: false,
+				passengers: false,
+				payment: true,
 				final: false,
 				waiting: false,
 			},
@@ -73,7 +73,7 @@ class App extends Component {
 		library.lib.getResponse({
 			method: 'POST',
 			data: searchParams,
-			url: library.lib.urlsLibrary.oneway,
+			url: library.lib.urlsLibrary.offers,
 			callback: (response) => {
 				status.search = 'done';
 				status.chooseFlight = true;
@@ -89,20 +89,19 @@ class App extends Component {
 	};
 
 	setFlightParams = (flightParams) => {
-		let status = Object.create(this.state.status);
-
-		status.chooseFlight = 'done';
-		status.passengers = true;
-
 		this.setState({
 			flightParams,
-			status,
+			status: {
+				...this.state.status,
+				chooseFlight: 'done',
+				search: 'done',
+				passengers: true,
+			},
 		})
 	};
 
 	setPassengers = (data) => {
 		let status = Object.create(this.state.status);
-		// const self = this;
 
 		this.setState({
 			status: {
@@ -111,50 +110,609 @@ class App extends Component {
 			}
 		});
 
+		let passengers = {
+			"document": {
+				"name": "KRONOS NDC GATEWAY",
+				"referenceVersion": "1.0"
+			},
+			"party": {
+				"sender": {
+					"travelAgencySender": {
+						"contacts": [
+							{
+								"emailContact": {
+									"address": {
+										"value": "ndc@usdtravel.com"
+									}
+								}
+							}
+						],
+						"pseudoCity": {
+							"value": "A4A"
+						},
+						"agencyID": {
+							"value": "C9",
+							"owner": "C9"
+						},
+						"agentUser": {
+							"name": "ksmith",
+							"agentUserID": {
+								"value": "ramesh@jrt.com"
+							},
+							"userRole": "ADMIN"
+						},
+						"iatanumber": "98417900"
+					}
+				}
+			},
+			"query": {
+				"passengers": {
+					"passenger": [
+						{
+							"objectKey": "PAX1",
+							"ptc": {
+								"value": "ADT",
+								"quantity": 1
+							},
+							"residenceCode": {
+								"value": "US"
+							},
+							"age": {
+								"birthDate": {
+									"value": "1985-09-04T20:00:00.000+0000"
+								}
+							},
+							"name": {
+								"surname": {
+									"value": "Patel"
+								},
+								"given": [
+									{
+										"value": "Ramesh"
+									}
+								],
+								"middle": [
+									{
+										"value": "N"
+									}
+								]
+							},
+							"contacts": [
+								{
+									"addressContact": {
+										"street": [
+											"22 Main Street"
+										],
+										"postalCode": "14202",
+										"countryCode": {
+											"value": "DE"
+										}
+									}
+								},
+								{
+									"emailContact": {
+										"address": {
+											"value": "ramesh@jrtechnologies.com"
+										}
+									}
+								},
+								{
+									"phoneContact": {
+										"application": "Emergency",
+										"number": [
+											{
+												"value": "9869159259"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"objectKey": "PAX1",
+							"ptc": {
+								"value": "ADT",
+								"quantity": 1
+							},
+							"residenceCode": {
+								"value": "US"
+							},
+							"age": {
+								"birthDate": {
+									"value": "1985-09-04T20:00:00.000+0000"
+								}
+							},
+							"name": {
+								"surname": {
+									"value": "Patel"
+								},
+								"given": [
+									{
+										"value": "Ramesh"
+									}
+								],
+								"middle": [
+									{
+										"value": "N"
+									}
+								]
+							},
+							"contacts": [
+								{
+									"addressContact": {
+										"street": [
+											"22 Main Street"
+										],
+										"postalCode": "14202",
+										"countryCode": {
+											"value": "DE"
+										}
+									}
+								},
+								{
+									"emailContact": {
+										"address": {
+											"value": "ramesh@jrtechnologies.com"
+										}
+									}
+								},
+								{
+									"phoneContact": {
+										"application": "Emergency",
+										"number": [
+											{
+												"value": "9869159259"
+											}
+										]
+									}
+								}
+							]
+						},
+					]
+				},
+				"orderItems": {
+					"shoppingResponse": {
+						"owner": "C9",
+						"responseID": {
+							"value": "RE2a07c59a77634ad08a606f8639ea428c"
+						},
+						"offers": [
+							{
+								"offerID": {
+									"value": "7",
+									"owner": "C9"
+								},
+								"offerItems": [
+									{
+										"offerItemID": {
+											"value": "1#M#109974565#309974565",
+											"owner": "C9"
+										},
+										"passengers": [
+											"<?xml version=\"1.0\" encoding=\"UTF-16\"?>\n<PassengerReference xmlns=\"http://www.iata.org/IATA/EDIST\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">PAX1</PassengerReference>"
+										]
+									}
+								]
+							}
+						]
+					}
+				},
+				"payments": [
+					{
+						"method": {
+							"paymentCard": {
+								"cardCode": "MC",
+								"cardNumber": {
+									"value": "1111222233334444"
+								},
+								"seriesCode": {
+									"value": "584"
+								},
+								"effectiveExpireDate": {
+									"effective": "0322"
+								}
+							}
+						},
+						"amount": {
+							"value": 90722,
+							"taxable": true
+						},
+						"payer": {
+							"name": {
+								"surname": {
+									"value": "Patel"
+								},
+								"given": [
+									{
+										"value": "Ramesh"
+									}
+								]
+							},
+							"contacts": [
+								{
+									"addressContact": {
+										"street": [
+											"22 Main Street"
+										],
+										"cityName": "FRA",
+										"postalCode": "14201",
+										"countryCode": {
+											"value": "DE"
+										}
+									},
+									"emailContact": {
+										"address": {
+											"value": "ramesh@jrtechnologies.com"
+										}
+									}
+								}
+							]
+						}
+					}
+				],
+				"dataLists": {
+					"flightSegmentList": [
+						{
+							"departure": {
+								"airportCode": {
+									"value": "FRA"
+								},
+								"date": "2016-05-25T21:00:00.000+0000",
+								"time": "09:35",
+								"airportName": "Frankfurt International"
+							},
+							"arrival": {
+								"airportCode": {
+									"value": "CDG"
+								},
+								"date": "2016-05-25T21:00:00.000+0000",
+								"time": "10:45",
+								"airportName": "Charles de Gaulle"
+							},
+							"marketingCarrier": {
+								"airlineID": {
+									"value": "C9"
+								},
+								"name": "Kronos Air",
+								"flightNumber": {
+									"value": "1030"
+								}
+							},
+							"operatingCarrier": {
+								"airlineID": {
+									"value": "C9"
+								},
+								"name": "Kronos Air",
+								"flightNumber": {
+									"value": "1030"
+								}
+							},
+							"equipment": {
+								"aircraftCode": {
+									"value": "320"
+								},
+								"name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+							},
+							"flightDetail": {
+								"flightDuration": {
+									"value": "PT1H10M"
+								}
+							},
+							"segmentKey": "SEG5"
+						},
+						{
+							"departure": {
+								"airportCode": {
+									"value": "CDG"
+								},
+								"date": "2016-05-25T21:00:00.000+0000",
+								"time": "14:45",
+								"airportName": "Charles de Gaulle"
+							},
+							"arrival": {
+								"airportCode": {
+									"value": "TXL"
+								},
+								"date": "2016-05-25T21:00:00.000+0000",
+								"time": "16:25",
+								"airportName": "Berlin Tegel Airport"
+							},
+							"marketingCarrier": {
+								"airlineID": {
+									"value": "C9"
+								},
+								"name": "Kronos Air",
+								"flightNumber": {
+									"value": "1030"
+								}
+							},
+							"operatingCarrier": {
+								"airlineID": {
+									"value": "C9"
+								},
+								"name": "Kronos Air",
+								"flightNumber": {
+									"value": "1030"
+								}
+							},
+							"equipment": {
+								"aircraftCode": {
+									"value": "320"
+								},
+								"name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+							},
+							"flightDetail": {
+								"flightDuration": {
+									"value": "PT1H40M"
+								}
+							},
+							"segmentKey": "SEG6"
+						}
+					],
+					"flightList": [
+						{
+							"journey": {
+								"time": "PT6H50M"
+							},
+							"segmentReferences": {
+								"value": [
+									{
+										"departure": {
+											"airportCode": {
+												"value": "FRA"
+											},
+											"date": "2016-05-25T21:00:00.000+0000",
+											"time": "09:35",
+											"airportName": "Frankfurt International"
+										},
+										"arrival": {
+											"airportCode": {
+												"value": "CDG"
+											},
+											"date": "2016-05-25T21:00:00.000+0000",
+											"time": "10:45",
+											"airportName": "Charles de Gaulle"
+										},
+										"marketingCarrier": {
+											"airlineID": {
+												"value": "C9"
+											},
+											"name": "Kronos Air",
+											"flightNumber": {
+												"value": "1030"
+											}
+										},
+										"operatingCarrier": {
+											"airlineID": {
+												"value": "C9"
+											},
+											"name": "Kronos Air",
+											"flightNumber": {
+												"value": "1030"
+											}
+										},
+										"equipment": {
+											"aircraftCode": {
+												"value": "320"
+											},
+											"name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+										},
+										"flightDetail": {
+											"flightDuration": {
+												"value": "PT1H10M"
+											}
+										},
+										"segmentKey": "SEG5"
+									},
+									{
+										"departure": {
+											"airportCode": {
+												"value": "CDG"
+											},
+											"date": "2016-05-25T21:00:00.000+0000",
+											"time": "14:45",
+											"airportName": "Charles de Gaulle"
+										},
+										"arrival": {
+											"airportCode": {
+												"value": "TXL"
+											},
+											"date": "2016-05-25T21:00:00.000+0000",
+											"time": "16:25",
+											"airportName": "Berlin Tegel Airport"
+										},
+										"marketingCarrier": {
+											"airlineID": {
+												"value": "C9"
+											},
+											"name": "Kronos Air",
+											"flightNumber": {
+												"value": "1030"
+											}
+										},
+										"operatingCarrier": {
+											"airlineID": {
+												"value": "C9"
+											},
+											"name": "Kronos Air",
+											"flightNumber": {
+												"value": "1030"
+											}
+										},
+										"equipment": {
+											"aircraftCode": {
+												"value": "320"
+											},
+											"name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+										},
+										"flightDetail": {
+											"flightDuration": {
+												"value": "PT1H40M"
+											}
+										},
+										"segmentKey": "SEG6"
+									}
+								]
+							},
+							"flightKey": "FL3"
+						}
+					],
+					"originDestinationList": [
+						{
+							"departureCode": {
+								"value": "FRA"
+							},
+							"arrivalCode": {
+								"value": "TXL"
+							},
+							"originDestinationKey": "OD1",
+							"flightReferences": {
+								"value": [
+									{
+										"journey": {
+											"time": "PT6H50M"
+										},
+										"segmentReferences": {
+											"value": [
+												{
+													"departure": {
+														"airportCode": {
+															"value": "FRA"
+														},
+														"date": "2016-05-25T21:00:00.000+0000",
+														"time": "09:35",
+														"airportName": "Frankfurt International"
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "CDG"
+														},
+														"date": "2016-05-25T21:00:00.000+0000",
+														"time": "10:45",
+														"airportName": "Charles de Gaulle"
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "C9"
+														},
+														"name": "Kronos Air",
+														"flightNumber": {
+															"value": "1030"
+														}
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "C9"
+														},
+														"name": "Kronos Air",
+														"flightNumber": {
+															"value": "1030"
+														}
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "320"
+														},
+														"name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+													},
+													"flightDetail": {
+														"flightDuration": {
+															"value": "PT1H10M"
+														}
+													},
+													"segmentKey": "SEG5"
+												},
+												{
+													"departure": {
+														"airportCode": {
+															"value": "CDG"
+														},
+														"date": "2016-05-25T21:00:00.000+0000",
+														"time": "14:45",
+														"airportName": "Charles de Gaulle"
+													},
+													"arrival": {
+														"airportCode": {
+															"value": "TXL"
+														},
+														"date": "2016-05-25T21:00:00.000+0000",
+														"time": "16:25",
+														"airportName": "Berlin Tegel Airport"
+													},
+													"marketingCarrier": {
+														"airlineID": {
+															"value": "C9"
+														},
+														"name": "Kronos Air",
+														"flightNumber": {
+															"value": "1030"
+														}
+													},
+													"operatingCarrier": {
+														"airlineID": {
+															"value": "C9"
+														},
+														"name": "Kronos Air",
+														"flightNumber": {
+															"value": "1030"
+														}
+													},
+													"equipment": {
+														"aircraftCode": {
+															"value": "320"
+														},
+														"name": "320 - AIRBUS INDUSTRIE A320-100/200 JET"
+													},
+													"flightDetail": {
+														"flightDuration": {
+															"value": "PT1H40M"
+														}
+													},
+													"segmentKey": "SEG6"
+												}
+											]
+										},
+										"flightKey": "FL3"
+									}
+								]
+							}
+						}
+					]
+				},
+				"metadata": {
+					"other": [
+						{
+							"currencyMetadatas": [
+								{
+									"metadataKey": "EUR",
+									"decimals": 2
+								}
+							]
+						}
+					]
+				}
+			},
+			"target": "Production",
+			"version": "16.1"
+		};
+
 		library.lib.getResponse({
 			method: 'POST',
-			data,
+			data: passengers,
 			url: library.lib.urlsLibrary.orders,
-			callback: (response) => {
+			callback: (order) => {
+				status.passengers = 'done';
+				status.payment = true;
+				status.waiting = false;
 
-				let promise = new Promise((resolve) => {
-						resolve( this.getOrderId(response) );
-				});
-
-				promise.then(
-					order => {
-						status.passengers = 'done';
-						status.payment = true;
-						status.waiting = false;
-
-						this.setState({
-							order: order,
-							status,
-						})
-					}
-				);
-
+				this.setState({
+					order: order,
+					status,
+				})
 			}
 		});
 
 		this.setState({ passengers: data })
-	}
-
-	getOrderId = (order) => {
-		return new Promise((resolve) => {
-			library.lib.getResponse({
-				method: 'POST',
-				data: order,
-				url: library.lib.urlsLibrary.processId + order,
-				callback: (response) => {
-					if (typeof response === 'string') {
-						setTimeout(() => this.getOrderId(order), 1000);
-					} else {
-						resolve(response);
-					}
-				}
-			});
-		})
 	}
 
 	setPaymentInfo = (data) => {
@@ -173,7 +731,8 @@ class App extends Component {
 
 					{status.chooseFlight &&
 					<TotalResult dataLists={searchResult.dataLists}
-					             searchParams={searchParams.coreQuery.originDestinations}/>}
+					             searchParams={searchParams.coreQuery.originDestinations}
+					/>}
 
 					{(status.search && status.search !== 'done') &&
 					<SearchFlights airports={airports} callback={this.setSearchParamsMock}/>}
@@ -187,7 +746,7 @@ class App extends Component {
 					/>
 					}
 
-					{status.passengers && <PassengersDetail
+					{status.passengers && status.passengers !== 'done' && <PassengersDetail
 						dataLists={searchResult.dataLists}
 						callback={this.setPassengers}
 					/>}
@@ -205,4 +764,3 @@ class App extends Component {
 }
 
 export default App;
-
