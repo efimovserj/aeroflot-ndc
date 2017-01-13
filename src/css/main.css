@@ -194,7 +194,8 @@ h1, h2, h3, h4, h5, h6 {
 .search-result .segments-list {
   position: relative; }
   .search-result .segments-list .segment {
-    border-bottom: 1px solid #eee; }
+    border-bottom: 1px solid #eee;
+    padding: 60px 0; }
     .search-result .segments-list .segment:last-child {
       border: 0; }
     .search-result .segments-list .segment .info .col-xs-3 {
@@ -324,27 +325,29 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   height: 100%;
   margin-top: -115px; }
-  .search-result .total .total-container .total-price,
-  .search-result .total .total-container .total-currency {
-    font-size: 24px;
-    color: #02458d;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: -10px;
-    line-height: 30px; }
-  .search-result .total .total-container .selector {
-    padding: 10px;
-    text-align: center;
-    color: #02458d;
-    text-decoration: underline;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: color 200ms ease-in;
-    cursor: pointer; }
-    .search-result .total .total-container .selector:hover {
-      text-decoration: none; }
-    .search-result .total .total-container .selector.active {
-      color: #FFB20D; }
+  .search-result .total .total-container {
+    margin-top: 10px; }
+    .search-result .total .total-container .total-price,
+    .search-result .total .total-container .total-currency {
+      font-size: 24px;
+      color: #02458d;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: -10px;
+      line-height: 30px; }
+    .search-result .total .total-container .selector {
+      padding: 10px;
+      text-align: center;
+      color: #02458d;
+      text-decoration: underline;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: color 200ms ease-in;
+      cursor: pointer; }
+      .search-result .total .total-container .selector:hover {
+        text-decoration: none; }
+      .search-result .total .total-container .selector.active {
+        color: #FFB20D; }
 
 .passenger-detail .sex {
   margin-right: 10px; }

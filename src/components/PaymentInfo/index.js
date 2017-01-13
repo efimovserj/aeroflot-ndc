@@ -43,6 +43,10 @@ class PaymentInfo extends Component {
 		})
 	}
 
+	sendData = () => {
+		this.props.callback();
+	};
+
 	render() {
 		const {cardNumber, clientVerification, nameOwner, yearsList} = this.state;
 

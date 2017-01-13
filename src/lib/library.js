@@ -1,5 +1,5 @@
-const urlBase = 'http://192.168.192.198:8395/api/';
-// const urlBase = '';
+// const urlBase = 'http://192.168.192.174:8395/api/';
+const urlBase = '/api/';
 
 const urlsLibrary = {
 	offers: urlBase + 'offers',

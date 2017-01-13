@@ -12,6 +12,7 @@ import ShowFlightsResult from '../ShowFlightsResult';
 import PassengersDetail from '../PassengersDetail';
 import PaymentInfo from '../PaymentInfo';
 import Navigation from '../Navigation';
+import Final from '../Final';
 import TotalResult from '../TotalResult';
 
 // import static data
@@ -323,7 +324,8 @@ class App extends Component {
 				},
 				"target": "Production",
 				"version": "16.1"
-			}
+			},
+			orderResult: {}
 		};
 	}
 
@@ -380,6 +382,11 @@ class App extends Component {
 				status.chooseFlight = true;
 				status.waiting = false;
 
+				let changedOrderQuery = Object.assign({}, this.state.order.query);
+
+				changedOrderQuery.orderItems.shoppingResponse = JSON.parse(response).shoppingResponseID;
+				changedOrderQuery.orderItems.shoppingResponse.offers = [];
+
 				self.setState({
 					searchParams: searchParams,
 					searchResult: JSON.parse(response),
@@ -427,6 +434,148 @@ class App extends Component {
 	};
 
 	setPassengers = (data) => {
+		let status = Object.assign({}, this.state.status);
+		let query = Object.assign({}, this.state.order.query);
+
+		status.passengers = 'done';
+		status.payment = true;
+		status.waiting = false;
+
+		query.passengers = {
+					"passenger": [
+						{
+							"objectKey": "PAX1",
+							"ptc": {
+								"value": "ADT",
+								"quantity": 1
+							},
+							"residenceCode": {
+								"value": "US"
+							},
+							"age": {
+								"birthDate": {
+									"value": "1985-09-04T20:00:00.000+0000"
+								}
+							},
+							"name": {
+								"surname": {
+									"value": "Patel"
+								},
+								"given": [
+									{
+										"value": "Ramesh"
+									}
+								],
+								"middle": [
+									{
+										"value": "N"
+									}
+								]
+							},
+							"contacts": [
+								{
+									"addressContact": {
+										"street": [
+											"22 Main Street"
+										],
+										"postalCode": "14202",
+										"countryCode": {
+											"value": "DE"
+										}
+									}
+								},
+								{
+									"emailContact": {
+										"address": {
+											"value": "ramesh@jrtechnologies.com"
+										}
+									}
+								},
+								{
+									"phoneContact": {
+										"application": "Emergency",
+										"number": [
+											{
+												"value": "9869159259"
+											}
+										]
+									}
+								}
+							]
+						},
+						{
+							"objectKey": "PAX1",
+							"ptc": {
+								"value": "ADT",
+								"quantity": 1
+							},
+							"residenceCode": {
+								"value": "US"
+							},
+							"age": {
+								"birthDate": {
+									"value": "1985-09-04T20:00:00.000+0000"
+								}
+							},
+							"name": {
+								"surname": {
+									"value": "Patel"
+								},
+								"given": [
+									{
+										"value": "Ramesh"
+									}
+								],
+								"middle": [
+									{
+										"value": "N"
+									}
+								]
+							},
+							"contacts": [
+								{
+									"addressContact": {
+										"street": [
+											"22 Main Street"
+										],
+										"postalCode": "14202",
+										"countryCode": {
+											"value": "DE"
+										}
+									}
+								},
+								{
+									"emailContact": {
+										"address": {
+											"value": "ramesh@jrtechnologies.com"
+										}
+									}
+								},
+								{
+									"phoneContact": {
+										"application": "Emergency",
+										"number": [
+											{
+												"value": "9869159259"
+											}
+										]
+									}
+								}
+							]
+						},
+					]
+				};
+
+		this.setState({
+			order: {
+				...this.state.order,
+				query,
+			},
+			status,
+		});
+	}
+
+	setPaymentInfo = (data) => {
 		let status = Object.assign({}, this.state.status);
 
 		this.setState({
@@ -1026,13 +1175,13 @@ class App extends Component {
 			method: 'POST',
 			data: passengers,
 			url: library.lib.urlsLibrary.orders,
-			callback: (order) => {
-				status.passengers = 'done';
-				status.payment = true;
+			callback: (orderResult) => {
+				status.payment = 'done';
+				status.final = true;
 				status.waiting = false;
 
 				this.setState({
-					order: order,
+					orderResult,
 					status,
 				})
 			}
@@ -1041,9 +1190,9 @@ class App extends Component {
 		this.setState({ passengers: data })
 	}
 
-	setPaymentInfo = (data) => {
+	/*setPaymentInfo = (data) => {
 		this.setState({ paymentInfo: data })
-	}
+	}*/
 
 	render() {
 		const { status, searchResult, searchParams } = this.state;
@@ -1061,7 +1210,7 @@ class App extends Component {
 					/>}
 
 					{(status.search && status.search !== 'done') &&
-					<SearchFlights airports={airports} callback={this.setSearchParamsMock}/>}
+					<SearchFlights airports={airports} callback={this.setSearchParams}/>}
 
 					{(status.chooseFlight && status.chooseFlight !== 'done') &&
 					<ShowFlightsResult
@@ -1077,9 +1226,11 @@ class App extends Component {
 						callback={this.setPassengers}
 					/>}
 
-					{status.payment && <PaymentInfo
+					{status.payment && status.payment !== 'done' && <PaymentInfo
 						callback={this.setPaymentInfo}
 					/>}
+
+					{status.final && status.final !== 'done' && <Final orderResult={this.state.orderResult} />}
 
 					{status.waiting && <PreLoader status={status.waiting}/>}
 				</div>

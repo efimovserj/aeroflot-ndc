@@ -41,9 +41,9 @@ class ServicesList extends Component {
 		return (
 			<div>
 				{!!include.length
-					? (<p><span className="like-link" onClick={this.showHideServices}>
+					? (<div><span className="like-link" onClick={this.showHideServices}>
 							{include.length} included in price extra{include.length > 1 ? 's' : ''}
-						</span></p>)
+						</span><br /></div>)
 					: (<p>Included in price extras not available</p>)
 				}
 
