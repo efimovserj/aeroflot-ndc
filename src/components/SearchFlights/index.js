@@ -18,9 +18,9 @@ class SearchFlights extends Component {
 			searchParams: {
 				direction: 'roundWay',
 				airportFrom: this.props.airports[0],
-				airportTo: this.props.airports[0],
+				airportTo: this.props.airports[1],
 				dateFrom: moment(),
-				dateTo: moment(),
+				dateTo: moment().add(7, 'days'),
 				passengers: {
 					adults: 1,
 					children: 0,
@@ -338,7 +338,7 @@ class SearchFlights extends Component {
 										isManualInputAllowed={false}
 										format="DD.MM.YYYY"
 										value={dateTo}
-										minDate={moment()}
+										minDate={dateFrom}
 										onChange={(result) => {
 											this.setState({
 												searchParams: {

@@ -125,15 +125,15 @@ class YearsView extends React.Component {
 				<thead>
 				<tr className="table-header-nav">
 					<th colSpan="5">
-						<button type="button" className="left-arrow pull-left" onClick={() => {
+						<button type="button" className="left-arrow pull-left btn btn-primary" onClick={() => {
 							this.move(-20)
-						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-left" /></button>
+						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-left" />{`<`}</button>
 						<button id={ariaLabel} onClick={onEscalate} role="heading" aria-live="assertive"
-						        aria-atomic="true" type="button" className="middle-btn" tabIndex="-1">
+						        aria-atomic="true" type="button" className="middle-btn btn btn-primary" tabIndex="-1">
 							<strong>{frameStart + " - " + frameEnd}</strong></button>
-						<button type="button" className="right-arrow pull-right" onClick={() => {
+						<button type="button" className="right-arrow pull-right btn btn-primary" onClick={() => {
 							this.move(+20)
-						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-right"/></button>
+						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-right"/>{`>`}</button>
 					</th>
 				</tr>
 				</thead>
@@ -253,15 +253,15 @@ class MonthsView extends React.Component {
 				<thead>
 				<tr className="table-header-nav">
 					<th colSpan="4">
-						<button type="button" className="left-arrow pull-left" onClick={() => {
+						<button type="button" className="left-arrow pull-left btn btn-primary" onClick={() => {
 							this.move(-12)
-						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-left"/></button>
+						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-left"/>{`<`}</button>
 						<button id={ariaLabel} onClick={onEscalate} role="heading" aria-live="assertive"
-						        aria-atomic="true" type="button" className="middle-btn" tabIndex="-1">
+						        aria-atomic="true" type="button" className="middle-btn btn btn-primary" tabIndex="-1">
 							<strong>{currentYear}</strong></button>
-						<button type="button" className="right-arrow pull-right" onClick={() => {
+						<button type="button" className="right-arrow pull-right btn btn-primary" onClick={() => {
 							this.move(+12)
-						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-right"/></button>
+						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-right"/>{`>`}</button>
 					</th>
 				</tr>
 				</thead>
@@ -391,15 +391,15 @@ class DaysView extends React.Component {
 				<thead>
 				<tr className="table-header-nav">
 					<th colSpan="7">
-						<button type="button" className="left-arrow pull-left" onClick={() => {
+						<button type="button" className="left-arrow pull-left btn btn-primary" onClick={() => {
 							this.move(-1, "months")
-						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-left"/></button>
+						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-left"/>{`<`}</button>
 						<button id={ariaLabel} onClick={onEscalate} role="heading" aria-live="assertive"
-						        aria-atomic="true" type="button" className="middle-btn" tabIndex="-1">
+						        aria-atomic="true" type="button" className="middle-btn btn btn-primary" tabIndex="-1">
 							<strong>{currentMonth + " " + currentYear}</strong></button>
-						<button type="button" className="right-arrow pull-right" onClick={() => {
+						<button type="button" className="right-arrow pull-right btn btn-primary" onClick={() => {
 							this.move(+1, "months")
-						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-right"/></button>
+						}} tabIndex="-1"><i className="lp-icon lp-icon-angle-right "/>{`>`}</button>
 					</th>
 				</tr>
 				<tr className="table-header-col-names">

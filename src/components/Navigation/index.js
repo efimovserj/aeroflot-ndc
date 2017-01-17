@@ -18,15 +18,16 @@ class Navigation extends Component {
 					title: 'Passengers',
 				},
 				{
-					type: 'payment',
-					title: 'Payment',
+					type: 'booking',
+					title: 'Booking Confirmation',
 				},
 				{
-					type: 'final',
-					title: 'Final',
-				}
+					type: 'travel',
+					title: 'Travel Documentation',
+				},
 			]
-		}}
+		}
+	}
 
 	render() {
 		return (
@@ -34,11 +35,11 @@ class Navigation extends Component {
 				<ul>
 					{this.state.itemList.map((item, id) => {
 						return (
-						<li key={id}
-								className={[this.props.status[item.type] ? 'active' : '',
-									this.props.status[item.type] === 'done' ? 'done' : ''].join(' ')}>
-							{item.title}
-						</li>)
+							<li key={id}
+							    className={[this.props.status[item.type] ? 'active' : '',
+								    this.props.status[item.type] === 'done' ? 'done' : ''].join(' ')}>
+								{item.title}
+							</li>)
 					})}
 				</ul>
 			</div>

@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
       .container .block .direction label {
         display: block; }
   .container .row.block {
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
   .container.navigator {
     border-top: 1px solid #000;
     border-bottom: 0;
@@ -149,6 +149,9 @@ h1, h2, h3, h4, h5, h6 {
       width: 200px;
       margin: -100px 0 0 -100px; }
 
+.middle-btn {
+  margin-left: 60px; }
+
 .total-result {
   background: #02458d;
   color: #fff;
@@ -215,6 +218,23 @@ h1, h2, h3, h4, h5, h6 {
 .search-result .service small {
   display: block;
   margin: 5px 0; }
+.search-result .filter-list {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 0; }
+  .search-result .filter-list li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+    background: #02458d no-repeat 2px -2px;
+    transition: background-color 200ms ease-in 0ms;
+    text-align: center; }
+    .search-result .filter-list li img {
+      width: 25px; }
+    .search-result .filter-list li.active {
+      background-color: #FFB20D; }
 .search-result .services-editor {
   position: absolute;
   top: 0;
@@ -229,12 +249,29 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     opacity: 1;
     transition: width 200ms ease-in 0ms;
-    overflow: inherit; }
+    overflow: inherit;
+    height: 597px;
+    background: #fff;
+    z-index: 10; }
+    .search-result .services-editor.active:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: -21%;
+      width: 21%;
+      height: 400px;
+      background: #fff;
+      border-radius: 0 0 10px 0; }
     .search-result .services-editor.active .done {
       right: 0; }
     .search-result .services-editor.active .done, .search-result .services-editor.active .content {
       opacity: 1;
-      transition: opacity 200ms ease-in 200ms; }
+      transition: opacity 200ms ease-in 200ms;
+      margin-left: -1%;
+      padding-left: 1%;
+      background: #fff;
+      border-radius: 0 0 0 20px; }
   .search-result .services-editor .done {
     position: absolute;
     top: -30px;
@@ -260,6 +297,17 @@ h1, h2, h3, h4, h5, h6 {
       text-align: right; }
     .search-result .services-editor .content .service-list {
       padding: 15px; }
+      .search-result .services-editor .content .service-list .filter-list {
+        text-align: right; }
+        .search-result .services-editor .content .service-list .filter-list li {
+          width: 40px;
+          height: 40px;
+          margin-right: 0;
+          margin-left: 10px;
+          border-radius: 20px;
+          cursor: pointer; }
+          .search-result .services-editor .content .service-list .filter-list li img {
+            width: 30px; }
     .search-result .services-editor .content .head {
       text-align: center;
       color: #02458d;
@@ -324,9 +372,10 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   top: 50%;
   height: 100%;
-  margin-top: -115px; }
+  margin-top: -148px; }
   .search-result .total .total-container {
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-align: center; }
     .search-result .total .total-container .total-price,
     .search-result .total .total-container .total-currency {
       font-size: 24px;
@@ -336,20 +385,42 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: -10px;
       line-height: 30px; }
     .search-result .total .total-container .selector {
-      padding: 10px;
-      text-align: center;
-      color: #02458d;
-      text-decoration: underline;
-      font-size: 16px;
-      margin-top: 10px;
       transition: color 200ms ease-in;
-      cursor: pointer; }
+      padding: 5px 10px;
+      border-color: transparent;
+      margin-top: 10px; }
       .search-result .total .total-container .selector:hover {
         text-decoration: none; }
       .search-result .total .total-container .selector.active {
+        background-color: #FFB20D; }
+    .search-result .total .total-container .offer-id {
+      text-align: center;
+      color: #02458d; }
+      .search-result .total .total-container .offer-id span {
         color: #FFB20D; }
 
 .passenger-detail .sex {
   margin-right: 10px; }
+
+.result label {
+  color: #02458d;
+  font-weight: bold; }
+.result .name {
+  color: #02458d;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px; }
+.result .flight:last-child {
+  border-left: 1px solid #eee; }
+
+.bpm {
+  float: right;
+  color: #02458d; }
+
+.offer {
+  font-size: 16px; }
+
+.blue {
+  color: #02458d; }
 
 /*# sourceMappingURL=main.css.map */

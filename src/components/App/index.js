@@ -10,9 +10,9 @@ import SearchFlights from '../SearchFlights'
 import PreLoader from '../PreLoader';
 import ShowFlightsResult from '../ShowFlightsResult';
 import PassengersDetail from '../PassengersDetail';
-import PaymentInfo from '../PaymentInfo';
+// import PaymentInfo from '../PaymentInfo';
 import Navigation from '../Navigation';
-import Final from '../Final';
+import BookingConfirmation from '../BookingConfirmation';
 import TotalResult from '../TotalResult';
 
 // import static data
@@ -28,7 +28,8 @@ class App extends Component {
 				chooseFlight: false,
 				passengers: false,
 				payment: false,
-				final: false,
+				booking: false,
+				travel: false,
 				waiting: false,
 			},
 			searchResult: offers || {},
@@ -77,8 +78,8 @@ class App extends Component {
 						"originDestinationList": []
 					},
 					/*"passengers": {
-						"passenger": []
-					},*/
+					 "passenger": []
+					 },*/
 					"passengers": {
 						"passenger": [
 							{
@@ -433,150 +434,276 @@ class App extends Component {
 		})
 	};
 
+	/*setPassengers = (data) => {
+	 let status = Object.assign({}, this.state.status);
+	 let query = Object.assign({}, this.state.order.query);
+
+	 status.passengers = 'done';
+	 status.final = true;
+	 status.waiting = false;
+
+	 query.passengers = {
+	 "passenger": [
+	 {
+	 "objectKey": "PAX1",
+	 "ptc": {
+	 "value": "ADT",
+	 "quantity": 1
+	 },
+	 "residenceCode": {
+	 "value": "US"
+	 },
+	 "age": {
+	 "birthDate": {
+	 "value": "1985-09-04T20:00:00.000+0000"
+	 }
+	 },
+	 "name": {
+	 "surname": {
+	 "value": "Patel"
+	 },
+	 "given": [
+	 {
+	 "value": "Ramesh"
+	 }
+	 ],
+	 "middle": [
+	 {
+	 "value": "N"
+	 }
+	 ]
+	 },
+	 "contacts": [
+	 {
+	 "addressContact": {
+	 "street": [
+	 "22 Main Street"
+	 ],
+	 "postalCode": "14202",
+	 "countryCode": {
+	 "value": "DE"
+	 }
+	 }
+	 },
+	 {
+	 "emailContact": {
+	 "address": {
+	 "value": "ramesh@jrtechnologies.com"
+	 }
+	 }
+	 },
+	 {
+	 "phoneContact": {
+	 "application": "Emergency",
+	 "number": [
+	 {
+	 "value": "9869159259"
+	 }
+	 ]
+	 }
+	 }
+	 ]
+	 },
+	 {
+	 "objectKey": "PAX1",
+	 "ptc": {
+	 "value": "ADT",
+	 "quantity": 1
+	 },
+	 "residenceCode": {
+	 "value": "US"
+	 },
+	 "age": {
+	 "birthDate": {
+	 "value": "1985-09-04T20:00:00.000+0000"
+	 }
+	 },
+	 "name": {
+	 "surname": {
+	 "value": "Patel"
+	 },
+	 "given": [
+	 {
+	 "value": "Ramesh"
+	 }
+	 ],
+	 "middle": [
+	 {
+	 "value": "N"
+	 }
+	 ]
+	 },
+	 "contacts": [
+	 {
+	 "addressContact": {
+	 "street": [
+	 "22 Main Street"
+	 ],
+	 "postalCode": "14202",
+	 "countryCode": {
+	 "value": "DE"
+	 }
+	 }
+	 },
+	 {
+	 "emailContact": {
+	 "address": {
+	 "value": "ramesh@jrtechnologies.com"
+	 }
+	 }
+	 },
+	 {
+	 "phoneContact": {
+	 "application": "Emergency",
+	 "number": [
+	 {
+	 "value": "9869159259"
+	 }
+	 ]
+	 }
+	 }
+	 ]
+	 },
+	 ]
+	 };
+
+	 this.setState({
+	 order: {
+	 ...this.state.order,
+	 query,
+	 },
+	 status,
+	 });
+	 }*/
+
 	setPassengers = (data) => {
 		let status = Object.assign({}, this.state.status);
 		let query = Object.assign({}, this.state.order.query);
 
-		status.passengers = 'done';
-		status.payment = true;
-		status.waiting = false;
-
 		query.passengers = {
-					"passenger": [
+			"passenger": [
+				{
+					"objectKey": "PAX1",
+					"ptc": {
+						"value": "ADT",
+						"quantity": 1
+					},
+					"residenceCode": {
+						"value": "US"
+					},
+					"age": {
+						"birthDate": {
+							"value": "1985-09-04T20:00:00.000+0000"
+						}
+					},
+					"name": {
+						"surname": {
+							"value": "Patel"
+						},
+						"given": [
+							{
+								"value": "Ramesh"
+							}
+						],
+						"middle": [
+							{
+								"value": "N"
+							}
+						]
+					},
+					"contacts": [
 						{
-							"objectKey": "PAX1",
-							"ptc": {
-								"value": "ADT",
-								"quantity": 1
-							},
-							"residenceCode": {
-								"value": "US"
-							},
-							"age": {
-								"birthDate": {
-									"value": "1985-09-04T20:00:00.000+0000"
-								}
-							},
-							"name": {
-								"surname": {
-									"value": "Patel"
-								},
-								"given": [
-									{
-										"value": "Ramesh"
-									}
+							"addressContact": {
+								"street": [
+									"22 Main Street"
 								],
-								"middle": [
-									{
-										"value": "N"
-									}
-								]
-							},
-							"contacts": [
-								{
-									"addressContact": {
-										"street": [
-											"22 Main Street"
-										],
-										"postalCode": "14202",
-										"countryCode": {
-											"value": "DE"
-										}
-									}
-								},
-								{
-									"emailContact": {
-										"address": {
-											"value": "ramesh@jrtechnologies.com"
-										}
-									}
-								},
-								{
-									"phoneContact": {
-										"application": "Emergency",
-										"number": [
-											{
-												"value": "9869159259"
-											}
-										]
-									}
+								"postalCode": "14202",
+								"countryCode": {
+									"value": "DE"
 								}
-							]
+							}
 						},
 						{
-							"objectKey": "PAX1",
-							"ptc": {
-								"value": "ADT",
-								"quantity": 1
-							},
-							"residenceCode": {
-								"value": "US"
-							},
-							"age": {
-								"birthDate": {
-									"value": "1985-09-04T20:00:00.000+0000"
+							"emailContact": {
+								"address": {
+									"value": "ramesh@jrtechnologies.com"
 								}
-							},
-							"name": {
-								"surname": {
-									"value": "Patel"
-								},
-								"given": [
+							}
+						},
+						{
+							"phoneContact": {
+								"application": "Emergency",
+								"number": [
 									{
-										"value": "Ramesh"
-									}
-								],
-								"middle": [
-									{
-										"value": "N"
+										"value": "9869159259"
 									}
 								]
-							},
-							"contacts": [
-								{
-									"addressContact": {
-										"street": [
-											"22 Main Street"
-										],
-										"postalCode": "14202",
-										"countryCode": {
-											"value": "DE"
-										}
-									}
-								},
-								{
-									"emailContact": {
-										"address": {
-											"value": "ramesh@jrtechnologies.com"
-										}
-									}
-								},
-								{
-									"phoneContact": {
-										"application": "Emergency",
-										"number": [
-											{
-												"value": "9869159259"
-											}
-										]
-									}
-								}
-							]
-						},
+							}
+						}
 					]
-				};
-
-		this.setState({
-			order: {
-				...this.state.order,
-				query,
-			},
-			status,
-		});
-	}
-
-	setPaymentInfo = (data) => {
-		let status = Object.assign({}, this.state.status);
+				},
+				{
+					"objectKey": "PAX1",
+					"ptc": {
+						"value": "ADT",
+						"quantity": 1
+					},
+					"residenceCode": {
+						"value": "US"
+					},
+					"age": {
+						"birthDate": {
+							"value": "1985-09-04T20:00:00.000+0000"
+						}
+					},
+					"name": {
+						"surname": {
+							"value": "Patel"
+						},
+						"given": [
+							{
+								"value": "Ramesh"
+							}
+						],
+						"middle": [
+							{
+								"value": "N"
+							}
+						]
+					},
+					"contacts": [
+						{
+							"addressContact": {
+								"street": [
+									"22 Main Street"
+								],
+								"postalCode": "14202",
+								"countryCode": {
+									"value": "DE"
+								}
+							}
+						},
+						{
+							"emailContact": {
+								"address": {
+									"value": "ramesh@jrtechnologies.com"
+								}
+							}
+						},
+						{
+							"phoneContact": {
+								"application": "Emergency",
+								"number": [
+									{
+										"value": "9869159259"
+									}
+								]
+							}
+						}
+					]
+				},
+			]
+		};
 
 		this.setState({
 			status: {
@@ -1175,27 +1302,31 @@ class App extends Component {
 			method: 'POST',
 			data: passengers,
 			url: library.lib.urlsLibrary.orders,
-			callback: (orderResult) => {
-				status.payment = 'done';
-				status.final = true;
+			callback: (orderResult, headers) => {
+				status.passengers = 'done';
+				status.booking = true;
 				status.waiting = false;
+
+				console.log("orderResult", orderResult);
+				console.log("headers", headers);
 
 				this.setState({
 					orderResult,
 					status,
-				})
+					order: {
+						...this.state.order,
+						query,
+					},
+					headers
+				},)
 			}
 		});
 
 		this.setState({ passengers: data })
 	}
 
-	/*setPaymentInfo = (data) => {
-		this.setState({ paymentInfo: data })
-	}*/
-
 	render() {
-		const { status, searchResult, searchParams } = this.state;
+		const { status, searchResult, searchParams, order, headers } = this.state;
 
 		return (
 			<div className="App">
@@ -1204,13 +1335,13 @@ class App extends Component {
 
 				<div className={['container', status.waiting ? 'preloading' : ''].join(' ')}>
 
-					{status.chooseFlight &&
+					{false && status.chooseFlight &&
 					<TotalResult dataLists={searchResult.dataLists}
 					             searchParams={searchParams.coreQuery.originDestinations}
 					/>}
 
 					{(status.search && status.search !== 'done') &&
-					<SearchFlights airports={airports} callback={this.setSearchParams}/>}
+					<SearchFlights airports={airports} callback={this.setSearchParamsMock}/>}
 
 					{(status.chooseFlight && status.chooseFlight !== 'done') &&
 					<ShowFlightsResult
@@ -1226,11 +1357,15 @@ class App extends Component {
 						callback={this.setPassengers}
 					/>}
 
-					{status.payment && status.payment !== 'done' && <PaymentInfo
+					{/*status.payment && status.payment !== 'done' && <PaymentInfo
 						callback={this.setPaymentInfo}
-					/>}
+					/>*/}
 
-					{status.final && status.final !== 'done' && <Final orderResult={this.state.orderResult} />}
+					{status.booking && status.booking !== 'done' &&
+					<BookingConfirmation orderResult={this.state.orderResult}
+					       offers={order.query.orderItems.shoppingResponse.offers}
+					       headers={headers}
+					/>}
 
 					{status.waiting && <PreLoader status={status.waiting}/>}
 				</div>

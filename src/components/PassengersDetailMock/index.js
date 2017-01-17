@@ -40,7 +40,7 @@ class TravelerInformation extends Component {
 				secondName: e.target.value,
 			}
 		}, this.sendMainInfo)
-	}
+	};
 
 	handleFirstNameInput = (e) => {
 		this.setState({
@@ -49,7 +49,7 @@ class TravelerInformation extends Component {
 				firstName: e.target.value,
 			}
 		}, this.sendMainInfo)
-	}
+	};
 
 	handleMiddleNameInput = (e) => {
 		this.setState({
@@ -58,7 +58,7 @@ class TravelerInformation extends Component {
 				middleName: e.target.value,
 			}
 		}, this.sendMainInfo)
-	}
+	};
 
 	handleSuffixSelect = (e) => {
 		this.setState({
@@ -67,7 +67,7 @@ class TravelerInformation extends Component {
 				suffix: e.target.value,
 			}
 		}, this.sendMainInfo)
-	}
+	};
 
 	handleBirthDate = (result) => {
 		this.setState({
@@ -76,7 +76,7 @@ class TravelerInformation extends Component {
 				birthDate: result,
 			}
 		}, this.sendMainInfo)
-	}
+	};
 
 	handleAppealSelect = (e) => {
 		this.setState({
@@ -85,7 +85,7 @@ class TravelerInformation extends Component {
 				appeal: e.target.value,
 			}
 		}, this.sendMainInfo)
-	}
+	};
 
 	handleSexInput = (e) => {
 		this.setState({
@@ -94,11 +94,11 @@ class TravelerInformation extends Component {
 				sex: e.target.value,
 			}
 		}, this.sendMainInfo)
-	}
+	};
 
 	sendMainInfo = () => {
 		this.props.onChange(this.state.mainInfo)
-	}
+	};
 
 	render() {
 		return (
@@ -200,7 +200,7 @@ class TravelerPreferences extends Component {
 				name: e.target.value,
 			}
 		}, this.sendPreference)
-	}
+	};
 
 	handleNumberInput = (e) => {
 		this.setState({
@@ -209,7 +209,7 @@ class TravelerPreferences extends Component {
 				number: e.target.value,
 			}
 		}, this.sendPreference)
-	}
+	};
 
 	handleSpecialRequestSelect = (e) => {
 		this.setState({
@@ -218,11 +218,11 @@ class TravelerPreferences extends Component {
 				specialRequest: e.target.value,
 			}
 		}, this.sendPreference)
-	}
+	};
 
 	sendPreference = () => {
 		this.props.onChange(this.state.preference)
-	}
+	};
 
 	render() {
 		const { preference } = this.state;
@@ -316,7 +316,7 @@ class TravelerDocument extends Component {
 				number: e.target.value,
 			}
 		}, this.sendDocument)
-	}
+	};
 
 	handleCountrySelect = (e) => {
 		this.setState({
@@ -325,7 +325,7 @@ class TravelerDocument extends Component {
 				country: e.target.value,
 			}
 		}, this.sendDocument)
-	}
+	};
 
 	handleExpireDate = (date) => {
 		this.setState({
@@ -334,7 +334,7 @@ class TravelerDocument extends Component {
 				expire: date,
 			}
 		}, this.sendDocument)
-	}
+	};
 
 	handleCitizenshipSelect = (e) => {
 		this.setState({
@@ -343,11 +343,11 @@ class TravelerDocument extends Component {
 				citizenship: e.target.value,
 			}
 		}, this.sendDocument)
-	}
+	};
 
 	sendDocument = () => {
 		this.props.onChange(this.state.document)
-	}
+	};
 
 	render() {
 		const { document } = this.state;
@@ -433,7 +433,7 @@ class TravelerDocument extends Component {
 	}
 }
 
-class PassengersDetail extends Component {
+class PassengersDetailMock extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -446,7 +446,7 @@ class PassengersDetail extends Component {
 	componentDidMount() {
 		let passengers = {};
 
-		this.props.dataLists.anonymousTravelerList.forEach(type => {
+		this.props.passengers.forEach(type => {
 			passengers[type.ptc.value] = [];
 
 			for (let count = 1; count <= type.ptc.quantity; count++) {
@@ -456,7 +456,7 @@ class PassengersDetail extends Component {
 					document: {}
 				})
 			}
-		})
+		});
 
 		this.setState({ passengers });
 	}
@@ -472,7 +472,7 @@ class PassengersDetail extends Component {
 				[type.id]: tmpPassengers,
 			},
 		})
-	}
+	};
 
 	setPreference = (preference, id, type) => {
 		let tmpPassengers = this.state.passengers[type.id].slice();
@@ -485,7 +485,7 @@ class PassengersDetail extends Component {
 				[type.id]: tmpPassengers,
 			},
 		})
-	}
+	};
 
 	setDocument = (document, id, type) => {
 		let tmpPassengers = this.state.passengers[type.id].slice();
@@ -498,7 +498,7 @@ class PassengersDetail extends Component {
 				[type.id]: tmpPassengers,
 			},
 		})
-	}
+	};
 
 	sendData = () => {
 		this.props.callback(this.state.passengers);
@@ -581,7 +581,7 @@ class PassengersDetail extends Component {
 					return null;
 				})}
 
-				<Button title='Confirm order'
+				<Button title='Go to the payment'
 				        buttonProps={{
 					        type: "button",
 					        className: "btn btn-primary",
@@ -593,4 +593,4 @@ class PassengersDetail extends Component {
 	}
 }
 
-export default PassengersDetail;
+export default PassengersDetailMock;
