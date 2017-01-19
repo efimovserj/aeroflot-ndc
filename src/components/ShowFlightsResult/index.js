@@ -615,6 +615,13 @@ class ShowFlightsResult extends Component {
 
 		return (
 			<div className="search-result">
+				<div className="found">
+					<h3>Found:</h3>
+					<a href="#OD1">Forward direction ({customOffers['OD1'].length} offers)</a>
+					<a href="#OD2">Backward direction ({customOffers['OD2'].length} offers)</a>
+				</div>
+
+				<a name="OD1"></a>
 				<h2>Forward direction ({customOffers['OD1'].length} offers)</h2>
 				{customOffers['OD1'].map((offer, id) => {
 					if (chosenFlight['OD1'].id) {
@@ -638,7 +645,8 @@ class ShowFlightsResult extends Component {
 					return false;
 				})}
 
-				<h2>Reverse direction  ({customOffers['OD2'].length} offers)</h2>
+				<a name="OD2"></a>
+				<h2>Backward direction  ({customOffers['OD2'].length} offers)</h2>
 				{customOffers['OD2'].map((offer, id) => {
 					if (chosenFlight['OD2'].id) {
 						if (offer.choose) {

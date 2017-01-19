@@ -1,19 +1,43 @@
 import React, { Component } from 'react';
 import library from "../../lib/library";
 
+import Button from '../button';
+
 class BookingConfirmation extends Component {
+
+	sendData = () => {
+		this.props.onChange()
+	}
 
 	render() {
 		const orderResult = JSON.parse(this.props.orderResult);
-		const { offers } = this.props;
+		const { offers, header } = this.props;
 
 		return (
 			<div>
-				<h2>Final order</h2>
+				<h2>Booking Confirmation</h2>
 				<div className="row">
-					<h3 className="col-xs-8">Booking Reference(PNR): <span
+					<h3 className="col-xs-5">Booking Reference(PNR): <span
 						className="blue">{orderResult.response.order[0].bookingReferences[0].id}</span></h3>
-					<h5 className="col-xs-3 bpm">BPM process: <span className="blue">3617</span></h5>
+					<div className="col-xs-2">
+						<Button title='Payment by Passenger'
+						        buttonProps={{
+							        type: "button",
+							        className: "btn btn-primary payment"
+						        }}
+						        onChange={this.sendData}
+						/>
+					</div>
+					<div className="col-xs-2">
+						<Button title='Payment by Agent'
+						        buttonProps={{
+							        type: "button",
+							        className: "btn btn-primary payment"
+						        }}
+						        onChange={this.sendData}
+						/>
+					</div>
+					<h5 className="col-xs-3 bpm">BPM process: <span className="blue">{header}</span></h5>
 
 					<p className="offer col-xs-12"><label>Order Id:</label> {offers[0].offerID.value}</p>
 				</div>
@@ -55,7 +79,6 @@ class BookingConfirmation extends Component {
 						</div>
 					)
 				})}
-
 			</div>
 		)
 	}

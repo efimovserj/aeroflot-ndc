@@ -1,5 +1,5 @@
-const urlBase = 'http://192.168.192.29:8395/api/';
-//const urlBase = '/api/';
+//const urlBase = 'http://192.168.192.29:8395/api/';
+const urlBase = '/api/';
 
 const urlsLibrary = {
 	offers: urlBase + 'offers',
@@ -19,16 +19,8 @@ let getResponse = ({ method, data = null, url, callback }) => {
 
 	xhr.onreadystatechange = function () {
 		let headers = {};
-
-		if(this.readyState === this.HEADERS_RECEIVED) {
-			//headers = xhr.getAllResponseHeaders();
-			headers = xhr.getResponseHeader('x-bpm-process-id');
-			console.log("headers", headers);
-		}
-
-		console.log("headers2", headers);
-
 		if (this.readyState === 4) {
+			headers = xhr.getResponseHeader('x-bpm-process-id');
 			callback(this['response'], headers)
 		}
 	};

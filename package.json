@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "file-loader": "^0.9.0",
     "node-sass": "^4.1.1",
     "react-scripts": "0.7.0",
     "sass-loader": "^4.1.1",

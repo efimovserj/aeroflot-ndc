@@ -13,6 +13,7 @@ import PassengersDetail from '../PassengersDetail';
 // import PaymentInfo from '../PaymentInfo';
 import Navigation from '../Navigation';
 import BookingConfirmation from '../BookingConfirmation';
+import TravelDocumentation from '../TravelDocumentation';
 import TotalResult from '../TotalResult';
 
 // import static data
@@ -433,6 +434,16 @@ class App extends Component {
 			},
 		})
 	};
+
+	setPayment = () => {
+		this.setState({
+			status: {
+				...this.state.status,
+				booking: 'done',
+				travel: true,
+			},
+		})
+	}
 
 	/*setPassengers = (data) => {
 	 let status = Object.assign({}, this.state.status);
@@ -1307,9 +1318,6 @@ class App extends Component {
 				status.booking = true;
 				status.waiting = false;
 
-				console.log("orderResult", orderResult);
-				console.log("headers", headers);
-
 				this.setState({
 					orderResult,
 					status,
@@ -1341,7 +1349,7 @@ class App extends Component {
 					/>}
 
 					{(status.search && status.search !== 'done') &&
-					<SearchFlights airports={airports} callback={this.setSearchParamsMock}/>}
+					<SearchFlights airports={airports} callback={this.setSearchParams}/>}
 
 					{(status.chooseFlight && status.chooseFlight !== 'done') &&
 					<ShowFlightsResult
@@ -1363,8 +1371,15 @@ class App extends Component {
 
 					{status.booking && status.booking !== 'done' &&
 					<BookingConfirmation orderResult={this.state.orderResult}
+					                     offers={order.query.orderItems.shoppingResponse.offers}
+					                     header={headers}
+					                     onChange={this.setPayment}
+					/>}
+
+					{status.travel && status.travel !== 'done' &&
+					<TravelDocumentation orderResult={this.state.orderResult}
 					       offers={order.query.orderItems.shoppingResponse.offers}
-					       headers={headers}
+					       header={headers}
 					/>}
 
 					{status.waiting && <PreLoader status={status.waiting}/>}
